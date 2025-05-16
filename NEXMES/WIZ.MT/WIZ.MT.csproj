@@ -1,0 +1,678 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{75FF1E22-1AD8-448C-8CCB-3064CD9138B8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WIZ.MT</RootNamespace>
+    <AssemblyName>WIZ.MT</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.CeXview2DProLib">
+      <HintPath>C:\CoChain\CoChain백업\AxInterop.CeXview2DProLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Shared.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.Misc.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraGauge.v11.1.Design, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinChart.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinDock.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGauge.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinSchedule.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinTabbedMdi.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinTabControl.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinTree.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Interop.CeXview2DProLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>DLL\Interop.CeXview2DProLib.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\Microsoft Enterprise Library 5.0\Bin\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CC0000.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CC0000.designer.cs">
+      <DependentUpon>CC0000.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DG0430[검사기 데이터조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DG0430[검사기 데이터조회].Designer.cs">
+      <DependentUpon>DG0430[검사기 데이터조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="DG0422[측정기 처짐데이터조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DG0422[측정기 처짐데이터조회].Designer.cs">
+      <DependentUpon>DG0422[측정기 처짐데이터조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="DG0421[측정기 PPA데이터조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DG0421[측정기 PPA데이터조회].Designer.cs">
+      <DependentUpon>DG0421[측정기 PPA데이터조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="DG0420[측정기 얼라인키데이터조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DG0420[측정기 얼라인키데이터조회].Designer.cs">
+      <DependentUpon>DG0420[측정기 얼라인키데이터조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="DG0415[용접기 프리텐션데이터조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DG0415[용접기 프리텐션데이터조회].Designer.cs">
+      <DependentUpon>DG0415[용접기 프리텐션데이터조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="DG0414[용접기 용접레시피데이터조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DG0414[용접기 용접레시피데이터조회].Designer.cs">
+      <DependentUpon>DG0414[용접기 용접레시피데이터조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="DG0413[용접기 클램프CF데이터조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DG0413[용접기 클램프CF데이터조회].Designer.cs">
+      <DependentUpon>DG0413[용접기 클램프CF데이터조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="DG0412[용접기 처짐데이터조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DG0412[용접기 처짐데이터조회].Designer.cs">
+      <DependentUpon>DG0412[용접기 처짐데이터조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="DG0411[용접기 PPA데이터조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DG0411[용접기 PPA데이터조회].Designer.cs">
+      <DependentUpon>DG0411[용접기 PPA데이터조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="DG0410[용접기 얼라인키데이터조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DG0410[용접기 얼라인키데이터조회].Designer.cs">
+      <DependentUpon>DG0410[용접기 얼라인키데이터조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="DG0403[레시피로딩로그조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DG0403[레시피로딩로그조회].Designer.cs">
+      <DependentUpon>DG0403[레시피로딩로그조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="DG0402[시퀀스로그조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DG0402[시퀀스로그조회].Designer.cs">
+      <DependentUpon>DG0402[시퀀스로그조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="DG0401[온도조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DG0401[온도조회].Designer.cs">
+      <DependentUpon>DG0401[온도조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="IFTABLE[ERP 인터페이스 조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IFTABLE[ERP 인터페이스 조회].Designer.cs">
+      <DependentUpon>IFTABLE[ERP 인터페이스 조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="DG0300[설비인터페이스 조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DG0300[설비인터페이스 조회].Designer.cs">
+      <DependentUpon>DG0300[설비인터페이스 조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MT0040.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MT0040.Designer.cs">
+      <DependentUpon>MT0040.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MT0012.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MT0012.Designer.cs">
+      <DependentUpon>MT0012.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MT0011.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MT0011.Designer.cs">
+      <DependentUpon>MT0011.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MT0013.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MT0013.Designer.cs">
+      <DependentUpon>MT0013.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MT0030_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MT0030_UC.designer.cs">
+      <DependentUpon>MT0030_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MT0030[모니터링].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MT0030[모니터링].Designer.cs">
+      <DependentUpon>MT0030[모니터링].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MT0010[작업장별 생산현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MT0010[작업장별 생산현황].Designer.cs">
+      <DependentUpon>MT0010[작업장별 생산현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MT0300[종합모니터링].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MT0300[종합모니터링].designer.cs">
+      <DependentUpon>MT0300[종합모니터링].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MT0150.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MT0150.designer.cs">
+      <DependentUpon>MT0150.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MT0100.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MT0100.designer.cs">
+      <DependentUpon>MT0100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MT0100Y.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MT0100Y.designer.cs">
+      <DependentUpon>MT0100Y.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MT0200.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MT0200.Designer.cs">
+      <DependentUpon>MT0200.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MT0400.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MT0400.designer.cs">
+      <DependentUpon>MT0400.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MT0500.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MT0500.designer.cs">
+      <DependentUpon>MT0500.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MT0710[KPI 조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MT0710[KPI 조회].Designer.cs">
+      <DependentUpon>MT0710[KPI 조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MT0700[KPI 관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MT0700[KPI 관리].Designer.cs">
+      <DependentUpon>MT0700[KPI 관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MT0600[KPI].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MT0600[KPI].Designer.cs">
+      <DependentUpon>MT0600[KPI].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MT1300.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MT1300.Designer.cs">
+      <DependentUpon>MT1300.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MT0020[4분할모니터링].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MT0020[4분할모니터링].Designer.cs">
+      <DependentUpon>MT0020[4분할모니터링].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiSamplesSPC.cs" />
+    <Compile Include="DG0400[알람로그조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DG0400[알람로그조회].Designer.cs">
+      <DependentUpon>DG0400[알람로그조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SingleSampleSPC.cs" />
+    <Compile Include="SPCBase.cs" />
+    <Compile Include="UC_CheckSheet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_CheckSheet.designer.cs">
+      <DependentUpon>UC_CheckSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_SPC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_SPC.Designer.cs">
+      <DependentUpon>UC_SPC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MT0010_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MT0010_UC.designer.cs">
+      <DependentUpon>MT0010_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_WorkCenterProdStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_WorkCenterProdStatus.designer.cs">
+      <DependentUpon>UC_WorkCenterProdStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_WorkCenterCheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_WorkCenterCheck.designer.cs">
+      <DependentUpon>UC_WorkCenterCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_WorkCenterStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_WorkCenterStatus.designer.cs">
+      <DependentUpon>UC_WorkCenterStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_WorkCenter_MT0300.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_WorkCenter_MT0300.designer.cs">
+      <DependentUpon>UC_WorkCenter_MT0300.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_WorkCenterC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_WorkCenterC.designer.cs">
+      <DependentUpon>UC_WorkCenterC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_WorkCenter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_WorkCenter.designer.cs">
+      <DependentUpon>UC_WorkCenter.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CC0000.resx">
+      <DependentUpon>CC0000.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DG0430[검사기 데이터조회].resx">
+      <DependentUpon>DG0430[검사기 데이터조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DG0422[측정기 처짐데이터조회].resx">
+      <DependentUpon>DG0422[측정기 처짐데이터조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DG0421[측정기 PPA데이터조회].resx">
+      <DependentUpon>DG0421[측정기 PPA데이터조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DG0420[측정기 얼라인키데이터조회].resx">
+      <DependentUpon>DG0420[측정기 얼라인키데이터조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DG0415[용접기 프리텐션데이터조회].resx">
+      <DependentUpon>DG0415[용접기 프리텐션데이터조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DG0414[용접기 용접레시피데이터조회].resx">
+      <DependentUpon>DG0414[용접기 용접레시피데이터조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DG0413[용접기 클램프CF데이터조회].resx">
+      <DependentUpon>DG0413[용접기 클램프CF데이터조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DG0412[용접기 처짐데이터조회].resx">
+      <DependentUpon>DG0412[용접기 처짐데이터조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DG0411[용접기 PPA데이터조회].resx">
+      <DependentUpon>DG0411[용접기 PPA데이터조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DG0410[용접기 얼라인키데이터조회].resx">
+      <DependentUpon>DG0410[용접기 얼라인키데이터조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DG0403[레시피로딩로그조회].resx">
+      <DependentUpon>DG0403[레시피로딩로그조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DG0402[시퀀스로그조회].resx">
+      <DependentUpon>DG0402[시퀀스로그조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DG0401[온도조회].resx">
+      <DependentUpon>DG0401[온도조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IFTABLE[ERP 인터페이스 조회].resx">
+      <DependentUpon>IFTABLE[ERP 인터페이스 조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DG0300[설비인터페이스 조회].resx">
+      <DependentUpon>DG0300[설비인터페이스 조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MT0040.resx">
+      <DependentUpon>MT0040.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MT0012.resx">
+      <DependentUpon>MT0012.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MT0011.resx">
+      <DependentUpon>MT0011.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MT0013.resx">
+      <DependentUpon>MT0013.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MT0030_UC.resx">
+      <DependentUpon>MT0030_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MT0030[모니터링].resx">
+      <DependentUpon>MT0030[모니터링].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MT0010[작업장별 생산현황].resx">
+      <DependentUpon>MT0010[작업장별 생산현황].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MT0300[종합모니터링].resx">
+      <DependentUpon>MT0300[종합모니터링].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MT0150.resx">
+      <DependentUpon>MT0150.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MT0100.resx">
+      <DependentUpon>MT0100.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MT0100Y.resx">
+      <DependentUpon>MT0100Y.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MT0200.resx">
+      <DependentUpon>MT0200.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MT0400.resx">
+      <DependentUpon>MT0400.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MT0500.resx">
+      <DependentUpon>MT0500.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MT0710[KPI 조회].resx">
+      <DependentUpon>MT0710[KPI 조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MT0700[KPI 관리].resx">
+      <DependentUpon>MT0700[KPI 관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MT0600[KPI].resx">
+      <DependentUpon>MT0600[KPI].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MT1300.resx">
+      <DependentUpon>MT1300.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MT0020[4분할모니터링].resx">
+      <DependentUpon>MT0020[4분할모니터링].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DG0400[알람로그조회].resx">
+      <DependentUpon>DG0400[알람로그조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UC_CheckSheet.resx">
+      <DependentUpon>UC_CheckSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_SPC.resx">
+      <DependentUpon>UC_SPC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MT0010_UC.resx">
+      <DependentUpon>MT0010_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_WorkCenterProdStatus.resx">
+      <DependentUpon>UC_WorkCenterProdStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_WorkCenterCheck.resx">
+      <DependentUpon>UC_WorkCenterCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_WorkCenterStatus.resx">
+      <DependentUpon>UC_WorkCenterStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_WorkCenter_MT0300.resx">
+      <DependentUpon>UC_WorkCenter_MT0300.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_WorkCenterC.resx">
+      <DependentUpon>UC_WorkCenterC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_WorkCenter.resx">
+      <DependentUpon>UC_WorkCenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_06.gif" />
+    <None Include="Resources\icon_05.gif" />
+    <None Include="Resources\icon_04.gif" />
+    <None Include="Resources\icon_03.gif" />
+    <None Include="Resources\icon_02.gif" />
+    <None Include="Resources\icon_01.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MCTIMAGE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Module\MES\PopManager\PopManager.csproj">
+      <Project>{fd5753c6-1531-442f-8ce5-e317811ed41d}</Project>
+      <Name>PopManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.Control\WIZ.Control.csproj">
+      <Project>{865bf19b-00b8-45e8-b4e7-0cc5f58f8a98}</Project>
+      <Name>WIZ.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.Forms\WIZ.Forms.csproj">
+      <Project>{4c2dad9f-dcab-4b8f-a803-f5e43f8849e7}</Project>
+      <Name>WIZ.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.MAIN\WIZ.MAIN.csproj">
+      <Project>{857469de-5d2a-45b7-8875-38c5912d16c8}</Project>
+      <Name>WIZ.MAIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ\WIZ.csproj">
+      <Project>{3887acf7-cbbb-4d70-bb62-1a45d6679c2c}</Project>
+      <Name>WIZ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIZ.PopUp\WIZ.PopUp.csproj">
+      <Project>{c8d579ce-fbb1-4da8-a1bd-848168b8ccb1}</Project>
+      <Name>WIZ.PopUp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1488819634_Location_07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Change.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Day.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HearderBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InspList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAINLOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT_Loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NG_FC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NG_INSP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Night.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK_FC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK_INSP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wait_FC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wait_INSP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2D_layout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pattern2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT0030_000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT0030_001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT0030_002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT0030_003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT0030_004.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT0030_005.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT0030_006.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT0030_007.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT0030_008.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT0030_009.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT0030_010.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLL\AxInterop.CeXview2DProLib.dll" />
+    <Content Include="DLL\Interop.CeXview2DProLib.DLL" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetDir)$(TargetFileName) $(SolutionDir)\$(SolutionName)\$(OutDir)$(TargetFileName)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,277 @@
+#region < HEADER AREA >
+// *---------------------------------------------------------------------------------------------*
+//   Form ID      : BM0682
+//   Form Name    : ¼öÁÖ ÇöÈ²
+//   Name Space   : WIZ.BM
+//   Created Date : 2019-11-11
+//   Made By      : ±â¼ú¿¬±¸¼Ò ÃÖ¹®ÁØ
+//   Description  : ¼öÁÖ ÇöÈ² Á¤º¸¸¦ °ü¸®
+// *---------------------------------------------------------------------------------------------*
+#endregion
+
+#region < USING AREA >
+using System;
+using System.Data;
+using System.Drawing;
+using System.Windows.Forms;
+
+using WIZ.PopUp;
+
+using Infragistics.Win.UltraWinGrid;
+using System.Text;
+using System.Net;
+#endregion
+
+namespace WIZ.PL
+{
+    public partial class PL0100_POP : WIZ.Forms.BaseMDIChildForm
+    {
+        #region < MEMBER AREA >
+        private bool bNew = false;
+
+        //DBHelper helper = new DBHelper("", true);
+
+        UltraGridUtil _GridUtil = new UltraGridUtil();
+
+        BizTextBoxManager btbManager = new BizTextBoxManager();
+        BizGridManager bizGrid1Manager;
+
+        Common _Common = new Common();
+
+        DataTable rtnDtTemp = new DataTable();
+        DataTable dt = new DataTable();
+        DataSet DSGrid1 = new DataSet();
+
+        DataTable dtBARCORE = new DataTable();
+
+        string btnTag = "";
+        string MOLDCODE = "";
+        string sSTATE = "";
+
+        int cnt;
+
+        #endregion
+
+        #region < CONSTRUCTOR >
+        public PL0100_POP()
+        {
+            InitializeComponent();
+        }
+        #endregion
+
+        #region < FORM LOAD >
+        private void PL0100_POP_Load(object sender, EventArgs e)
+        {
+            this.ActiveControl = txtBARCODE;
+            txtBARCODE.Focus();
+        }
+
+        #endregion
+
+        #region < TOOL BAR AREA >
+
+        #endregion
+
+        #region < EVENT AREA >
+        public void SetMoldInfo(DataTable DTinfo)
+        {
+            //if (DTinfo.Rows.Count > 0)
+            //{
+            //    txtMOLDPRODLIST.Text = CModule.ToString(DTinfo.Rows[0]["MOLDPROD"]);
+            //    txtDEGREE.Text       = CModule.ToString(DTinfo.Rows[0]["DEGREE"]);
+            //    txtMOLDNAME.Text     = CModule.ToString(DTinfo.Rows[0]["MOLDNAME"]);
+
+            //    checkBox3.Checked = true;
+
+            //    for (int i = 0; i < Convert.ToInt32(CModule.ToString(DTinfo.Rows[0]["CAVITYNUM"])); i++)
+            //    {
+            //        if (i == Convert.ToInt32(CModule.ToString(DSGrid1.Tables[0].Rows[0]["CAVITYNUM"])) - 1)
+            //            cbo_CVTLIST.Items.Add("CAVITY." + CModule.ToString(DSGrid1.Tables[0].Rows[0]["CAVITYSTRING"]).Substring(i));
+            //        else
+            //            cbo_CVTLIST.Items.Add("CAVITY." + CModule.ToString(DSGrid1.Tables[0].Rows[0]["CAVITYSTRING"]).Substring(i, 1));
+            //    }
+            //}
+            //else
+            //{
+
+            //}
+        }
+        #endregion
+
+        #region < METHOD AREA >
+        private void CallBeforeWork()
+        {
+            //for (int i = 0; i < DSGrid1.Tables[2].Rows.Count; i++)
+            //{
+            //    for (int j = 0; j < grid1.Rows.Count; j++)
+            //    {
+            //        if (CModule.ToString(DSGrid1.Tables[2].Rows[i]["RPc_CoreName"]) == CModule.ToString(grid1.Rows[j].Cells[0].Value))
+            //        {
+            //            grid1.Rows[j].Cells[CModule.ToString(DSGrid1.Tables[2].Rows[i]["RPc_CVT"])].Value = CModule.ToString(DSGrid1.Tables[2].Rows[i]["RPc_UseCnt"]);
+            //        }
+            //    }
+            //}
+
+
+            //for (int j = 0; j < grid1.Rows.Count; j++)
+            //{
+            //    grid1.Rows[j].Cells["SUMCOUNT"].Value = 0;
+            //    for (int i = 2; i < grid1.Columns.Count - 1; i++)
+            //    {
+            //        grid1.Rows[j].Cells["SUMCOUNT"].Value = DBHelper.nvlDouble(grid1.Rows[j].Cells["SUMCOUNT"].Value) + CModule.ToDouble(grid1.Rows[j].Cells[i].Value);
+            //    }
+            //}
+        }
+        #endregion
+
+        private void txtBARCODE_KeyDown(object sender, KeyEventArgs e)
+        {
+            //if (e.KeyCode == Keys.Enter)
+            //{
+            //    #region GRID SETTING 
+
+            //    _GridUtil.InitializeGrid(grid1, true, true, false, "", false);
+            //    DBHelper helper = new DBHelper(false);
+            //    DSGrid1 = helper.FillDataSet("USP_MD0070_POP_S1", CommandType.StoredProcedure
+            //        , helper.CreateParameter("AS_MOLDCODE", txtBARCODE.Text, DbType.String, ParameterDirection.Input));
+
+            //    if (DSGrid1.Tables.Count >= 2)
+            //    {
+            //        _GridUtil.InitColumnUltraGrid(grid1, "SUMCOUNT", "ÇÕ°è", true, GridColDataType_emu.VarChar, 100, 120, Infragistics.Win.HAlign.Left, true, false);
+            //        for (int i = 0; i < Convert.ToInt32(CModule.ToString(DSGrid1.Tables[0].Rows[0]["CAVITYNUM"])); i++)
+            //        {
+            //            int CAV = Convert.ToInt32(CModule.ToString(DSGrid1.Tables[0].Rows[0]["CAVITYSTRING"]).Length);
+
+            //            if (CAV / Convert.ToInt32(CModule.ToString(DSGrid1.Tables[0].Rows[0]["CAVITYNUM"])) == 1)
+            //                if(i == Convert.ToInt32(CModule.ToString(DSGrid1.Tables[0].Rows[0]["CAVITYNUM"])) -1)
+            //                    _GridUtil.InitColumnUltraGrid(grid1, "CAVITY." + i, "CAVITY." + CModule.ToString(DSGrid1.Tables[0].Rows[0]["CAVITYSTRING"]).Substring(i), true, GridColDataType_emu.VarChar, 70, 120, Infragistics.Win.HAlign.Left, true, true);
+            //                else
+            //                    _GridUtil.InitColumnUltraGrid(grid1, "CAVITY." + i, "CAVITY." + CModule.ToString(DSGrid1.Tables[0].Rows[0]["CAVITYSTRING"]).Substring(i,1), true, GridColDataType_emu.VarChar, 70, 120, Infragistics.Win.HAlign.Left, true, true);
+            //        }           
+
+            //        #endregion
+
+            //        SetMoldInfo(DSGrid1.Tables[0]);
+            //        grid1.DataSource = DSGrid1.Tables[1];
+            //        grid1.DataBinds();
+
+            //    }
+            //}
+        }
+
+        private void ultraGroupBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_CLOSE_Click(object sender, EventArgs e)
+        {
+            //if(!listBox1.Items.Contains(cbo_CVTLIST.Text + " ºÀ¼â"))
+            //    listBox1.Items.Add(cbo_CVTLIST.Text + " ºÀ¼â");
+        }
+
+        private void btn_OPEN_Click(object sender, EventArgs e)
+        {
+            //listBox1.Items.Remove(cbo_CVTLIST.Text + " ºÀ¼â");
+        }
+
+        private void grid1_AfterCellUpdate(object sender, CellEventArgs e)
+        {
+            //if (e.Cell.Column.Key.Contains("CAVITY"))
+            //{
+            //    grid1.ActiveRow.Cells["SUMCOUNT"].Value = DBHelper.nvlDouble(grid1.ActiveRow.Cells["SUMCOUNT"].Value) + CModule.ToDouble(e.Cell.Value);
+            //}
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            //if (checkBox1.Checked == true)
+            //{
+            //    checkBox2.Checked = false;
+            //    checkBox3.Checked = false;
+            //}
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            //if (checkBox2.Checked == true)
+            //{
+            //    checkBox1.Checked = false;
+            //    checkBox3.Checked = false;
+            //}
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            //if (checkBox3.Checked == true)
+            //{
+            //    checkBox1.Checked = false;
+            //    checkBox2.Checked = false;
+            //}
+        }
+
+        private void ultraButton2_Click(object sender, EventArgs e)
+        {
+            //DBHelper helper = new DBHelper("", true);
+
+            //try
+            //{
+            //    helper.ExecuteNoneQuery("USP_PL0100_POP_D", CommandType.StoredProcedure
+            //        , helper.CreateParameter("AS_RPc_MOLDCODE", txtBARCODE.Text, DbType.String, ParameterDirection.Input));
+
+            //    for (int i = 0; i < grid1.Rows.Count; i++)
+            //    {
+            //        for (int j = 2; j < grid1.Columns.Count - 1; j++)
+            //        {
+            //            if (Convert.ToString(grid1.Rows[i].Cells[j].Value) != "")
+            //            {
+            //                helper.ExecuteNoneQuery("USP_PL0100_POP_I", CommandType.StoredProcedure
+            //                    , helper.CreateParameter("AS_RPc_LotNo",    "", DbType.String, ParameterDirection.Input)
+            //                    , helper.CreateParameter("AS_RPc_CoreName", Convert.ToString(grid1.Rows[i].Cells[0].Value), DbType.String, ParameterDirection.Input)
+            //                    , helper.CreateParameter("AS_RPc_MOLDCODE", txtBARCODE.Text, DbType.String, ParameterDirection.Input)
+            //                    , helper.CreateParameter("AS_RPc_CVT",      Convert.ToString(grid1.Columns[j].ToString()), DbType.String, ParameterDirection.Input)
+            //                    , helper.CreateParameter("AS_RPc_UseCnt",   Convert.ToString(grid1.Rows[i].Cells[j].Value), DbType.String, ParameterDirection.Input));
+            //            }
+            //        }
+            //    }
+
+            //    helper.Commit();
+            //    this.Close();
+            //}
+            //catch (SException ex)
+            //{
+            //    CancelProcess = true;
+            //    helper.Rollback();
+            //    throw ex;
+            //}
+            //finally
+            //{
+
+            //}
+        }
+
+        private void ultraButton1_Click(object sender, EventArgs e)
+        {
+            //for (int i = 0; i < DSGrid1.Tables[2].Rows.Count; i++)
+            //{
+            //    for (int j = 0; j < grid1.Rows.Count; j++)
+            //    {
+            //        if (CModule.ToString(DSGrid1.Tables[2].Rows[i]["RPc_CoreName"]) == CModule.ToString(grid1.Rows[j].Cells[0].Value))
+            //        {
+            //            grid1.Rows[j].Cells[CModule.ToString(DSGrid1.Tables[2].Rows[i]["RPc_CVT"])].Value = CModule.ToString(DSGrid1.Tables[2].Rows[i]["RPc_UseCnt"]);
+            //        }
+            //    }
+            //}
+
+
+            //for (int j = 0; j < grid1.Rows.Count; j++)
+            //{
+            //    grid1.Rows[j].Cells["SUMCOUNT"].Value = 0;
+            //    for (int i = 2; i < grid1.Columns.Count - 1; i++)
+            //    {
+            //        grid1.Rows[j].Cells["SUMCOUNT"].Value = DBHelper.nvlDouble(grid1.Rows[j].Cells["SUMCOUNT"].Value) + CModule.ToDouble(grid1.Rows[j].Cells[i].Value);
+            //    }
+            //}
+        }
+    }
+}

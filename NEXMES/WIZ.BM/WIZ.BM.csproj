@@ -1,0 +1,2013 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BF18D048-B718-4498-87BE-B3C5949DA1A3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WIZ.BM</RootNamespace>
+    <AssemblyName>WIZ.BM</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DynamicData, Version=7.11.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DynamicData.7.11.1\lib\net462\DynamicData.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Shared.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.Misc.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinDock.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinExplorerBar.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.ExcelExport.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinSchedule.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinStatusBar.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinTabbedMdi.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinTabControl.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinToolbars.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinTree.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics3.Documents.Excel.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Spire.PdfViewer.Asp, Version=7.7.1.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.PDFViewer.7.7.0\lib\net46\Spire.PdfViewer.Asp.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.PdfViewer.Forms, Version=7.7.1.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.PDFViewer.7.7.0\lib\net46\Spire.PdfViewer.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Specialized.4.3.0\lib\net46\System.Collections.Specialized.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.ComponentModel.Primitives, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Primitives.4.3.0\lib\net45\System.ComponentModel.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.6.0.0\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive, Version=5.0.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reactive.5.0.0\lib\netstandard2.0\System.Reactive.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Primitives, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.Serialization.Primitives.4.3.0\lib\net46\System.Runtime.Serialization.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BM0014[환율마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0014[환율마스터].designer.cs">
+      <DependentUpon>BM0014[환율마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0013[품목마스터2].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0013[품목마스터2].Designer.cs">
+      <DependentUpon>BM0013[품목마스터2].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0011[환율마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0011[환율마스터].Designer.cs">
+      <DependentUpon>BM0011[환율마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0012[환율마스터OLD].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0012[환율마스터OLD].designer.cs">
+      <DependentUpon>BM0012[환율마스터OLD].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0123[공정BOM마스터_트리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0123[공정BOM마스터_트리].Designer.cs">
+      <DependentUpon>BM0123[공정BOM마스터_트리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0122[BOM조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0122[BOM조회].Designer.cs">
+      <DependentUpon>BM0122[BOM조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0415[공정검사항목품목별스펙관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0415[공정검사항목품목별스펙관리].Designer.cs">
+      <DependentUpon>BM0415[공정검사항목품목별스펙관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0450[공정검사항목작업장별품목별스펙관리%28Excel%29].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0450[공정검사항목작업장별품목별스펙관리%28Excel%29].Designer.cs">
+      <DependentUpon>BM0450[공정검사항목작업장별품목별스펙관리%28Excel%29].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0465[측정공정항목마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0465[측정공정항목마스터].Designer.cs">
+      <DependentUpon>BM0465[측정공정항목마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0485[작업장별 측정항목관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0485[작업장별 측정항목관리].Designer.cs">
+      <DependentUpon>BM0485[작업장별 측정항목관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0800[도면관리마스터%28PDF%29].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0800[도면관리마스터%28PDF%29].Designer.cs">
+      <DependentUpon>BM0800[도면관리마스터%28PDF%29].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0810[도면관리마스터%28CAD%29].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0810[도면관리마스터%28CAD%29].Designer.cs">
+      <DependentUpon>BM0810[도면관리마스터%28CAD%29].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM4510[사용자 쿼리 설정].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM4510[사용자 쿼리 설정].Designer.cs">
+      <DependentUpon>BM4510[사용자 쿼리 설정].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM5810[SHELL PG 연결] .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM5810[SHELL PG 연결] .Designer.cs">
+      <DependentUpon>BM5810[SHELL PG 연결] .cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM5820[SHELL PG 파일 설정] .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM5820[SHELL PG 파일 설정] .Designer.cs">
+      <DependentUpon>BM5820[SHELL PG 파일 설정] .cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM5900[자재입고 LOT 설정].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM5900[자재입고 LOT 설정].Designer.cs">
+      <DependentUpon>BM5900[자재입고 LOT 설정].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM5800[SHELL PG 설정].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM5800[SHELL PG 설정].Designer.cs">
+      <DependentUpon>BM5800[SHELL PG 설정].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM9750[프린터등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM9750[프린터등록].Designer.cs">
+      <DependentUpon>BM9750[프린터등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="DG0200[설비인터페이스포맷].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DG0200[설비인터페이스포맷].Designer.cs">
+      <DependentUpon>DG0200[설비인터페이스포맷].cs</DependentUpon>
+    </Compile>
+    <Compile Include="DG0100[설비인터페이스타입].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DG0100[설비인터페이스타입].Designer.cs">
+      <DependentUpon>DG0100[설비인터페이스타입].cs</DependentUpon>
+    </Compile>
+    <Compile Include="DG0000[설비키컬럼리스트].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DG0000[설비키컬럼리스트].Designer.cs">
+      <DependentUpon>DG0000[설비키컬럼리스트].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0425[자주검사항목작업장별품목별스펙관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0425[자주검사항목작업장별품목별스펙관리].Designer.cs">
+      <DependentUpon>BM0425[자주검사항목작업장별품목별스펙관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM5055[작업조건추가 마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM5055[작업조건추가 마스터].Designer.cs">
+      <DependentUpon>BM5055[작업조건추가 마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM8000[결감항목마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM8000[결감항목마스터].Designer.cs">
+      <DependentUpon>BM8000[결감항목마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM5200[DAS 알람 마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM5200[DAS 알람 마스터].Designer.cs">
+      <DependentUpon>BM5200[DAS 알람 마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0682[치공구마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0682[치공구마스터].designer.cs">
+      <DependentUpon>BM0682[치공구마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0685[점검조치항목].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0685[점검조치항목].Designer.cs">
+      <DependentUpon>BM0685[점검조치항목].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0121[공정BOM마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0121[공정BOM마스터].Designer.cs">
+      <DependentUpon>BM0121[공정BOM마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM5130[알람처리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM5130[알람처리].Designer.cs">
+      <DependentUpon>BM5130[알람처리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM5120[알람 그룹별발송].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM5120[알람 그룹별발송].Designer.cs">
+      <DependentUpon>BM5120[알람 그룹별발송].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM5110[알람 개인별발송].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM5110[알람 개인별발송].Designer.cs">
+      <DependentUpon>BM5110[알람 개인별발송].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM5100[알람 마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM5100[알람 마스터].Designer.cs">
+      <DependentUpon>BM5100[알람 마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM5050[공정별 작업조건 설정].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM5050[공정별 작업조건 설정].Designer.cs">
+      <DependentUpon>BM5050[공정별 작업조건 설정].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM5000[작업조건 마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM5000[작업조건 마스터].Designer.cs">
+      <DependentUpon>BM5000[작업조건 마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0710[설비보전항목마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0710[설비보전항목마스터].Designer.cs">
+      <DependentUpon>BM0710[설비보전항목마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0390[검사항목품목별스펙관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0390[검사항목품목별스펙관리].Designer.cs">
+      <DependentUpon>BM0390[검사항목품목별스펙관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0580[공지사항관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0580[공지사항관리].Designer.cs">
+      <DependentUpon>BM0580[공지사항관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0680[금형마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0680[금형마스터].Designer.cs">
+      <DependentUpon>BM0680[금형마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0460[설비점검항목마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0460[설비점검항목마스터].Designer.cs">
+      <DependentUpon>BM0460[설비점검항목마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0630[근무형태관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0630[근무형태관리].Designer.cs">
+      <DependentUpon>BM0630[근무형태관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0600[품목별 표준시간마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0600[품목별 표준시간마스터].Designer.cs">
+      <DependentUpon>BM0600[품목별 표준시간마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0550[목표치마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0550[목표치마스터].Designer.cs">
+      <DependentUpon>BM0550[목표치마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0540[메모%28알람%29마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0540[메모%28알람%29마스터].Designer.cs">
+      <DependentUpon>BM0540[메모%28알람%29마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0510[MES 사용PC마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0510[MES 사용PC마스터].Designer.cs">
+      <DependentUpon>BM0510[MES 사용PC마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0620[조업분석마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0620[조업분석마스터].Designer.cs">
+      <DependentUpon>BM0620[조업분석마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0380[설비구분별 발생 고장분류].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0380[설비구분별 발생 고장분류].Designer.cs">
+      <DependentUpon>BM0380[설비구분별 발생 고장분류].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0360[설비별 비가동내역].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0360[설비별 비가동내역].Designer.cs">
+      <DependentUpon>BM0360[설비별 비가동내역].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0350[공정별 비가동내역].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0350[공정별 비가동내역].Designer.cs">
+      <DependentUpon>BM0350[공정별 비가동내역].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0340[라인별 비가동내역].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0340[라인별 비가동내역].Designer.cs">
+      <DependentUpon>BM0340[라인별 비가동내역].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0330[작업장별 비가동내역].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0330[작업장별 비가동내역].Designer.cs">
+      <DependentUpon>BM0330[작업장별 비가동내역].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0320[설비별 불량항목내역].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0320[설비별 불량항목내역].Designer.cs">
+      <DependentUpon>BM0320[설비별 불량항목내역].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0310[공정별 불량항목내역].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0310[공정별 불량항목내역].Designer.cs">
+      <DependentUpon>BM0310[공정별 불량항목내역].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0300[라인별 불량항목내역].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0300[라인별 불량항목내역].Designer.cs">
+      <DependentUpon>BM0300[라인별 불량항목내역].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0290[작업장별 불량항목내역].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0290[작업장별 불량항목내역].Designer.cs">
+      <DependentUpon>BM0290[작업장별 불량항목내역].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0440[공정검사항목작업장별품목별스펙관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0440[공정검사항목작업장별품목별스펙관리].Designer.cs">
+      <DependentUpon>BM0440[공정검사항목작업장별품목별스펙관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0430[제품검사항목품목별스펙관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0430[제품검사항목품목별스펙관리].Designer.cs">
+      <DependentUpon>BM0430[제품검사항목품목별스펙관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0420[자주검사항목품목별스펙관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0420[자주검사항목품목별스펙관리].Designer.cs">
+      <DependentUpon>BM0420[자주검사항목품목별스펙관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0410[공정검사항목품목별스펙관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0410[공정검사항목품목별스펙관리].Designer.cs">
+      <DependentUpon>BM0410[공정검사항목품목별스펙관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0400[수입검사항목품목별스펙관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0400[수입검사항목품목별스펙관리].Designer.cs">
+      <DependentUpon>BM0400[수입검사항목품목별스펙관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0560[실적수집장비마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0560[실적수집장비마스터].Designer.cs">
+      <DependentUpon>BM0560[실적수집장비마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0280[품목별 불량항목내역].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0280[품목별 불량항목내역].Designer.cs">
+      <DependentUpon>BM0280[품목별 불량항목내역].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0220[작업장별 구성 설비] .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0220[작업장별 구성 설비] .Designer.cs">
+      <DependentUpon>BM0220[작업장별 구성 설비] .cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0210[고객사별 출하품목관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0210[고객사별 출하품목관리].Designer.cs">
+      <DependentUpon>BM0210[고객사별 출하품목관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0270[작업장별 고정 작업자].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0270[작업장별 고정 작업자].Designer.cs">
+      <DependentUpon>BM0270[작업장별 고정 작업자].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0260[공정별 기본 작업자].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0260[공정별 기본 작업자].Designer.cs">
+      <DependentUpon>BM0260[공정별 기본 작업자].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0250[설비별 기본 작업자].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0250[설비별 기본 작업자].Designer.cs">
+      <DependentUpon>BM0250[설비별 기본 작업자].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0240[라인별 기본 작업자].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0240[라인별 기본 작업자].Designer.cs">
+      <DependentUpon>BM0240[라인별 기본 작업자].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0230[작업장별 기본 작업자].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0230[작업장별 기본 작업자].Designer.cs">
+      <DependentUpon>BM0230[작업장별 기본 작업자].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0520[메시지정보마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0520[메시지정보마스터].Designer.cs">
+      <DependentUpon>BM0520[메시지정보마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0090[저장위치마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0090[저장위치마스터].Designer.cs">
+      <DependentUpon>BM0090[저장위치마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0480[작업장별 설비점검항목관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0480[작업장별 설비점검항목관리].Designer.cs">
+      <DependentUpon>BM0480[작업장별 설비점검항목관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0200[협력사별공급품목관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0200[협력사별공급품목관리].Designer.cs">
+      <DependentUpon>BM0200[협력사별공급품목관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0370[설비 고장항목마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0370[설비 고장항목마스터].Designer.cs">
+      <DependentUpon>BM0370[설비 고장항목마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0140[라우터마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0140[라우터마스터].Designer.cs">
+      <DependentUpon>BM0140[라우터마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0130[단위코드마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0130[단위코드마스터].Designer.cs">
+      <DependentUpon>BM0130[단위코드마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0120[BOM마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0120[BOM마스터].Designer.cs">
+      <DependentUpon>BM0120[BOM마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0070[설비마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0070[설비마스터].Designer.cs">
+      <DependentUpon>BM0070[설비마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0050[라인마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0050[라인마스터].Designer.cs">
+      <DependentUpon>BM0050[라인마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0100[불량항목마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0100[불량항목마스터].Designer.cs">
+      <DependentUpon>BM0100[불량항목마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0170[공정검사항목마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0170[공정검사항목마스터].Designer.cs">
+      <DependentUpon>BM0170[공정검사항목마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0530[각종사유마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0530[각종사유마스터].Designer.cs">
+      <DependentUpon>BM0530[각종사유마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0500[운행차량마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0500[운행차량마스터].Designer.cs">
+      <DependentUpon>BM0500[운행차량마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0190[제품검사항목마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0190[제품검사항목마스터].Designer.cs">
+      <DependentUpon>BM0190[제품검사항목마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0180[자주검사항목마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0180[자주검사항목마스터].Designer.cs">
+      <DependentUpon>BM0180[자주검사항목마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0160[수입검사항목마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0160[수입검사항목마스터].Designer.cs">
+      <DependentUpon>BM0160[수입검사항목마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0150[검사항목마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0150[검사항목마스터].Designer.cs">
+      <DependentUpon>BM0150[검사항목마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0110[비가동마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0110[비가동마스터].Designer.cs">
+      <DependentUpon>BM0110[비가동마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0080[창고마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0080[창고마스터].Designer.cs">
+      <DependentUpon>BM0080[창고마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0060[작업장마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0060[작업장마스터].Designer.cs">
+      <DependentUpon>BM0060[작업장마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0040[공정마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0040[공정마스터].Designer.cs">
+      <DependentUpon>BM0040[공정마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0030[거래처마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0030[거래처마스터].Designer.cs">
+      <DependentUpon>BM0030[거래처마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0020[작업자마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0020[작업자마스터].Designer.cs">
+      <DependentUpon>BM0020[작업자마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0010[품목마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0010[품목마스터].Designer.cs">
+      <DependentUpon>BM0010[품목마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0660[일자별 작업장근무형태관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0660[일자별 작업장근무형태관리].designer.cs">
+      <DependentUpon>BM0660[일자별 작업장근무형태관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM6100[측정항목관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM6100[측정항목관리].designer.cs">
+      <DependentUpon>BM6100[측정항목관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0650[일자별 라인근무형태관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0650[일자별 라인근무형태관리].designer.cs">
+      <DependentUpon>BM0650[일자별 라인근무형태관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0640[연간캘린더생성].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0640[연간캘린더생성].Designer.cs">
+      <DependentUpon>BM0640[연간캘린더생성].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM6800.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM6800.Designer.cs">
+      <DependentUpon>BM6800.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM8200.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM8200.Designer.cs">
+      <DependentUpon>BM8200.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM6500.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM6500.designer.cs">
+      <DependentUpon>BM6500.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0000[코드마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0000[코드마스터].Designer.cs">
+      <DependentUpon>BM0000[코드마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0620Y.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0620Y.Designer.cs">
+      <DependentUpon>BM0620Y.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0705.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0705.designer.cs">
+      <DependentUpon>BM0705.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM1000.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM1000.designer.cs">
+      <DependentUpon>BM1000.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM1010.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM1010.Designer.cs">
+      <DependentUpon>BM1010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM1110.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM1110.Designer.cs">
+      <DependentUpon>BM1110.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM1200.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM1200.designer.cs">
+      <DependentUpon>BM1200.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM1510.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM1510.Designer.cs">
+      <DependentUpon>BM1510.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM1520.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM1520.Designer.cs">
+      <DependentUpon>BM1520.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM1530.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM1530.Designer.cs">
+      <DependentUpon>BM1530.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM1540.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM1540.Designer.cs">
+      <DependentUpon>BM1540.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM1550.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM1550.designer.cs">
+      <DependentUpon>BM1550.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM1560.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM1560.designer.cs">
+      <DependentUpon>BM1560.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM1570.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM1570.designer.cs">
+      <DependentUpon>BM1570.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM1610.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM1610.designer.cs">
+      <DependentUpon>BM1610.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM1620.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM1620.designer.cs">
+      <DependentUpon>BM1620.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM1710.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM1710.Designer.cs">
+      <DependentUpon>BM1710.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM1810.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM1810.Designer.cs">
+      <DependentUpon>BM1810.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM2501.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM2501.Designer.cs">
+      <DependentUpon>BM2501.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM3610.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM3610.Designer.cs">
+      <DependentUpon>BM3610.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM3620.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM3620.Designer.cs">
+      <DependentUpon>BM3620.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM3630.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM3630.Designer.cs">
+      <DependentUpon>BM3630.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM3640.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM3640.Designer.cs">
+      <DependentUpon>BM3640.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM3650.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM3650.designer.cs">
+      <DependentUpon>BM3650.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM3651.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM3651.Designer.cs">
+      <DependentUpon>BM3651.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM3660.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM3660.designer.cs">
+      <DependentUpon>BM3660.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM3670.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM3670.Designer.cs">
+      <DependentUpon>BM3670.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM3680.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM3680.Designer.cs">
+      <DependentUpon>BM3680.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM3690.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM3690.designer.cs">
+      <DependentUpon>BM3690.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM4000.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM4000.Designer.cs">
+      <DependentUpon>BM4000.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM4200.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM4200.Designer.cs">
+      <DependentUpon>BM4200.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM4300.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM4300.designer.cs">
+      <DependentUpon>BM4300.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM4500.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM4500.Designer.cs">
+      <DependentUpon>BM4500.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM4700.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM4700.designer.cs">
+      <DependentUpon>BM4700.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM4800.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM4800.designer.cs">
+      <DependentUpon>BM4800.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0590[바코드 출력 형태 관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0590[바코드 출력 형태 관리].designer.cs">
+      <DependentUpon>BM0590[바코드 출력 형태 관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM5300.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM5300.designer.cs">
+      <DependentUpon>BM5300.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM5430.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM5430.designer.cs">
+      <DependentUpon>BM5430.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM5450.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM5450.designer.cs">
+      <DependentUpon>BM5450.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM6000.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM6000.designer.cs">
+      <DependentUpon>BM6000.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM6010.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM6010.designer.cs">
+      <DependentUpon>BM6010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM6020.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM6020.designer.cs">
+      <DependentUpon>BM6020.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM6200.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM6200.designer.cs">
+      <DependentUpon>BM6200.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM7100.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM7100.designer.cs">
+      <DependentUpon>BM7100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM7200.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM7200.designer.cs">
+      <DependentUpon>BM7200.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM7600.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM7600.designer.cs">
+      <DependentUpon>BM7600.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM8100.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM8100.Designer.cs">
+      <DependentUpon>BM8100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM9100.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM9100.designer.cs">
+      <DependentUpon>BM9100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0700.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0700.Designer.cs">
+      <DependentUpon>BM0700.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0800.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0800.Designer.cs">
+      <DependentUpon>BM0800.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0900.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0900.Designer.cs">
+      <DependentUpon>BM0900.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM1100.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM1100.Designer.cs">
+      <DependentUpon>BM1100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM1300.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM1300.Designer.cs">
+      <DependentUpon>BM1300.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM1400.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM1400.Designer.cs">
+      <DependentUpon>BM1400.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM1500.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM1500.Designer.cs">
+      <DependentUpon>BM1500.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM1600.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM1600.Designer.cs">
+      <DependentUpon>BM1600.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM1700.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM1700.Designer.cs">
+      <DependentUpon>BM1700.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM1800.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM1800.Designer.cs">
+      <DependentUpon>BM1800.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM1900.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM1900.Designer.cs">
+      <DependentUpon>BM1900.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM2100.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM2100.Designer.cs">
+      <DependentUpon>BM2100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM2200.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM2200.Designer.cs">
+      <DependentUpon>BM2200.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM2300.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM2300.Designer.cs">
+      <DependentUpon>BM2300.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM2400.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM2400.Designer.cs">
+      <DependentUpon>BM2400.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM2500.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM2500.Designer.cs">
+      <DependentUpon>BM2500.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM2600.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM2600.Designer.cs">
+      <DependentUpon>BM2600.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM2700.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM2700.Designer.cs">
+      <DependentUpon>BM2700.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM2800.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM2800.Designer.cs">
+      <DependentUpon>BM2800.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM2900.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM2900.Designer.cs">
+      <DependentUpon>BM2900.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM3000.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM3000.Designer.cs">
+      <DependentUpon>BM3000.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM3100.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM3100.Designer.cs">
+      <DependentUpon>BM3100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM3200.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM3200.Designer.cs">
+      <DependentUpon>BM3200.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM3300.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM3300.Designer.cs">
+      <DependentUpon>BM3300.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM3400.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM3400.Designer.cs">
+      <DependentUpon>BM3400.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM3500.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM3500.Designer.cs">
+      <DependentUpon>BM3500.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM3600.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM3600.Designer.cs">
+      <DependentUpon>BM3600.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM3700.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM3700.Designer.cs">
+      <DependentUpon>BM3700.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM3800.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM3800.Designer.cs">
+      <DependentUpon>BM3800.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM3900.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM3900.Designer.cs">
+      <DependentUpon>BM3900.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM4100.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM4100.Designer.cs">
+      <DependentUpon>BM4100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM3661.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM3661.Designer.cs">
+      <DependentUpon>BM3661.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM3671.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM3671.Designer.cs">
+      <DependentUpon>BM3671.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM8010.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM8010.designer.cs">
+      <DependentUpon>BM8010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0610[현장 하드웨어 관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0610[현장 하드웨어 관리].designer.cs">
+      <DependentUpon>BM0610[현장 하드웨어 관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM4600.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM4600.designer.cs">
+      <DependentUpon>BM4600.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM3652.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM3652.Designer.cs">
+      <DependentUpon>BM3652.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM3662.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM3662.Designer.cs">
+      <DependentUpon>BM3662.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM9600[품목별측정항목관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM9600[품목별측정항목관리].Designer.cs">
+      <DependentUpon>BM9600[품목별측정항목관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM9700[프린터설정].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM9700[프린터설정].Designer.cs">
+      <DependentUpon>BM9700[프린터설정].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0820[레시피관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0820[레시피관리].designer.cs">
+      <DependentUpon>BM0820[레시피관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BM0100Y.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0100Y.Designer.cs">
+      <DependentUpon>BM0100Y.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0600Y.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0600Y.Designer.cs">
+      <DependentUpon>BM0600Y.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM2000.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM2000.Designer.cs">
+      <DependentUpon>BM2000.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM9300.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM9300.Designer.cs">
+      <DependentUpon>BM9300.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM9400Y.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM9400Y.Designer.cs">
+      <DependentUpon>BM9400Y.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM1600Y.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM1600Y.Designer.cs">
+      <DependentUpon>BM1600Y.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM6300.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM6300.Designer.cs">
+      <DependentUpon>BM6300.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM6400.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM6400.Designer.cs">
+      <DependentUpon>BM6400.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM6310.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM6310.Designer.cs">
+      <DependentUpon>BM6310.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM6320.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM6320.Designer.cs">
+      <DependentUpon>BM6320.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM6600.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM6600.Designer.cs">
+      <DependentUpon>BM6600.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BM0014[환율마스터].resx">
+      <DependentUpon>BM0014[환율마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0013[품목마스터2].resx">
+      <DependentUpon>BM0013[품목마스터2].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0011[환율마스터].resx">
+      <DependentUpon>BM0011[환율마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0012[환율마스터OLD].resx">
+      <DependentUpon>BM0012[환율마스터OLD].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0123[공정BOM마스터_트리].resx">
+      <DependentUpon>BM0123[공정BOM마스터_트리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0122[BOM조회].resx">
+      <DependentUpon>BM0122[BOM조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0415[공정검사항목품목별스펙관리].resx">
+      <DependentUpon>BM0415[공정검사항목품목별스펙관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0450[공정검사항목작업장별품목별스펙관리%28Excel%29].resx">
+      <DependentUpon>BM0450[공정검사항목작업장별품목별스펙관리%28Excel%29].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0465[측정공정항목마스터].resx">
+      <DependentUpon>BM0465[측정공정항목마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0485[작업장별 측정항목관리].resx">
+      <DependentUpon>BM0485[작업장별 측정항목관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0800[도면관리마스터%28PDF%29].resx">
+      <DependentUpon>BM0800[도면관리마스터%28PDF%29].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0810[도면관리마스터%28CAD%29].resx">
+      <DependentUpon>BM0810[도면관리마스터%28CAD%29].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM4510[사용자 쿼리 설정].resx">
+      <DependentUpon>BM4510[사용자 쿼리 설정].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM5810[SHELL PG 연결] .resx">
+      <DependentUpon>BM5810[SHELL PG 연결] .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM5820[SHELL PG 파일 설정] .resx">
+      <DependentUpon>BM5820[SHELL PG 파일 설정] .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM5900[자재입고 LOT 설정].resx">
+      <DependentUpon>BM5900[자재입고 LOT 설정].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM5800[SHELL PG 설정].resx">
+      <DependentUpon>BM5800[SHELL PG 설정].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM9750[프린터등록].resx">
+      <DependentUpon>BM9750[프린터등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DG0200[설비인터페이스포맷].resx">
+      <DependentUpon>DG0200[설비인터페이스포맷].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DG0100[설비인터페이스타입].resx">
+      <DependentUpon>DG0100[설비인터페이스타입].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DG0000[설비키컬럼리스트].resx">
+      <DependentUpon>DG0000[설비키컬럼리스트].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0425[자주검사항목작업장별품목별스펙관리].resx">
+      <DependentUpon>BM0425[자주검사항목작업장별품목별스펙관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM5055[작업조건추가 마스터].resx">
+      <DependentUpon>BM5055[작업조건추가 마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM8000[결감항목마스터].resx">
+      <DependentUpon>BM8000[결감항목마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM5200[DAS 알람 마스터].resx">
+      <DependentUpon>BM5200[DAS 알람 마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0682[치공구마스터].resx">
+      <DependentUpon>BM0682[치공구마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0685[점검조치항목].resx">
+      <DependentUpon>BM0685[점검조치항목].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0121[공정BOM마스터].resx">
+      <DependentUpon>BM0121[공정BOM마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM5130[알람처리].resx">
+      <DependentUpon>BM5130[알람처리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM5120[알람 그룹별발송].resx">
+      <DependentUpon>BM5120[알람 그룹별발송].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM5110[알람 개인별발송].resx">
+      <DependentUpon>BM5110[알람 개인별발송].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM5100[알람 마스터].resx">
+      <DependentUpon>BM5100[알람 마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM5050[공정별 작업조건 설정].resx">
+      <DependentUpon>BM5050[공정별 작업조건 설정].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM5000[작업조건 마스터].resx">
+      <DependentUpon>BM5000[작업조건 마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0710[설비보전항목마스터].resx">
+      <DependentUpon>BM0710[설비보전항목마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0390[검사항목품목별스펙관리].resx">
+      <DependentUpon>BM0390[검사항목품목별스펙관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0580[공지사항관리].resx">
+      <DependentUpon>BM0580[공지사항관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0680[금형마스터].resx">
+      <DependentUpon>BM0680[금형마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0460[설비점검항목마스터].resx">
+      <DependentUpon>BM0460[설비점검항목마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0630[근무형태관리].resx">
+      <DependentUpon>BM0630[근무형태관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0600[품목별 표준시간마스터].resx">
+      <DependentUpon>BM0600[품목별 표준시간마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0550[목표치마스터].resx">
+      <DependentUpon>BM0550[목표치마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0540[메모%28알람%29마스터].resx">
+      <DependentUpon>BM0540[메모%28알람%29마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0510[MES 사용PC마스터].resx">
+      <DependentUpon>BM0510[MES 사용PC마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0620[조업분석마스터].resx">
+      <DependentUpon>BM0620[조업분석마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0380[설비구분별 발생 고장분류].resx">
+      <DependentUpon>BM0380[설비구분별 발생 고장분류].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0360[설비별 비가동내역].resx">
+      <DependentUpon>BM0360[설비별 비가동내역].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0350[공정별 비가동내역].resx">
+      <DependentUpon>BM0350[공정별 비가동내역].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0340[라인별 비가동내역].resx">
+      <DependentUpon>BM0340[라인별 비가동내역].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0330[작업장별 비가동내역].resx">
+      <DependentUpon>BM0330[작업장별 비가동내역].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0320[설비별 불량항목내역].resx">
+      <DependentUpon>BM0320[설비별 불량항목내역].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0310[공정별 불량항목내역].resx">
+      <DependentUpon>BM0310[공정별 불량항목내역].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0300[라인별 불량항목내역].resx">
+      <DependentUpon>BM0300[라인별 불량항목내역].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0290[작업장별 불량항목내역].resx">
+      <DependentUpon>BM0290[작업장별 불량항목내역].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0440[공정검사항목작업장별품목별스펙관리].resx">
+      <DependentUpon>BM0440[공정검사항목작업장별품목별스펙관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0430[제품검사항목품목별스펙관리].resx">
+      <DependentUpon>BM0430[제품검사항목품목별스펙관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0420[자주검사항목품목별스펙관리].resx">
+      <DependentUpon>BM0420[자주검사항목품목별스펙관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0410[공정검사항목품목별스펙관리].resx">
+      <DependentUpon>BM0410[공정검사항목품목별스펙관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0400[수입검사항목품목별스펙관리].resx">
+      <DependentUpon>BM0400[수입검사항목품목별스펙관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0560[실적수집장비마스터].resx">
+      <DependentUpon>BM0560[실적수집장비마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0280[품목별 불량항목내역].resx">
+      <DependentUpon>BM0280[품목별 불량항목내역].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0220[작업장별 구성 설비] .resx">
+      <DependentUpon>BM0220[작업장별 구성 설비] .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0210[고객사별 출하품목관리].resx">
+      <DependentUpon>BM0210[고객사별 출하품목관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0270[작업장별 고정 작업자].resx">
+      <DependentUpon>BM0270[작업장별 고정 작업자].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0260[공정별 기본 작업자].resx">
+      <DependentUpon>BM0260[공정별 기본 작업자].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0250[설비별 기본 작업자].resx">
+      <DependentUpon>BM0250[설비별 기본 작업자].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0240[라인별 기본 작업자].resx">
+      <DependentUpon>BM0240[라인별 기본 작업자].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0230[작업장별 기본 작업자].resx">
+      <DependentUpon>BM0230[작업장별 기본 작업자].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0520[메시지정보마스터].resx">
+      <DependentUpon>BM0520[메시지정보마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0090[저장위치마스터].resx">
+      <DependentUpon>BM0090[저장위치마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0480[작업장별 설비점검항목관리].resx">
+      <DependentUpon>BM0480[작업장별 설비점검항목관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0200[협력사별공급품목관리].resx">
+      <DependentUpon>BM0200[협력사별공급품목관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0370[설비 고장항목마스터].resx">
+      <DependentUpon>BM0370[설비 고장항목마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0140[라우터마스터].resx">
+      <DependentUpon>BM0140[라우터마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0130[단위코드마스터].resx">
+      <DependentUpon>BM0130[단위코드마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0120[BOM마스터].resx">
+      <DependentUpon>BM0120[BOM마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0070[설비마스터].resx">
+      <DependentUpon>BM0070[설비마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0050[라인마스터].resx">
+      <DependentUpon>BM0050[라인마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0100[불량항목마스터].resx">
+      <DependentUpon>BM0100[불량항목마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0170[공정검사항목마스터].resx">
+      <DependentUpon>BM0170[공정검사항목마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0530[각종사유마스터].resx">
+      <DependentUpon>BM0530[각종사유마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0500[운행차량마스터].resx">
+      <DependentUpon>BM0500[운행차량마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0190[제품검사항목마스터].resx">
+      <DependentUpon>BM0190[제품검사항목마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0180[자주검사항목마스터].resx">
+      <DependentUpon>BM0180[자주검사항목마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0160[수입검사항목마스터].resx">
+      <DependentUpon>BM0160[수입검사항목마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0150[검사항목마스터].resx">
+      <DependentUpon>BM0150[검사항목마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0110[비가동마스터].resx">
+      <DependentUpon>BM0110[비가동마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0080[창고마스터].resx">
+      <DependentUpon>BM0080[창고마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0060[작업장마스터].resx">
+      <DependentUpon>BM0060[작업장마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0040[공정마스터].resx">
+      <DependentUpon>BM0040[공정마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0030[거래처마스터].resx">
+      <DependentUpon>BM0030[거래처마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0020[작업자마스터].resx">
+      <DependentUpon>BM0020[작업자마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0010[품목마스터].resx">
+      <DependentUpon>BM0010[품목마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0660[일자별 작업장근무형태관리].resx">
+      <DependentUpon>BM0660[일자별 작업장근무형태관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM6100[측정항목관리].resx">
+      <DependentUpon>BM6100[측정항목관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0650[일자별 라인근무형태관리].resx">
+      <DependentUpon>BM0650[일자별 라인근무형태관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0900.resx">
+      <DependentUpon>BM0900.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM1400.resx">
+      <DependentUpon>BM1400.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM1600.resx">
+      <DependentUpon>BM1600.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM1900.resx">
+      <DependentUpon>BM1900.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM2100.resx">
+      <DependentUpon>BM2100.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM2200.resx">
+      <DependentUpon>BM2200.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM2300.resx">
+      <DependentUpon>BM2300.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM2500.resx">
+      <DependentUpon>BM2500.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM2600.resx">
+      <DependentUpon>BM2600.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM2700.resx">
+      <DependentUpon>BM2700.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM2800.resx">
+      <DependentUpon>BM2800.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM2900.resx">
+      <DependentUpon>BM2900.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM3000.resx">
+      <DependentUpon>BM3000.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM3100.resx">
+      <DependentUpon>BM3100.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM3200.resx">
+      <DependentUpon>BM3200.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM3300.resx">
+      <DependentUpon>BM3300.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM3500.resx">
+      <DependentUpon>BM3500.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM3652.resx">
+      <DependentUpon>BM3652.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM3661.resx">
+      <DependentUpon>BM3661.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM3662.resx">
+      <DependentUpon>BM3662.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM3671.resx">
+      <DependentUpon>BM3671.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM3900.resx">
+      <DependentUpon>BM3900.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM4100.resx">
+      <DependentUpon>BM4100.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM4600.resx">
+      <DependentUpon>BM4600.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0640[연간캘린더생성].resx">
+      <DependentUpon>BM0640[연간캘린더생성].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM6800.resx">
+      <DependentUpon>BM6800.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM8010.resx">
+      <DependentUpon>BM8010.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM8200.resx">
+      <DependentUpon>BM8200.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM6500.resx">
+      <DependentUpon>BM6500.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0000[코드마스터].resx">
+      <DependentUpon>BM0000[코드마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0620Y.resx">
+      <DependentUpon>BM0620Y.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0700.resx">
+      <DependentUpon>BM0700.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0705.resx">
+      <DependentUpon>BM0705.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0800.resx">
+      <DependentUpon>BM0800.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM1000.resx">
+      <DependentUpon>BM1000.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM1010.resx">
+      <DependentUpon>BM1010.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM1100.resx">
+      <DependentUpon>BM1100.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM1110.resx">
+      <DependentUpon>BM1110.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM1200.resx">
+      <DependentUpon>BM1200.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM1300.resx">
+      <DependentUpon>BM1300.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM1500.resx">
+      <DependentUpon>BM1500.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM1510.resx">
+      <DependentUpon>BM1510.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM1520.resx">
+      <DependentUpon>BM1520.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM1530.resx">
+      <DependentUpon>BM1530.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM1540.resx">
+      <DependentUpon>BM1540.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM1550.resx">
+      <DependentUpon>BM1550.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM1560.resx">
+      <DependentUpon>BM1560.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM1570.resx">
+      <DependentUpon>BM1570.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM1600Y.resx">
+      <DependentUpon>BM1600Y.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM1610.resx">
+      <DependentUpon>BM1610.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM1620.resx">
+      <DependentUpon>BM1620.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM1700.resx">
+      <DependentUpon>BM1700.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM1710.resx">
+      <DependentUpon>BM1710.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM1800.resx">
+      <DependentUpon>BM1800.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM1810.resx">
+      <DependentUpon>BM1810.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM2400.resx">
+      <DependentUpon>BM2400.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM2501.resx">
+      <DependentUpon>BM2501.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM3400.resx">
+      <DependentUpon>BM3400.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM3600.resx">
+      <DependentUpon>BM3600.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM3610.resx">
+      <DependentUpon>BM3610.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM3620.resx">
+      <DependentUpon>BM3620.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM3630.resx">
+      <DependentUpon>BM3630.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM3640.resx">
+      <DependentUpon>BM3640.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM3650.resx">
+      <DependentUpon>BM3650.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM3651.resx">
+      <DependentUpon>BM3651.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM3660.resx">
+      <DependentUpon>BM3660.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM3670.resx">
+      <DependentUpon>BM3670.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM3680.resx">
+      <DependentUpon>BM3680.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM3690.resx">
+      <DependentUpon>BM3690.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM3700.resx">
+      <DependentUpon>BM3700.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM3800.resx">
+      <DependentUpon>BM3800.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM4000.resx">
+      <DependentUpon>BM4000.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM4200.resx">
+      <DependentUpon>BM4200.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM4300.resx">
+      <DependentUpon>BM4300.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM4500.resx">
+      <DependentUpon>BM4500.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM4700.resx">
+      <DependentUpon>BM4700.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM4800.resx">
+      <DependentUpon>BM4800.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0590[바코드 출력 형태 관리].resx">
+      <DependentUpon>BM0590[바코드 출력 형태 관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM5300.resx">
+      <DependentUpon>BM5300.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM5430.resx">
+      <DependentUpon>BM5430.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM5450.resx">
+      <DependentUpon>BM5450.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM6000.resx">
+      <DependentUpon>BM6000.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM6010.resx">
+      <DependentUpon>BM6010.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM6020.resx">
+      <DependentUpon>BM6020.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM6200.resx">
+      <DependentUpon>BM6200.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM7100.resx">
+      <DependentUpon>BM7100.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM7200.resx">
+      <DependentUpon>BM7200.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM7600.resx">
+      <DependentUpon>BM7600.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM8100.resx">
+      <DependentUpon>BM8100.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0610[현장 하드웨어 관리].resx">
+      <DependentUpon>BM0610[현장 하드웨어 관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM9100.resx">
+      <DependentUpon>BM9100.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM9600[품목별측정항목관리].resx">
+      <DependentUpon>BM9600[품목별측정항목관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM9700[프린터설정].resx">
+      <DependentUpon>BM9700[프린터설정].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0820[레시피관리].resx">
+      <DependentUpon>BM0820[레시피관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="BM0100Y.resx">
+      <DependentUpon>BM0100Y.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0600Y.resx">
+      <DependentUpon>BM0600Y.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM2000.resx">
+      <DependentUpon>BM2000.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM9300.resx">
+      <DependentUpon>BM9300.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM9400Y.resx">
+      <DependentUpon>BM9400Y.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM6300.resx">
+      <DependentUpon>BM6300.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM6400.resx">
+      <DependentUpon>BM6400.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM6310.resx">
+      <DependentUpon>BM6310.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM6320.resx">
+      <DependentUpon>BM6320.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM6600.resx">
+      <DependentUpon>BM6600.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Module\MES\PopManager\PopManager.csproj">
+      <Project>{fd5753c6-1531-442f-8ce5-e317811ed41d}</Project>
+      <Name>PopManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.Control\WIZ.Control.csproj">
+      <Project>{865bf19b-00b8-45e8-b4e7-0cc5f58f8a98}</Project>
+      <Name>WIZ.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.Forms\WIZ.Forms.csproj">
+      <Project>{4c2dad9f-dcab-4b8f-a803-f5e43f8849e7}</Project>
+      <Name>WIZ.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.MAIN\WIZ.MAIN.csproj">
+      <Project>{857469de-5d2a-45b7-8875-38c5912d16c8}</Project>
+      <Name>WIZ.MAIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.SY\WIZ.SY.csproj">
+      <Project>{6fefaff7-664f-4b53-b787-22b3bd31ad97}</Project>
+      <Name>WIZ.SY</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ\WIZ.csproj">
+      <Project>{3887acf7-cbbb-4d70-bb62-1a45d6679c2c}</Project>
+      <Name>WIZ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIZ.ETC\WIZ.ETC.csproj">
+      <Project>{407bb92a-9f1f-48ea-bdbd-3fe3730ce2a0}</Project>
+      <Name>WIZ.ETC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIZ.PopUp\WIZ.PopUp.csproj">
+      <Project>{c8d579ce-fbb1-4da8-a1bd-848168b8ccb1}</Project>
+      <Name>WIZ.PopUp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\Default_Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetDir)$(TargetFileName) $(SolutionDir)\$(SolutionName)\$(OutDir)$(TargetFileName)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

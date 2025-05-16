@@ -1,0 +1,1431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{413F3FAE-6E85-4BF8-A661-19C73E64433A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WIZ.PP</RootNamespace>
+    <AssemblyName>WIZ.PP</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics2.Documents.Excel.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Shared.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.Misc.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Infragistics\NetAdvantage 2011.1\Windows Forms\Bin\Infragistics2.Win.Misc.v11.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinChart.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinDock.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGauge.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.ExcelExport.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinSchedule.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinStatusBar.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinTabbedMdi.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinTabControl.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinTree.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Infragistics\NetAdvantage 2011.1\Windows Forms\Bin\Infragistics2.Win.v11.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Shared.v14.2, Version=14.2.20142.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Oracle.DataAccess, Version=4.112.3.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SmartMES\bin\Debug\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.Reporting, Version=7.2.13.1105, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\NEXMES\DLL\Telerik.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WinForms, Version=7.2.13.1105, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\NEXMES\DLL\Telerik.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PP0125[고객크레임등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0125[고객크레임등록].Designer.cs">
+      <DependentUpon>PP0125[고객크레임등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0235[인력투입이력].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0235[인력투입이력].designer.cs">
+      <DependentUpon>PP0235[인력투입이력].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0225[자재투입이력].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0225[자재투입이력].designer.cs">
+      <DependentUpon>PP0225[자재투입이력].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0217[생산소요시간].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0217[생산소요시간].Designer.cs">
+      <DependentUpon>PP0217[생산소요시간].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0218[생산소요시간].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0218[생산소요시간].Designer.cs">
+      <DependentUpon>PP0218[생산소요시간].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0216[수주진척관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0216[수주진척관리].designer.cs">
+      <DependentUpon>PP0216[수주진척관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0215[수주진척관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0215[수주진척관리].Designer.cs">
+      <DependentUpon>PP0215[수주진척관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0021[외주가공 입고조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0021[외주가공 입고조회].designer.cs">
+      <DependentUpon>PP0021[외주가공 입고조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0253[재고위치관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0253[재고위치관리].Designer.cs">
+      <DependentUpon>PP0253[재고위치관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0350[투입LOT 리스트 확인].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0350[투입LOT 리스트 확인].Designer.cs">
+      <DependentUpon>PP0350[투입LOT 리스트 확인].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0028[생산실적조회4].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0028[생산실적조회4].Designer.cs">
+      <DependentUpon>PP0028[생산실적조회4].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0025[생산실적조회3].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0025[생산실적조회3].Designer.cs">
+      <DependentUpon>PP0025[생산실적조회3].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0023[생산실적조회2 LOT].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0023[생산실적조회2 LOT].Designer.cs">
+      <DependentUpon>PP0023[생산실적조회2 LOT].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0022[생산실적조회 LOT].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0022[생산실적조회 LOT].Designer.cs">
+      <DependentUpon>PP0022[생산실적조회 LOT].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0252[투입재고현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0252[투입재고현황].Designer.cs">
+      <DependentUpon>PP0252[투입재고현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0290[단순온도습도].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0290[단순온도습도].Designer.cs">
+      <DependentUpon>PP0290[단순온도습도].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0280[외부 재고].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0280[외부 재고].Designer.cs">
+      <DependentUpon>PP0280[외부 재고].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0330[SPC차트].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0330[SPC차트].Designer.cs">
+      <DependentUpon>PP0330[SPC차트].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0200[치공구실적조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0200[치공구실적조회].designer.cs">
+      <DependentUpon>PP0200[치공구실적조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0251[전품목재고위치].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0251[전품목재고위치].Designer.cs">
+      <DependentUpon>PP0251[전품목재고위치].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0270[LOT TRACKING%28생산이력추적2%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0270[LOT TRACKING%28생산이력추적2%29.designer.cs">
+      <DependentUpon>PP0270[LOT TRACKING%28생산이력추적2%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0260[전품목입출고이력].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0260[전품목입출고이력].Designer.cs">
+      <DependentUpon>PP0260[전품목입출고이력].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0012[분쇄실적조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0012[분쇄실적조회].designer.cs">
+      <DependentUpon>PP0012[분쇄실적조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0011[품목이력조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0011[품목이력조회].Designer.cs">
+      <DependentUpon>PP0011[품목이력조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0400[생산실적관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0400[생산실적관리].Designer.cs">
+      <DependentUpon>PP0400[생산실적관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0240[작업장 별 설비점검 이력].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0240[작업장 별 설비점검 이력].Designer.cs">
+      <DependentUpon>PP0240[작업장 별 설비점검 이력].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0230[고장실적이력].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0230[고장실적이력].Designer.cs">
+      <DependentUpon>PP0230[고장실적이력].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0140[MTTRMTBF].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0140[MTTRMTBF].Designer.cs">
+      <DependentUpon>PP0140[MTTRMTBF].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0130[고장수리이력].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0130[고장수리이력].Designer.cs">
+      <DependentUpon>PP0130[고장수리이력].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0120[고장실적 및 도착등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0120[고장실적 및 도착등록].Designer.cs">
+      <DependentUpon>PP0120[고장실적 및 도착등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0110[설비고장등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0110[설비고장등록].Designer.cs">
+      <DependentUpon>PP0110[설비고장등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0100[일자별 시간대별 집계].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0100[일자별 시간대별 집계].Designer.cs">
+      <DependentUpon>PP0100[일자별 시간대별 집계].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0090[작업장별 비가동 현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0090[작업장별 비가동 현황].designer.cs">
+      <DependentUpon>PP0090[작업장별 비가동 현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0080[품목별 비가동 현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0080[품목별 비가동 현황].designer.cs">
+      <DependentUpon>PP0080[품목별 비가동 현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0190[라인별 투입 재공현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0190[라인별 투입 재공현황].designer.cs">
+      <DependentUpon>PP0190[라인별 투입 재공현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0170[공정별 투입 재공현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0170[공정별 투입 재공현황].designer.cs">
+      <DependentUpon>PP0170[공정별 투입 재공현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0800[금형점검관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0800[금형점검관리].Designer.cs">
+      <DependentUpon>PP0800[금형점검관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP2600[설비고장별TOP10].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP2600[설비고장별TOP10].Designer.cs">
+      <DependentUpon>PP2600[설비고장별TOP10].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP3500[자재출고처리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP3500[자재출고처리].Designer.cs">
+      <DependentUpon>PP3500[자재출고처리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP3510[자재입고처리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP3510[자재입고처리].Designer.cs">
+      <DependentUpon>PP3510[자재입고처리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP3520[외주가공 입출고현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP3520[외주가공 입출고현황].Designer.cs">
+      <DependentUpon>PP3520[외주가공 입출고현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0000.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0000.Designer.cs">
+      <DependentUpon>PP0000.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP2900[공정재고현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP2900[공정재고현황].designer.cs">
+      <DependentUpon>PP2900[공정재고현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP3310[제품품목별재고].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP3310[제품품목별재고].Designer.cs">
+      <DependentUpon>PP3310[제품품목별재고].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0150[작업장별 투입 재공현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0150[작업장별 투입 재공현황].designer.cs">
+      <DependentUpon>PP0150[작업장별 투입 재공현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP1400[작업장비가동사유등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP1400[작업장비가동사유등록].designer.cs">
+      <DependentUpon>PP1400[작업장비가동사유등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0160[작업장별생산창고 재고현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0160[작업장별생산창고 재고현황].designer.cs">
+      <DependentUpon>PP0160[작업장별생산창고 재고현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP9500[생산재고실사].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP9500[생산재고실사].designer.cs">
+      <DependentUpon>PP9500[생산재고실사].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP3300[생산재고실사이력].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP3300[생산재고실사이력].designer.cs">
+      <DependentUpon>PP3300[생산재고실사이력].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP6100Y[CAPA대비실적].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP6100Y[CAPA대비실적].Designer.cs">
+      <DependentUpon>PP6100Y[CAPA대비실적].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP6120Y[종합생산성].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP6120Y[종합생산성].Designer.cs">
+      <DependentUpon>PP6120Y[종합생산성].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0060[원인별 비가동 현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0060[원인별 비가동 현황].designer.cs">
+      <DependentUpon>PP0060[원인별 비가동 현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP9900[월마감일자설정].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP9900[월마감일자설정].Designer.cs">
+      <DependentUpon>PP9900[월마감일자설정].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0310[WorkCenter별 일생산 현황%28품목별%29].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0310[WorkCenter별 일생산 현황%28품목별%29].designer.cs">
+      <DependentUpon>PP0310[WorkCenter별 일생산 현황%28품목별%29].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0710[생산실적현황%28설비별%29].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0710[생산실적현황%28설비별%29].designer.cs">
+      <DependentUpon>PP0710[생산실적현황%28설비별%29].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP1000.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP1000.Designer.cs">
+      <DependentUpon>PP1000.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP1500[주요비가동발생이력].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP1500[주요비가동발생이력].designer.cs">
+      <DependentUpon>PP1500[주요비가동발생이력].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP1510[주요비가동발생현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP1510[주요비가동발생현황].designer.cs">
+      <DependentUpon>PP1510[주요비가동발생현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP2500[주요불량발생이력].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP2500[주요불량발생이력].designer.cs">
+      <DependentUpon>PP2500[주요불량발생이력].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP2510[주요불량발생현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP2510[주요불량발생현황].designer.cs">
+      <DependentUpon>PP2510[주요불량발생현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP7300[작업장별 총투입공수].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP7300[작업장별 총투입공수].designer.cs">
+      <DependentUpon>PP7300[작업장별 총투입공수].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0040[작업장별 투입공수 집계].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0040[작업장별 투입공수 집계].designer.cs">
+      <DependentUpon>PP0040[작업장별 투입공수 집계].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP7500.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP7500.designer.cs">
+      <DependentUpon>PP7500.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP7700.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP7700.designer.cs">
+      <DependentUpon>PP7700.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP7800[라인별비가동현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP7800[라인별비가동현황].designer.cs">
+      <DependentUpon>PP7800[라인별비가동현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP8000[품목별비가동현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP8000[품목별비가동현황].designer.cs">
+      <DependentUpon>PP8000[품목별비가동현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP8100[공정별생산실적현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP8100[공정별생산실적현황].designer.cs">
+      <DependentUpon>PP8100[공정별생산실적현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP8200[라인별생산금액현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP8200[라인별생산금액현황].designer.cs">
+      <DependentUpon>PP8200[라인별생산금액현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP8300[월별공정별손실금액].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP8300[월별공정별손실금액].designer.cs">
+      <DependentUpon>PP8300[월별공정별손실금액].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP8400[월별비가동손실금액].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP8400[월별비가동손실금액].designer.cs">
+      <DependentUpon>PP8400[월별비가동손실금액].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP8500[비가동추이].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP8500[비가동추이].designer.cs">
+      <DependentUpon>PP8500[비가동추이].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP9100[주문별 생산진행상태].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP9100[주문별 생산진행상태].Designer.cs">
+      <DependentUpon>PP9100[주문별 생산진행상태].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PT0100[공장별 일별가동률].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PT0100[공장별 일별가동률].Designer.cs">
+      <DependentUpon>PT0100[공장별 일별가동률].cs</DependentUpon>
+    </Compile>
+    <Compile Include="HH0200.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HH0200.designer.cs">
+      <DependentUpon>HH0200.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HH0300.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HH0300.designer.cs">
+      <DependentUpon>HH0300.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0010[생산실적관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0010[생산실적관리].Designer.cs">
+      <DependentUpon>PP0010[생산실적관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP9910.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP9910.Designer.cs">
+      <DependentUpon>PP9910.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0300[WorkCenter별 일생산 현황%28품목별%29].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0300[WorkCenter별 일생산 현황%28품목별%29].Designer.cs">
+      <DependentUpon>PP0300[WorkCenter별 일생산 현황%28품목별%29].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0500[품목별 생산현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0500[품목별 생산현황].Designer.cs">
+      <DependentUpon>PP0500[품목별 생산현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0600[LOT별생산현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0600[LOT별생산현황].Designer.cs">
+      <DependentUpon>PP0600[LOT별생산현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0020[생산실적조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0020[생산실적조회].Designer.cs">
+      <DependentUpon>PP0020[생산실적조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0900[투입반제품제공현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0900[투입반제품제공현황].Designer.cs">
+      <DependentUpon>PP0900[투입반제품제공현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP1100[작업자투입현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP1100[작업자투입현황].Designer.cs">
+      <DependentUpon>PP1100[작업자투입현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP1200[작업자실공수투입이력].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP1200[작업자실공수투입이력].Designer.cs">
+      <DependentUpon>PP1200[작업자실공수투입이력].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP1300[작업장별라인가동현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP1300[작업장별라인가동현황].Designer.cs">
+      <DependentUpon>PP1300[작업장별라인가동현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0050[작업장별 가동 현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0050[작업장별 가동 현황].Designer.cs">
+      <DependentUpon>PP0050[작업장별 가동 현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP1601[비가동항목별현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP1601[비가동항목별현황].designer.cs">
+      <DependentUpon>PP1601[비가동항목별현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP1700[비가동유형별TOP10].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP1700[비가동유형별TOP10].Designer.cs">
+      <DependentUpon>PP1700[비가동유형별TOP10].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP1800[불량WorkCenter별현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP1800[불량WorkCenter별현황].Designer.cs">
+      <DependentUpon>PP1800[불량WorkCenter별현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP1900[불량유형별현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP1900[불량유형별현황].Designer.cs">
+      <DependentUpon>PP1900[불량유형별현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP2000[불량WorkCenter별TOP10].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP2000[불량WorkCenter별TOP10].Designer.cs">
+      <DependentUpon>PP2000[불량WorkCenter별TOP10].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP2100[불량유형별TOP10].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP2100[불량유형별TOP10].Designer.cs">
+      <DependentUpon>PP2100[불량유형별TOP10].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP2200[재고부적합처리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP2200[재고부적합처리].Designer.cs">
+      <DependentUpon>PP2200[재고부적합처리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP2300[불량부적합처리이력].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP2300[불량부적합처리이력].Designer.cs">
+      <DependentUpon>PP2300[불량부적합처리이력].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP2400[불량부적합폐기이력].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP2400[불량부적합폐기이력].Designer.cs">
+      <DependentUpon>PP2400[불량부적합폐기이력].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP3400[재고실사이력].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP3400[재고실사이력].Designer.cs">
+      <DependentUpon>PP3400[재고실사이력].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP4100[일별작업장별설비효율].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP4100[일별작업장별설비효율].Designer.cs">
+      <DependentUpon>PP4100[일별작업장별설비효율].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP4300[월별작업장별설비효율].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP4300[월별작업장별설비효율].Designer.cs">
+      <DependentUpon>PP4300[월별작업장별설비효율].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP4500[월별생산추이].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP4500[월별생산추이].Designer.cs">
+      <DependentUpon>PP4500[월별생산추이].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP4600[월별생산추이].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP4600[월별생산추이].Designer.cs">
+      <DependentUpon>PP4600[월별생산추이].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP5300[금형별사용현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP5300[금형별사용현황].Designer.cs">
+      <DependentUpon>PP5300[금형별사용현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP6000[입고실적관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP6000[입고실적관리].Designer.cs">
+      <DependentUpon>PP6000[입고실적관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0210[LOT 정보 조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0210[LOT 정보 조회].designer.cs">
+      <DependentUpon>PP0210[LOT 정보 조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP6150[투입LOT조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP6150[투입LOT조회].designer.cs">
+      <DependentUpon>PP6150[투입LOT조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP7000[MQMS외주귀책불량].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP7000[MQMS외주귀책불량].designer.cs">
+      <DependentUpon>PP7000[MQMS외주귀책불량].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0030[작업자별 생산이력 조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0030[작업자별 생산이력 조회].Designer.cs">
+      <DependentUpon>PP0030[작업자별 생산이력 조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP7200[시간대별 생산이력].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP7200[시간대별 생산이력].Designer.cs">
+      <DependentUpon>PP7200[시간대별 생산이력].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP9110[알람수신여부설정].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP9110[알람수신여부설정].designer.cs">
+      <DependentUpon>PP9110[알람수신여부설정].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP9120.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP9120.designer.cs">
+      <DependentUpon>PP9120.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP9200.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP9200.designer.cs">
+      <DependentUpon>PP9200.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP9300.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP9300.designer.cs">
+      <DependentUpon>PP9300.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TT1060.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TT1060.designer.cs">
+      <DependentUpon>TT1060.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP5100[장비고장현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP5100[장비고장현황].Designer.cs">
+      <DependentUpon>PP5100[장비고장현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP5200[장비고장수리내역].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP5200[장비고장수리내역].Designer.cs">
+      <DependentUpon>PP5200[장비고장수리내역].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP6200[공정검사 체크시트조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP6200[공정검사 체크시트조회].Designer.cs">
+      <DependentUpon>PP6200[공정검사 체크시트조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="TT1000[전수게더링].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TT1000[전수게더링].Designer.cs">
+      <DependentUpon>TT1000[전수게더링].cs</DependentUpon>
+    </Compile>
+    <Compile Include="TT1010.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TT1010.Designer.cs">
+      <DependentUpon>TT1010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TT1020..cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TT1020..Designer.cs">
+      <DependentUpon>TT1020..cs</DependentUpon>
+    </Compile>
+    <Compile Include="TT1030..cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TT1030..Designer.cs">
+      <DependentUpon>TT1030..cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP6300[일상점검 체크시트조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP6300[일상점검 체크시트조회].Designer.cs">
+      <DependentUpon>PP6300[일상점검 체크시트조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="TT1061.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TT1061.designer.cs">
+      <DependentUpon>TT1061.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TT1062.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TT1062.designer.cs">
+      <DependentUpon>TT1062.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TT1070.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TT1070.Designer.cs">
+      <DependentUpon>TT1070.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TT1080.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TT1080.Designer.cs">
+      <DependentUpon>TT1080.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PT0300[생산계획대비실적].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PT0300[생산계획대비실적].Designer.cs">
+      <DependentUpon>PT0300[생산계획대비실적].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PT0200[공장별년간가동률].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PT0200[공장별년간가동률].Designer.cs">
+      <DependentUpon>PT0200[공장별년간가동률].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PT0400[공장별 년간 가동률].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PT0400[공장별 년간 가동률].Designer.cs">
+      <DependentUpon>PT0400[공장별 년간 가동률].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PT0500[불량 WorkCenter별 Top 10].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PT0500[불량 WorkCenter별 Top 10].Designer.cs">
+      <DependentUpon>PT0500[불량 WorkCenter별 Top 10].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PT0600[불량 WorkCenter별 Top 10].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PT0600[불량 WorkCenter별 Top 10].Designer.cs">
+      <DependentUpon>PT0600[불량 WorkCenter별 Top 10].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP9920[고장실적등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP9920[고장실적등록].Designer.cs">
+      <DependentUpon>PP9920[고장실적등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP5201[예방점검실적].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP5201[예방점검실적].Designer.cs">
+      <DependentUpon>PP5201[예방점검실적].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP9930[고장실적조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP9930[고장실적조회].Designer.cs">
+      <DependentUpon>PP9930[고장실적조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0220[LOT TRACKING%28생산이력추적%29].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0220[LOT TRACKING%28생산이력추적%29].designer.cs">
+      <DependentUpon>PP0220[LOT TRACKING%28생산이력추적%29].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP5400[MTTR].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP5400[MTTR].Designer.cs">
+      <DependentUpon>PP5400[MTTR].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0070[부품식별표 재출력].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0070[부품식별표 재출력].Designer.cs">
+      <DependentUpon>PP0070[부품식별표 재출력].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP0250[전품목재고현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP0250[전품목재고현황].Designer.cs">
+      <DependentUpon>PP0250[전품목재고현황].cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PP0125[고객크레임등록].resx">
+      <DependentUpon>PP0125[고객크레임등록].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0235[인력투입이력].resx">
+      <DependentUpon>PP0235[인력투입이력].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0225[자재투입이력].resx">
+      <DependentUpon>PP0225[자재투입이력].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0217[생산소요시간].resx">
+      <DependentUpon>PP0217[생산소요시간].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0218[생산소요시간].resx">
+      <DependentUpon>PP0218[생산소요시간].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0216[수주진척관리].resx">
+      <DependentUpon>PP0216[수주진척관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0215[수주진척관리].resx">
+      <DependentUpon>PP0215[수주진척관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0021[외주가공 입고조회].resx">
+      <DependentUpon>PP0021[외주가공 입고조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0253[재고위치관리].resx">
+      <DependentUpon>PP0253[재고위치관리].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0350[투입LOT 리스트 확인].resx">
+      <DependentUpon>PP0350[투입LOT 리스트 확인].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0028[생산실적조회4].resx">
+      <DependentUpon>PP0028[생산실적조회4].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0025[생산실적조회3].resx">
+      <DependentUpon>PP0025[생산실적조회3].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0023[생산실적조회2 LOT].resx">
+      <DependentUpon>PP0023[생산실적조회2 LOT].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0022[생산실적조회 LOT].resx">
+      <DependentUpon>PP0022[생산실적조회 LOT].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0252[투입재고현황].resx">
+      <DependentUpon>PP0252[투입재고현황].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0290[단순온도습도].resx">
+      <DependentUpon>PP0290[단순온도습도].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0280[외부 재고].resx">
+      <DependentUpon>PP0280[외부 재고].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0330[SPC차트].resx">
+      <DependentUpon>PP0330[SPC차트].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0200[치공구실적조회].resx">
+      <DependentUpon>PP0200[치공구실적조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0251[전품목재고위치].resx">
+      <DependentUpon>PP0251[전품목재고위치].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0270[LOT TRACKING%28생산이력추적2%29.resx">
+      <DependentUpon>PP0270[LOT TRACKING%28생산이력추적2%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0260[전품목입출고이력].resx">
+      <DependentUpon>PP0260[전품목입출고이력].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0012[분쇄실적조회].resx">
+      <DependentUpon>PP0012[분쇄실적조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0011[품목이력조회].resx">
+      <DependentUpon>PP0011[품목이력조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0400[생산실적관리].resx">
+      <DependentUpon>PP0400[생산실적관리].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0240[작업장 별 설비점검 이력].resx">
+      <DependentUpon>PP0240[작업장 별 설비점검 이력].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0230[고장실적이력].resx">
+      <DependentUpon>PP0230[고장실적이력].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0140[MTTRMTBF].resx">
+      <DependentUpon>PP0140[MTTRMTBF].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0130[고장수리이력].resx">
+      <DependentUpon>PP0130[고장수리이력].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0120[고장실적 및 도착등록].resx">
+      <DependentUpon>PP0120[고장실적 및 도착등록].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0110[설비고장등록].resx">
+      <DependentUpon>PP0110[설비고장등록].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0100[일자별 시간대별 집계].resx">
+      <DependentUpon>PP0100[일자별 시간대별 집계].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0090[작업장별 비가동 현황].resx">
+      <DependentUpon>PP0090[작업장별 비가동 현황].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0080[품목별 비가동 현황].resx">
+      <DependentUpon>PP0080[품목별 비가동 현황].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0190[라인별 투입 재공현황].resx">
+      <DependentUpon>PP0190[라인별 투입 재공현황].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0170[공정별 투입 재공현황].resx">
+      <DependentUpon>PP0170[공정별 투입 재공현황].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0800[금형점검관리].resx">
+      <DependentUpon>PP0800[금형점검관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP2600[설비고장별TOP10].resx">
+      <DependentUpon>PP2600[설비고장별TOP10].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP3500[자재출고처리].resx">
+      <DependentUpon>PP3500[자재출고처리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP3510[자재입고처리].resx">
+      <DependentUpon>PP3510[자재입고처리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP3520[외주가공 입출고현황].resx">
+      <DependentUpon>PP3520[외주가공 입출고현황].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0000.resx">
+      <DependentUpon>PP0000.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP2900[공정재고현황].resx">
+      <DependentUpon>PP2900[공정재고현황].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP3310[제품품목별재고].resx">
+      <DependentUpon>PP3310[제품품목별재고].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0150[작업장별 투입 재공현황].resx">
+      <DependentUpon>PP0150[작업장별 투입 재공현황].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP1400[작업장비가동사유등록].resx">
+      <DependentUpon>PP1400[작업장비가동사유등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0160[작업장별생산창고 재고현황].resx">
+      <DependentUpon>PP0160[작업장별생산창고 재고현황].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP9500[생산재고실사].resx">
+      <DependentUpon>PP9500[생산재고실사].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP3300[생산재고실사이력].resx">
+      <DependentUpon>PP3300[생산재고실사이력].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP6100Y[CAPA대비실적].resx">
+      <DependentUpon>PP6100Y[CAPA대비실적].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP6120Y[종합생산성].resx">
+      <DependentUpon>PP6120Y[종합생산성].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0060[원인별 비가동 현황].resx">
+      <DependentUpon>PP0060[원인별 비가동 현황].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP9900[월마감일자설정].resx">
+      <DependentUpon>PP9900[월마감일자설정].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0310[WorkCenter별 일생산 현황%28품목별%29].resx">
+      <DependentUpon>PP0310[WorkCenter별 일생산 현황%28품목별%29].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0710[생산실적현황%28설비별%29].resx">
+      <DependentUpon>PP0710[생산실적현황%28설비별%29].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP1000.resx">
+      <DependentUpon>PP1000.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP1500[주요비가동발생이력].resx">
+      <DependentUpon>PP1500[주요비가동발생이력].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP1510[주요비가동발생현황].resx">
+      <DependentUpon>PP1510[주요비가동발생현황].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP2500[주요불량발생이력].resx">
+      <DependentUpon>PP2500[주요불량발생이력].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP2510[주요불량발생현황].resx">
+      <DependentUpon>PP2510[주요불량발생현황].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP7300[작업장별 총투입공수].resx">
+      <DependentUpon>PP7300[작업장별 총투입공수].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0040[작업장별 투입공수 집계].resx">
+      <DependentUpon>PP0040[작업장별 투입공수 집계].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP7500.resx">
+      <DependentUpon>PP7500.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP7700.resx">
+      <DependentUpon>PP7700.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP7800[라인별비가동현황].resx">
+      <DependentUpon>PP7800[라인별비가동현황].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP8000[품목별비가동현황].resx">
+      <DependentUpon>PP8000[품목별비가동현황].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP8100[공정별생산실적현황].resx">
+      <DependentUpon>PP8100[공정별생산실적현황].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP8200[라인별생산금액현황].resx">
+      <DependentUpon>PP8200[라인별생산금액현황].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP8300[월별공정별손실금액].resx">
+      <DependentUpon>PP8300[월별공정별손실금액].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP8400[월별비가동손실금액].resx">
+      <DependentUpon>PP8400[월별비가동손실금액].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP8500[비가동추이].resx">
+      <DependentUpon>PP8500[비가동추이].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP9100[주문별 생산진행상태].resx">
+      <DependentUpon>PP9100[주문별 생산진행상태].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="PT0100[공장별 일별가동률].resx">
+      <DependentUpon>PT0100[공장별 일별가동률].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HH0200.resx">
+      <DependentUpon>HH0200.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HH0300.resx">
+      <DependentUpon>HH0300.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0010[생산실적관리].resx">
+      <DependentUpon>PP0010[생산실적관리].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP9910.resx">
+      <DependentUpon>PP9910.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0300[WorkCenter별 일생산 현황%28품목별%29].resx">
+      <DependentUpon>PP0300[WorkCenter별 일생산 현황%28품목별%29].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0500[품목별 생산현황].resx">
+      <DependentUpon>PP0500[품목별 생산현황].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0600[LOT별생산현황].resx">
+      <DependentUpon>PP0600[LOT별생산현황].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0020[생산실적조회].resx">
+      <DependentUpon>PP0020[생산실적조회].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0900[투입반제품제공현황].resx">
+      <DependentUpon>PP0900[투입반제품제공현황].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP1100[작업자투입현황].resx">
+      <DependentUpon>PP1100[작업자투입현황].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP1200[작업자실공수투입이력].resx">
+      <DependentUpon>PP1200[작업자실공수투입이력].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP1300[작업장별라인가동현황].resx">
+      <DependentUpon>PP1300[작업장별라인가동현황].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0050[작업장별 가동 현황].resx">
+      <DependentUpon>PP0050[작업장별 가동 현황].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP1601[비가동항목별현황].resx">
+      <DependentUpon>PP1601[비가동항목별현황].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP1700[비가동유형별TOP10].resx">
+      <DependentUpon>PP1700[비가동유형별TOP10].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP1800[불량WorkCenter별현황].resx">
+      <DependentUpon>PP1800[불량WorkCenter별현황].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP1900[불량유형별현황].resx">
+      <DependentUpon>PP1900[불량유형별현황].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP2000[불량WorkCenter별TOP10].resx">
+      <DependentUpon>PP2000[불량WorkCenter별TOP10].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP2100[불량유형별TOP10].resx">
+      <DependentUpon>PP2100[불량유형별TOP10].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP2200[재고부적합처리].resx">
+      <DependentUpon>PP2200[재고부적합처리].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP2300[불량부적합처리이력].resx">
+      <DependentUpon>PP2300[불량부적합처리이력].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP2400[불량부적합폐기이력].resx">
+      <DependentUpon>PP2400[불량부적합폐기이력].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP3400[재고실사이력].resx">
+      <DependentUpon>PP3400[재고실사이력].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP4100[일별작업장별설비효율].resx">
+      <DependentUpon>PP4100[일별작업장별설비효율].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP4300[월별작업장별설비효율].resx">
+      <DependentUpon>PP4300[월별작업장별설비효율].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP4500[월별생산추이].resx">
+      <DependentUpon>PP4500[월별생산추이].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP4600[월별생산추이].resx">
+      <DependentUpon>PP4600[월별생산추이].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP5300[금형별사용현황].resx">
+      <DependentUpon>PP5300[금형별사용현황].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP6000[입고실적관리].resx">
+      <DependentUpon>PP6000[입고실적관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0210[LOT 정보 조회].resx">
+      <DependentUpon>PP0210[LOT 정보 조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP6150[투입LOT조회].resx">
+      <DependentUpon>PP6150[투입LOT조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP7000[MQMS외주귀책불량].resx">
+      <DependentUpon>PP7000[MQMS외주귀책불량].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0030[작업자별 생산이력 조회].resx">
+      <DependentUpon>PP0030[작업자별 생산이력 조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP7200[시간대별 생산이력].resx">
+      <DependentUpon>PP7200[시간대별 생산이력].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP9110[알람수신여부설정].resx">
+      <DependentUpon>PP9110[알람수신여부설정].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP9120.resx">
+      <DependentUpon>PP9120.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP9200.resx">
+      <DependentUpon>PP9200.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP9300.resx">
+      <DependentUpon>PP9300.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TT1060.resx">
+      <DependentUpon>TT1060.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP5100[장비고장현황].resx">
+      <DependentUpon>PP5100[장비고장현황].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP5200[장비고장수리내역].resx">
+      <DependentUpon>PP5200[장비고장수리내역].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP6200[공정검사 체크시트조회].resx">
+      <DependentUpon>PP6200[공정검사 체크시트조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TT1000[전수게더링].resx">
+      <DependentUpon>TT1000[전수게더링].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TT1010.resx">
+      <DependentUpon>TT1010.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TT1020..resx">
+      <DependentUpon>TT1020..cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TT1030..resx">
+      <DependentUpon>TT1030..cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP6300[일상점검 체크시트조회].resx">
+      <DependentUpon>PP6300[일상점검 체크시트조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TT1061.resx">
+      <DependentUpon>TT1061.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TT1062.resx">
+      <DependentUpon>TT1062.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TT1070.resx">
+      <DependentUpon>TT1070.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TT1080.resx">
+      <DependentUpon>TT1080.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PT0300[생산계획대비실적].resx">
+      <DependentUpon>PT0300[생산계획대비실적].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PT0200[공장별년간가동률].resx">
+      <DependentUpon>PT0200[공장별년간가동률].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PT0400[공장별 년간 가동률].resx">
+      <DependentUpon>PT0400[공장별 년간 가동률].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PT0500[불량 WorkCenter별 Top 10].resx">
+      <DependentUpon>PT0500[불량 WorkCenter별 Top 10].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PT0600[불량 WorkCenter별 Top 10].resx">
+      <DependentUpon>PT0600[불량 WorkCenter별 Top 10].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP9920[고장실적등록].resx">
+      <DependentUpon>PP9920[고장실적등록].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP5201[예방점검실적].resx">
+      <DependentUpon>PP5201[예방점검실적].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP9930[고장실적조회].resx">
+      <DependentUpon>PP9930[고장실적조회].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0220[LOT TRACKING%28생산이력추적%29].resx">
+      <DependentUpon>PP0220[LOT TRACKING%28생산이력추적%29].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP5400[MTTR].resx">
+      <DependentUpon>PP5400[MTTR].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0070[부품식별표 재출력].resx">
+      <DependentUpon>PP0070[부품식별표 재출력].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP0250[전품목재고현황].resx">
+      <DependentUpon>PP0250[전품목재고현황].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Module\MES\PopManager\PopManager.csproj">
+      <Project>{fd5753c6-1531-442f-8ce5-e317811ed41d}</Project>
+      <Name>PopManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.Control\WIZ.Control.csproj">
+      <Project>{865bf19b-00b8-45e8-b4e7-0cc5f58f8a98}</Project>
+      <Name>WIZ.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.Forms\WIZ.Forms.csproj">
+      <Project>{4c2dad9f-dcab-4b8f-a803-f5e43f8849e7}</Project>
+      <Name>WIZ.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ\WIZ.csproj">
+      <Project>{3887acf7-cbbb-4d70-bb62-1a45d6679c2c}</Project>
+      <Name>WIZ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIZ.MT\WIZ.MT.csproj">
+      <Project>{75FF1E22-1AD8-448C-8CCB-3064CD9138B8}</Project>
+      <Name>WIZ.MT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIZ.PopUp\WIZ.PopUp.csproj">
+      <Project>{c8d579ce-fbb1-4da8-a1bd-848168b8ccb1}</Project>
+      <Name>WIZ.PopUp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIZ.REPORT\WIZ.REPORT.csproj">
+      <Project>{9c57806b-3f5c-4518-ac11-a9b24abddda6}</Project>
+      <Name>WIZ.REPORT</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetDir)$(TargetFileName) $(SolutionDir)\$(SolutionName)\$(OutDir)$(TargetFileName)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

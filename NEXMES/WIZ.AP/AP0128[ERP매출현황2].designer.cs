@@ -1,0 +1,789 @@
+﻿namespace WIZ.AP
+{
+    partial class AP0128
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            Infragistics.Win.UltraWinSchedule.CalendarCombo.DateButton dateButton1 = new Infragistics.Win.UltraWinSchedule.CalendarCombo.DateButton();
+            Infragistics.Win.UltraWinSchedule.CalendarCombo.DateButton dateButton2 = new Infragistics.Win.UltraWinSchedule.CalendarCombo.DateButton();
+            Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance18 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinSchedule.CalendarCombo.DateButton dateButton3 = new Infragistics.Win.UltraWinSchedule.CalendarCombo.DateButton();
+            Infragistics.Win.Appearance appearance19 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance58 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance16 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance20 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance21 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance22 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance23 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance24 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance26 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance27 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance28 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance40 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance41 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance29 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance30 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance31 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance32 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance33 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance34 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance35 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance36 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance37 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance38 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance39 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance17 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance74 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance25 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance5 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance6 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance7 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance8 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance9 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance10 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance11 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance12 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance13 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance14 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance15 = new Infragistics.Win.Appearance();
+            this.cbo_ENDDATE_H = new Infragistics.Win.UltraWinSchedule.UltraCalendarCombo();
+            this.lbl = new WIZ.Control.SLabel();
+            this.cbo_PLANTCODE_H = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
+            this.lbl_PLANTCODE_H = new WIZ.Control.SLabel();
+            this.txt_ITEMCODE_H = new WIZ.Control.SBtnTextEditor();
+            this.cbo_STARTDATE_H = new Infragistics.Win.UltraWinSchedule.UltraCalendarCombo();
+            this.lbl_DATE_H = new WIZ.Control.SLabel();
+            this.txt_ITEMNAME_H = new WIZ.Control.STextBox(this.components);
+            this.lbl_ITEMCODE_H = new WIZ.Control.SLabel();
+            this.cbo_ORDERTYPE_H = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
+            this.lbl_ORDERTYPE_H = new WIZ.Control.SLabel();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.gbx_CUSTCODE_B = new Infragistics.Win.Misc.UltraGroupBox();
+            this.grid1 = new WIZ.Control.Grid(this.components);
+            this.gbx_MAIN_B = new Infragistics.Win.Misc.UltraGroupBox();
+            this.grid3 = new WIZ.Control.Grid(this.components);
+            this.txtRemark = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnLink = new Infragistics.Win.Misc.UltraButton();
+            this.txt_CUSTCODE_H = new WIZ.Control.SBtnTextEditor();
+            this.txt_CUSTNAME_H = new WIZ.Control.STextBox(this.components);
+            this.lbl_CUSTCODE_H = new WIZ.Control.SLabel();
+            this.grid2 = new WIZ.Control.Grid(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.gbxHeader)).BeginInit();
+            this.gbxHeader.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gbxBody)).BeginInit();
+            this.gbxBody.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cbo_ENDDATE_H)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbo_PLANTCODE_H)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_ITEMCODE_H)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbo_STARTDATE_H)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_ITEMNAME_H)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbo_ORDERTYPE_H)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gbx_CUSTCODE_B)).BeginInit();
+            this.gbx_CUSTCODE_B.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grid1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gbx_MAIN_B)).BeginInit();
+            this.gbx_MAIN_B.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grid3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_CUSTCODE_H)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_CUSTNAME_H)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid2)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // gbxHeader
+            // 
+            this.gbxHeader.ContentPadding.Bottom = 2;
+            this.gbxHeader.ContentPadding.Left = 2;
+            this.gbxHeader.ContentPadding.Right = 2;
+            this.gbxHeader.ContentPadding.Top = 4;
+            this.gbxHeader.Controls.Add(this.txt_CUSTCODE_H);
+            this.gbxHeader.Controls.Add(this.txt_CUSTNAME_H);
+            this.gbxHeader.Controls.Add(this.lbl_CUSTCODE_H);
+            this.gbxHeader.Controls.Add(this.btnLink);
+            this.gbxHeader.Controls.Add(this.cbo_ORDERTYPE_H);
+            this.gbxHeader.Controls.Add(this.lbl_ORDERTYPE_H);
+            this.gbxHeader.Controls.Add(this.cbo_ENDDATE_H);
+            this.gbxHeader.Controls.Add(this.cbo_STARTDATE_H);
+            this.gbxHeader.Controls.Add(this.cbo_PLANTCODE_H);
+            this.gbxHeader.Controls.Add(this.txt_ITEMNAME_H);
+            this.gbxHeader.Controls.Add(this.txt_ITEMCODE_H);
+            this.gbxHeader.Controls.Add(this.lbl_PLANTCODE_H);
+            this.gbxHeader.Controls.Add(this.lbl);
+            this.gbxHeader.Controls.Add(this.lbl_DATE_H);
+            this.gbxHeader.Controls.Add(this.lbl_ITEMCODE_H);
+            this.gbxHeader.Size = new System.Drawing.Size(1639, 146);
+            this.gbxHeader.Controls.SetChildIndex(this.lbl_ITEMCODE_H, 0);
+            this.gbxHeader.Controls.SetChildIndex(this.lbl_DATE_H, 0);
+            this.gbxHeader.Controls.SetChildIndex(this.lbl, 0);
+            this.gbxHeader.Controls.SetChildIndex(this.lbl_PLANTCODE_H, 0);
+            this.gbxHeader.Controls.SetChildIndex(this.txt_ITEMCODE_H, 0);
+            this.gbxHeader.Controls.SetChildIndex(this.txt_ITEMNAME_H, 0);
+            this.gbxHeader.Controls.SetChildIndex(this.cbo_PLANTCODE_H, 0);
+            this.gbxHeader.Controls.SetChildIndex(this.cbo_STARTDATE_H, 0);
+            this.gbxHeader.Controls.SetChildIndex(this.cbo_ENDDATE_H, 0);
+            this.gbxHeader.Controls.SetChildIndex(this.lbl_ORDERTYPE_H, 0);
+            this.gbxHeader.Controls.SetChildIndex(this.cbo_ORDERTYPE_H, 0);
+            this.gbxHeader.Controls.SetChildIndex(this.btnLink, 0);
+            this.gbxHeader.Controls.SetChildIndex(this.lbl_CUSTCODE_H, 0);
+            this.gbxHeader.Controls.SetChildIndex(this.txt_CUSTNAME_H, 0);
+            this.gbxHeader.Controls.SetChildIndex(this.txt_CUSTCODE_H, 0);
+            // 
+            // gbxBody
+            // 
+            this.gbxBody.ContentPadding.Bottom = 2;
+            this.gbxBody.ContentPadding.Left = 2;
+            this.gbxBody.ContentPadding.Right = 2;
+            this.gbxBody.ContentPadding.Top = 4;
+            this.gbxBody.Controls.Add(this.splitContainer1);
+            this.gbxBody.Location = new System.Drawing.Point(0, 146);
+            this.gbxBody.Size = new System.Drawing.Size(1639, 724);
+            // 
+            // cbo_ENDDATE_H
+            // 
+            this.cbo_ENDDATE_H.AutoSize = false;
+            this.cbo_ENDDATE_H.DateButtons.Add(dateButton1);
+            this.cbo_ENDDATE_H.DateButtons.Add(dateButton2);
+            this.cbo_ENDDATE_H.Location = new System.Drawing.Point(516, 32);
+            this.cbo_ENDDATE_H.Name = "cbo_ENDDATE_H";
+            this.cbo_ENDDATE_H.NonAutoSizeHeight = 26;
+            this.cbo_ENDDATE_H.Size = new System.Drawing.Size(160, 27);
+            this.cbo_ENDDATE_H.TabIndex = 655;
+            this.cbo_ENDDATE_H.Value = new System.DateTime(2019, 8, 26, 0, 0, 0, 0);
+            // 
+            // lbl
+            // 
+            appearance1.FontData.BoldAsString = "False";
+            appearance1.FontData.UnderlineAsString = "False";
+            appearance1.ForeColor = System.Drawing.Color.Black;
+            appearance1.TextHAlignAsString = "Center";
+            appearance1.TextVAlignAsString = "Middle";
+            this.lbl.Appearance = appearance1;
+            this.lbl.DbField = null;
+            this.lbl.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lbl.Location = new System.Drawing.Point(480, 32);
+            this.lbl.Name = "lbl";
+            this.lbl.RequireFlag = WIZ.Control.SLabel.RequireFlagEnum.NO;
+            this.lbl.Size = new System.Drawing.Size(36, 27);
+            this.lbl.TabIndex = 656;
+            this.lbl.Text = "~";
+            // 
+            // cbo_PLANTCODE_H
+            // 
+            this.cbo_PLANTCODE_H.AutoSize = false;
+            this.cbo_PLANTCODE_H.Font = new System.Drawing.Font("맑은 고딕", 10F);
+            this.cbo_PLANTCODE_H.Location = new System.Drawing.Point(110, 32);
+            this.cbo_PLANTCODE_H.Name = "cbo_PLANTCODE_H";
+            this.cbo_PLANTCODE_H.Size = new System.Drawing.Size(160, 27);
+            this.cbo_PLANTCODE_H.TabIndex = 653;
+            // 
+            // lbl_PLANTCODE_H
+            // 
+            appearance18.FontData.BoldAsString = "False";
+            appearance18.FontData.UnderlineAsString = "False";
+            appearance18.ForeColor = System.Drawing.Color.Black;
+            appearance18.TextHAlignAsString = "Left";
+            appearance18.TextVAlignAsString = "Middle";
+            this.lbl_PLANTCODE_H.Appearance = appearance18;
+            this.lbl_PLANTCODE_H.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.None;
+            this.lbl_PLANTCODE_H.DbField = null;
+            this.lbl_PLANTCODE_H.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lbl_PLANTCODE_H.Location = new System.Drawing.Point(110, 10);
+            this.lbl_PLANTCODE_H.Name = "lbl_PLANTCODE_H";
+            this.lbl_PLANTCODE_H.RequireFlag = WIZ.Control.SLabel.RequireFlagEnum.NO;
+            this.lbl_PLANTCODE_H.Size = new System.Drawing.Size(145, 25);
+            this.lbl_PLANTCODE_H.TabIndex = 654;
+            this.lbl_PLANTCODE_H.Text = "사업장";
+            // 
+            // txt_ITEMCODE_H
+            // 
+            appearance3.FontData.BoldAsString = "False";
+            appearance3.FontData.Name = "맑은 고딕";
+            appearance3.FontData.SizeInPoints = 10F;
+            appearance3.FontData.UnderlineAsString = "False";
+            appearance3.ForeColor = System.Drawing.Color.Black;
+            this.txt_ITEMCODE_H.Appearance = appearance3;
+            this.txt_ITEMCODE_H.AutoSize = false;
+            this.txt_ITEMCODE_H.btnImgType = WIZ.Control.SBtnTextEditor.ButtonImgTypeEnum.Type1;
+            this.txt_ITEMCODE_H.btnWidth = 26;
+            this.txt_ITEMCODE_H.Font = new System.Drawing.Font("맑은 고딕", 9.75F);
+            this.txt_ITEMCODE_H.Location = new System.Drawing.Point(320, 100);
+            this.txt_ITEMCODE_H.Name = "txt_ITEMCODE_H";
+            this.txt_ITEMCODE_H.RequireFlag = WIZ.Control.SBtnTextEditor.RequireFlagEnum.NO;
+            this.txt_ITEMCODE_H.RequirePop = WIZ.Control.SBtnTextEditor.RequireFlagEnum.NO;
+            this.txt_ITEMCODE_H.Size = new System.Drawing.Size(145, 27);
+            this.txt_ITEMCODE_H.TabIndex = 651;
+            // 
+            // cbo_STARTDATE_H
+            // 
+            this.cbo_STARTDATE_H.AutoSize = false;
+            this.cbo_STARTDATE_H.DateButtons.Add(dateButton3);
+            this.cbo_STARTDATE_H.Location = new System.Drawing.Point(320, 32);
+            this.cbo_STARTDATE_H.Name = "cbo_STARTDATE_H";
+            this.cbo_STARTDATE_H.NonAutoSizeHeight = 26;
+            this.cbo_STARTDATE_H.Size = new System.Drawing.Size(160, 27);
+            this.cbo_STARTDATE_H.TabIndex = 645;
+            this.cbo_STARTDATE_H.Value = new System.DateTime(2019, 8, 26, 0, 0, 0, 0);
+            // 
+            // lbl_DATE_H
+            // 
+            appearance19.FontData.BoldAsString = "False";
+            appearance19.FontData.UnderlineAsString = "False";
+            appearance19.ForeColor = System.Drawing.Color.Black;
+            appearance19.TextHAlignAsString = "Left";
+            appearance19.TextVAlignAsString = "Middle";
+            this.lbl_DATE_H.Appearance = appearance19;
+            this.lbl_DATE_H.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.None;
+            this.lbl_DATE_H.DbField = null;
+            this.lbl_DATE_H.Font = new System.Drawing.Font("맑은 고딕", 9.75F);
+            this.lbl_DATE_H.Location = new System.Drawing.Point(320, 10);
+            this.lbl_DATE_H.Name = "lbl_DATE_H";
+            this.lbl_DATE_H.RequireFlag = WIZ.Control.SLabel.RequireFlagEnum.NO;
+            this.lbl_DATE_H.Size = new System.Drawing.Size(145, 25);
+            this.lbl_DATE_H.TabIndex = 646;
+            this.lbl_DATE_H.Text = "작업지시일자";
+            // 
+            // txt_ITEMNAME_H
+            // 
+            appearance2.FontData.BoldAsString = "False";
+            appearance2.FontData.UnderlineAsString = "False";
+            appearance2.ForeColor = System.Drawing.Color.Black;
+            this.txt_ITEMNAME_H.Appearance = appearance2;
+            this.txt_ITEMNAME_H.AutoSize = false;
+            this.txt_ITEMNAME_H.Font = new System.Drawing.Font("맑은 고딕", 9.75F);
+            this.txt_ITEMNAME_H.Location = new System.Drawing.Point(464, 100);
+            this.txt_ITEMNAME_H.Name = "txt_ITEMNAME_H";
+            this.txt_ITEMNAME_H.RequireFlag = WIZ.Control.STextBox.RequireFlagEnum.NO;
+            this.txt_ITEMNAME_H.RequirePop = WIZ.Control.STextBox.RequireFlagEnum.NO;
+            this.txt_ITEMNAME_H.Size = new System.Drawing.Size(200, 27);
+            this.txt_ITEMNAME_H.TabIndex = 648;
+            // 
+            // lbl_ITEMCODE_H
+            // 
+            appearance4.FontData.BoldAsString = "False";
+            appearance4.FontData.UnderlineAsString = "False";
+            appearance4.ForeColor = System.Drawing.Color.Black;
+            appearance4.TextHAlignAsString = "Left";
+            appearance4.TextVAlignAsString = "Middle";
+            this.lbl_ITEMCODE_H.Appearance = appearance4;
+            this.lbl_ITEMCODE_H.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.None;
+            this.lbl_ITEMCODE_H.DbField = null;
+            this.lbl_ITEMCODE_H.Font = new System.Drawing.Font("맑은 고딕", 9.75F);
+            this.lbl_ITEMCODE_H.Location = new System.Drawing.Point(320, 78);
+            this.lbl_ITEMCODE_H.Name = "lbl_ITEMCODE_H";
+            this.lbl_ITEMCODE_H.RequireFlag = WIZ.Control.SLabel.RequireFlagEnum.NO;
+            this.lbl_ITEMCODE_H.Size = new System.Drawing.Size(145, 25);
+            this.lbl_ITEMCODE_H.TabIndex = 647;
+            this.lbl_ITEMCODE_H.Text = "품목";
+            // 
+            // cbo_ORDERTYPE_H
+            // 
+            this.cbo_ORDERTYPE_H.AutoSize = false;
+            this.cbo_ORDERTYPE_H.Font = new System.Drawing.Font("맑은 고딕", 10F);
+            this.cbo_ORDERTYPE_H.Location = new System.Drawing.Point(110, 100);
+            this.cbo_ORDERTYPE_H.Name = "cbo_ORDERTYPE_H";
+            this.cbo_ORDERTYPE_H.Size = new System.Drawing.Size(160, 27);
+            this.cbo_ORDERTYPE_H.TabIndex = 667;
+            // 
+            // lbl_ORDERTYPE_H
+            // 
+            appearance58.FontData.BoldAsString = "False";
+            appearance58.FontData.UnderlineAsString = "False";
+            appearance58.ForeColor = System.Drawing.Color.Black;
+            appearance58.TextHAlignAsString = "Left";
+            appearance58.TextVAlignAsString = "Middle";
+            this.lbl_ORDERTYPE_H.Appearance = appearance58;
+            this.lbl_ORDERTYPE_H.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.None;
+            this.lbl_ORDERTYPE_H.DbField = "cboUseFlag";
+            this.lbl_ORDERTYPE_H.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lbl_ORDERTYPE_H.Location = new System.Drawing.Point(110, 78);
+            this.lbl_ORDERTYPE_H.Name = "lbl_ORDERTYPE_H";
+            this.lbl_ORDERTYPE_H.RequireFlag = WIZ.Control.SLabel.RequireFlagEnum.NO;
+            this.lbl_ORDERTYPE_H.Size = new System.Drawing.Size(145, 25);
+            this.lbl_ORDERTYPE_H.TabIndex = 668;
+            this.lbl_ORDERTYPE_H.Text = "작업지시구분";
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(4, 4);
+            this.splitContainer1.Name = "splitContainer1";
+            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.gbx_CUSTCODE_B);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.grid2);
+            this.splitContainer1.Size = new System.Drawing.Size(1631, 716);
+            this.splitContainer1.SplitterDistance = 358;
+            this.splitContainer1.TabIndex = 0;
+            // 
+            // gbx_CUSTCODE_B
+            // 
+            this.gbx_CUSTCODE_B.Controls.Add(this.grid1);
+            this.gbx_CUSTCODE_B.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gbx_CUSTCODE_B.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.gbx_CUSTCODE_B.Location = new System.Drawing.Point(0, 0);
+            this.gbx_CUSTCODE_B.Margin = new System.Windows.Forms.Padding(0);
+            this.gbx_CUSTCODE_B.Name = "gbx_CUSTCODE_B";
+            this.gbx_CUSTCODE_B.Size = new System.Drawing.Size(1631, 358);
+            this.gbx_CUSTCODE_B.TabIndex = 15;
+            this.gbx_CUSTCODE_B.Text = "수주현황";
+            // 
+            // grid1
+            // 
+            this.grid1.AutoResizeColumn = true;
+            this.grid1.AutoUserColumn = true;
+            this.grid1.ContextMenuCopyEnabled = true;
+            this.grid1.ContextMenuDeleteEnabled = true;
+            this.grid1.ContextMenuExcelEnabled = true;
+            this.grid1.ContextMenuInsertEnabled = true;
+            this.grid1.ContextMenuPasteEnabled = true;
+            this.grid1.DeleteButtonEnable = true;
+            appearance16.BackColor = System.Drawing.SystemColors.Window;
+            appearance16.BorderColor = System.Drawing.SystemColors.InactiveCaption;
+            this.grid1.DisplayLayout.Appearance = appearance16;
+            this.grid1.DisplayLayout.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
+            this.grid1.DisplayLayout.CaptionVisible = Infragistics.Win.DefaultableBoolean.False;
+            this.grid1.DisplayLayout.DefaultSelectedBackColor = System.Drawing.Color.Empty;
+            appearance20.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            appearance20.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance20.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance20.BorderColor = System.Drawing.SystemColors.Window;
+            this.grid1.DisplayLayout.GroupByBox.Appearance = appearance20;
+            appearance21.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.grid1.DisplayLayout.GroupByBox.BandLabelAppearance = appearance21;
+            this.grid1.DisplayLayout.GroupByBox.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
+            this.grid1.DisplayLayout.GroupByBox.Hidden = true;
+            appearance22.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            appearance22.BackColor2 = System.Drawing.SystemColors.Control;
+            appearance22.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance22.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.grid1.DisplayLayout.GroupByBox.PromptAppearance = appearance22;
+            this.grid1.DisplayLayout.MaxColScrollRegions = 1;
+            this.grid1.DisplayLayout.MaxRowScrollRegions = 1;
+            appearance23.BackColor = System.Drawing.SystemColors.Window;
+            appearance23.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.grid1.DisplayLayout.Override.ActiveCellAppearance = appearance23;
+            appearance24.BackColor = System.Drawing.SystemColors.Highlight;
+            appearance24.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.grid1.DisplayLayout.Override.ActiveRowAppearance = appearance24;
+            this.grid1.DisplayLayout.Override.AllowDelete = Infragistics.Win.DefaultableBoolean.True;
+            this.grid1.DisplayLayout.Override.AllowMultiCellOperations = ((Infragistics.Win.UltraWinGrid.AllowMultiCellOperation)((((((((Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Copy | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.CopyWithHeaders) 
+            | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Cut) 
+            | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Delete) 
+            | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Paste) 
+            | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Undo) 
+            | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Redo) 
+            | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Reserved)));
+            this.grid1.DisplayLayout.Override.BorderStyleCell = Infragistics.Win.UIElementBorderStyle.Dotted;
+            this.grid1.DisplayLayout.Override.BorderStyleRow = Infragistics.Win.UIElementBorderStyle.Dotted;
+            appearance26.BackColor = System.Drawing.SystemColors.Window;
+            this.grid1.DisplayLayout.Override.CardAreaAppearance = appearance26;
+            appearance27.BorderColor = System.Drawing.Color.Silver;
+            appearance27.TextTrimming = Infragistics.Win.TextTrimming.EllipsisCharacter;
+            this.grid1.DisplayLayout.Override.CellAppearance = appearance27;
+            this.grid1.DisplayLayout.Override.CellClickAction = Infragistics.Win.UltraWinGrid.CellClickAction.EditAndSelectText;
+            this.grid1.DisplayLayout.Override.CellPadding = 0;
+            appearance28.BackColor = System.Drawing.SystemColors.Control;
+            appearance28.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance28.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance28.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance28.BorderColor = System.Drawing.SystemColors.Window;
+            this.grid1.DisplayLayout.Override.GroupByRowAppearance = appearance28;
+            this.grid1.DisplayLayout.Override.HeaderClickAction = Infragistics.Win.UltraWinGrid.HeaderClickAction.SortMulti;
+            this.grid1.DisplayLayout.Override.HeaderStyle = Infragistics.Win.HeaderStyle.WindowsXPCommand;
+            appearance40.BackColor = System.Drawing.SystemColors.Window;
+            appearance40.BorderColor = System.Drawing.Color.Silver;
+            this.grid1.DisplayLayout.Override.RowAppearance = appearance40;
+            this.grid1.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.False;
+            appearance41.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.grid1.DisplayLayout.Override.TemplateAddRowAppearance = appearance41;
+            this.grid1.DisplayLayout.ScrollBounds = Infragistics.Win.UltraWinGrid.ScrollBounds.ScrollToFill;
+            this.grid1.DisplayLayout.ScrollStyle = Infragistics.Win.UltraWinGrid.ScrollStyle.Immediate;
+            this.grid1.DisplayLayout.SelectionOverlayBorderThickness = 2;
+            this.grid1.DisplayLayout.ViewStyleBand = Infragistics.Win.UltraWinGrid.ViewStyleBand.OutlookGroupBy;
+            this.grid1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grid1.EnterNextRowEnable = true;
+            this.grid1.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.grid1.Location = new System.Drawing.Point(3, 21);
+            this.grid1.Margin = new System.Windows.Forms.Padding(0);
+            this.grid1.Name = "grid1";
+            this.grid1.Size = new System.Drawing.Size(1625, 334);
+            this.grid1.TabIndex = 6;
+            this.grid1.TabStop = false;
+            this.grid1.Text = "grid3";
+            this.grid1.TextRenderingMode = Infragistics.Win.TextRenderingMode.GDI;
+            this.grid1.UpdateMode = Infragistics.Win.UltraWinGrid.UpdateMode.OnCellChange;
+            this.grid1.UseFlatMode = Infragistics.Win.DefaultableBoolean.True;
+            this.grid1.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.grid1.ClickCell += new Infragistics.Win.UltraWinGrid.ClickCellEventHandler(this.grid_ClickCell);
+            // 
+            // gbx_MAIN_B
+            // 
+            this.gbx_MAIN_B.Controls.Add(this.grid3);
+            this.gbx_MAIN_B.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gbx_MAIN_B.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.gbx_MAIN_B.Location = new System.Drawing.Point(0, 0);
+            this.gbx_MAIN_B.Margin = new System.Windows.Forms.Padding(0);
+            this.gbx_MAIN_B.Name = "gbx_MAIN_B";
+            this.gbx_MAIN_B.Size = new System.Drawing.Size(1200, 312);
+            this.gbx_MAIN_B.TabIndex = 14;
+            this.gbx_MAIN_B.Text = "작업지시";
+            // 
+            // grid3
+            // 
+            this.grid3.AutoResizeColumn = true;
+            this.grid3.AutoUserColumn = true;
+            this.grid3.ContextMenuCopyEnabled = true;
+            this.grid3.ContextMenuDeleteEnabled = true;
+            this.grid3.ContextMenuExcelEnabled = true;
+            this.grid3.ContextMenuInsertEnabled = true;
+            this.grid3.ContextMenuPasteEnabled = true;
+            this.grid3.DeleteButtonEnable = true;
+            appearance29.BackColor = System.Drawing.SystemColors.Window;
+            appearance29.BorderColor = System.Drawing.SystemColors.InactiveCaption;
+            this.grid3.DisplayLayout.Appearance = appearance29;
+            this.grid3.DisplayLayout.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
+            this.grid3.DisplayLayout.CaptionVisible = Infragistics.Win.DefaultableBoolean.False;
+            this.grid3.DisplayLayout.DefaultSelectedBackColor = System.Drawing.Color.Empty;
+            appearance30.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            appearance30.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance30.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance30.BorderColor = System.Drawing.SystemColors.Window;
+            this.grid3.DisplayLayout.GroupByBox.Appearance = appearance30;
+            appearance31.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.grid3.DisplayLayout.GroupByBox.BandLabelAppearance = appearance31;
+            this.grid3.DisplayLayout.GroupByBox.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
+            this.grid3.DisplayLayout.GroupByBox.Hidden = true;
+            appearance32.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            appearance32.BackColor2 = System.Drawing.SystemColors.Control;
+            appearance32.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance32.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.grid3.DisplayLayout.GroupByBox.PromptAppearance = appearance32;
+            this.grid3.DisplayLayout.MaxColScrollRegions = 1;
+            this.grid3.DisplayLayout.MaxRowScrollRegions = 1;
+            appearance33.BackColor = System.Drawing.SystemColors.Window;
+            appearance33.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.grid3.DisplayLayout.Override.ActiveCellAppearance = appearance33;
+            appearance34.BackColor = System.Drawing.SystemColors.Highlight;
+            appearance34.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.grid3.DisplayLayout.Override.ActiveRowAppearance = appearance34;
+            this.grid3.DisplayLayout.Override.AllowDelete = Infragistics.Win.DefaultableBoolean.True;
+            this.grid3.DisplayLayout.Override.AllowMultiCellOperations = ((Infragistics.Win.UltraWinGrid.AllowMultiCellOperation)((((((((Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Copy | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.CopyWithHeaders) 
+            | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Cut) 
+            | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Delete) 
+            | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Paste) 
+            | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Undo) 
+            | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Redo) 
+            | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Reserved)));
+            this.grid3.DisplayLayout.Override.BorderStyleCell = Infragistics.Win.UIElementBorderStyle.Dotted;
+            this.grid3.DisplayLayout.Override.BorderStyleRow = Infragistics.Win.UIElementBorderStyle.Dotted;
+            appearance35.BackColor = System.Drawing.SystemColors.Window;
+            this.grid3.DisplayLayout.Override.CardAreaAppearance = appearance35;
+            appearance36.BorderColor = System.Drawing.Color.Silver;
+            appearance36.TextTrimming = Infragistics.Win.TextTrimming.EllipsisCharacter;
+            this.grid3.DisplayLayout.Override.CellAppearance = appearance36;
+            this.grid3.DisplayLayout.Override.CellClickAction = Infragistics.Win.UltraWinGrid.CellClickAction.EditAndSelectText;
+            this.grid3.DisplayLayout.Override.CellPadding = 0;
+            appearance37.BackColor = System.Drawing.SystemColors.Control;
+            appearance37.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance37.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance37.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance37.BorderColor = System.Drawing.SystemColors.Window;
+            this.grid3.DisplayLayout.Override.GroupByRowAppearance = appearance37;
+            this.grid3.DisplayLayout.Override.HeaderClickAction = Infragistics.Win.UltraWinGrid.HeaderClickAction.SortMulti;
+            this.grid3.DisplayLayout.Override.HeaderStyle = Infragistics.Win.HeaderStyle.WindowsXPCommand;
+            appearance38.BackColor = System.Drawing.SystemColors.Window;
+            appearance38.BorderColor = System.Drawing.Color.Silver;
+            this.grid3.DisplayLayout.Override.RowAppearance = appearance38;
+            this.grid3.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.False;
+            appearance39.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.grid3.DisplayLayout.Override.TemplateAddRowAppearance = appearance39;
+            this.grid3.DisplayLayout.ScrollBounds = Infragistics.Win.UltraWinGrid.ScrollBounds.ScrollToFill;
+            this.grid3.DisplayLayout.ScrollStyle = Infragistics.Win.UltraWinGrid.ScrollStyle.Immediate;
+            this.grid3.DisplayLayout.SelectionOverlayBorderThickness = 2;
+            this.grid3.DisplayLayout.ViewStyleBand = Infragistics.Win.UltraWinGrid.ViewStyleBand.OutlookGroupBy;
+            this.grid3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grid3.EnterNextRowEnable = true;
+            this.grid3.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.grid3.Location = new System.Drawing.Point(3, 21);
+            this.grid3.Margin = new System.Windows.Forms.Padding(0);
+            this.grid3.Name = "grid3";
+            this.grid3.Size = new System.Drawing.Size(1194, 288);
+            this.grid3.TabIndex = 5;
+            this.grid3.TabStop = false;
+            this.grid3.Text = "grid3";
+            this.grid3.TextRenderingMode = Infragistics.Win.TextRenderingMode.GDI;
+            this.grid3.UpdateMode = Infragistics.Win.UltraWinGrid.UpdateMode.OnCellChange;
+            this.grid3.UseFlatMode = Infragistics.Win.DefaultableBoolean.True;
+            this.grid3.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            // 
+            // txtRemark
+            // 
+            this.txtRemark.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtRemark.Location = new System.Drawing.Point(17, 33);
+            this.txtRemark.Multiline = true;
+            this.txtRemark.Name = "txtRemark";
+            this.txtRemark.Size = new System.Drawing.Size(395, 270);
+            this.txtRemark.TabIndex = 4;
+            this.txtRemark.Tag = "REMARK";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(25, 10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(39, 20);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "비고";
+            // 
+            // btnLink
+            // 
+            this.btnLink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLink.Location = new System.Drawing.Point(1469, 92);
+            this.btnLink.Name = "btnLink";
+            this.btnLink.Size = new System.Drawing.Size(151, 40);
+            this.btnLink.TabIndex = 672;
+            this.btnLink.Text = "클릭시 조회";
+            this.btnLink.Visible = false;
+            // 
+            // txt_CUSTCODE_H
+            // 
+            appearance17.FontData.BoldAsString = "False";
+            appearance17.FontData.Name = "맑은 고딕";
+            appearance17.FontData.SizeInPoints = 10F;
+            appearance17.FontData.UnderlineAsString = "False";
+            appearance17.ForeColor = System.Drawing.Color.Black;
+            this.txt_CUSTCODE_H.Appearance = appearance17;
+            this.txt_CUSTCODE_H.AutoSize = false;
+            this.txt_CUSTCODE_H.btnImgType = WIZ.Control.SBtnTextEditor.ButtonImgTypeEnum.Type1;
+            this.txt_CUSTCODE_H.btnWidth = 26;
+            this.txt_CUSTCODE_H.Location = new System.Drawing.Point(682, 100);
+            this.txt_CUSTCODE_H.Name = "txt_CUSTCODE_H";
+            this.txt_CUSTCODE_H.RequireFlag = WIZ.Control.SBtnTextEditor.RequireFlagEnum.NO;
+            this.txt_CUSTCODE_H.RequirePop = WIZ.Control.SBtnTextEditor.RequireFlagEnum.NO;
+            this.txt_CUSTCODE_H.Size = new System.Drawing.Size(145, 27);
+            this.txt_CUSTCODE_H.TabIndex = 675;
+            // 
+            // txt_CUSTNAME_H
+            // 
+            appearance74.FontData.BoldAsString = "False";
+            appearance74.FontData.UnderlineAsString = "False";
+            appearance74.ForeColor = System.Drawing.Color.Black;
+            this.txt_CUSTNAME_H.Appearance = appearance74;
+            this.txt_CUSTNAME_H.AutoSize = false;
+            this.txt_CUSTNAME_H.Font = new System.Drawing.Font("맑은 고딕", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.txt_CUSTNAME_H.Location = new System.Drawing.Point(826, 100);
+            this.txt_CUSTNAME_H.Name = "txt_CUSTNAME_H";
+            this.txt_CUSTNAME_H.RequireFlag = WIZ.Control.STextBox.RequireFlagEnum.NO;
+            this.txt_CUSTNAME_H.RequirePop = WIZ.Control.STextBox.RequireFlagEnum.NO;
+            this.txt_CUSTNAME_H.Size = new System.Drawing.Size(200, 27);
+            this.txt_CUSTNAME_H.TabIndex = 673;
+            // 
+            // lbl_CUSTCODE_H
+            // 
+            appearance25.FontData.BoldAsString = "False";
+            appearance25.FontData.UnderlineAsString = "False";
+            appearance25.ForeColor = System.Drawing.Color.Black;
+            appearance25.TextHAlignAsString = "Left";
+            appearance25.TextVAlignAsString = "Middle";
+            this.lbl_CUSTCODE_H.Appearance = appearance25;
+            this.lbl_CUSTCODE_H.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.None;
+            this.lbl_CUSTCODE_H.DbField = null;
+            this.lbl_CUSTCODE_H.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lbl_CUSTCODE_H.Location = new System.Drawing.Point(682, 78);
+            this.lbl_CUSTCODE_H.Name = "lbl_CUSTCODE_H";
+            this.lbl_CUSTCODE_H.RequireFlag = WIZ.Control.SLabel.RequireFlagEnum.NO;
+            this.lbl_CUSTCODE_H.Size = new System.Drawing.Size(345, 25);
+            this.lbl_CUSTCODE_H.TabIndex = 674;
+            this.lbl_CUSTCODE_H.Text = "거래처";
+            // 
+            // grid2
+            // 
+            this.grid2.AutoResizeColumn = true;
+            this.grid2.AutoUserColumn = true;
+            this.grid2.ContextMenuCopyEnabled = true;
+            this.grid2.ContextMenuDeleteEnabled = true;
+            this.grid2.ContextMenuExcelEnabled = true;
+            this.grid2.ContextMenuInsertEnabled = true;
+            this.grid2.ContextMenuPasteEnabled = true;
+            this.grid2.DeleteButtonEnable = true;
+            appearance5.BackColor = System.Drawing.SystemColors.Window;
+            appearance5.BorderColor = System.Drawing.SystemColors.InactiveCaption;
+            this.grid2.DisplayLayout.Appearance = appearance5;
+            this.grid2.DisplayLayout.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
+            this.grid2.DisplayLayout.CaptionVisible = Infragistics.Win.DefaultableBoolean.False;
+            this.grid2.DisplayLayout.DefaultSelectedBackColor = System.Drawing.Color.Empty;
+            appearance6.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            appearance6.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance6.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance6.BorderColor = System.Drawing.SystemColors.Window;
+            this.grid2.DisplayLayout.GroupByBox.Appearance = appearance6;
+            appearance7.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.grid2.DisplayLayout.GroupByBox.BandLabelAppearance = appearance7;
+            this.grid2.DisplayLayout.GroupByBox.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
+            this.grid2.DisplayLayout.GroupByBox.Hidden = true;
+            appearance8.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            appearance8.BackColor2 = System.Drawing.SystemColors.Control;
+            appearance8.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance8.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.grid2.DisplayLayout.GroupByBox.PromptAppearance = appearance8;
+            this.grid2.DisplayLayout.MaxColScrollRegions = 1;
+            this.grid2.DisplayLayout.MaxRowScrollRegions = 1;
+            appearance9.BackColor = System.Drawing.SystemColors.Window;
+            appearance9.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.grid2.DisplayLayout.Override.ActiveCellAppearance = appearance9;
+            appearance10.BackColor = System.Drawing.SystemColors.Highlight;
+            appearance10.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.grid2.DisplayLayout.Override.ActiveRowAppearance = appearance10;
+            this.grid2.DisplayLayout.Override.AllowDelete = Infragistics.Win.DefaultableBoolean.True;
+            this.grid2.DisplayLayout.Override.AllowMultiCellOperations = ((Infragistics.Win.UltraWinGrid.AllowMultiCellOperation)((((((((Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Copy | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.CopyWithHeaders) 
+            | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Cut) 
+            | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Delete) 
+            | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Paste) 
+            | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Undo) 
+            | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Redo) 
+            | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Reserved)));
+            this.grid2.DisplayLayout.Override.BorderStyleCell = Infragistics.Win.UIElementBorderStyle.Dotted;
+            this.grid2.DisplayLayout.Override.BorderStyleRow = Infragistics.Win.UIElementBorderStyle.Dotted;
+            appearance11.BackColor = System.Drawing.SystemColors.Window;
+            this.grid2.DisplayLayout.Override.CardAreaAppearance = appearance11;
+            appearance12.BorderColor = System.Drawing.Color.Silver;
+            appearance12.TextTrimming = Infragistics.Win.TextTrimming.EllipsisCharacter;
+            this.grid2.DisplayLayout.Override.CellAppearance = appearance12;
+            this.grid2.DisplayLayout.Override.CellClickAction = Infragistics.Win.UltraWinGrid.CellClickAction.EditAndSelectText;
+            this.grid2.DisplayLayout.Override.CellPadding = 0;
+            appearance13.BackColor = System.Drawing.SystemColors.Control;
+            appearance13.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance13.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance13.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance13.BorderColor = System.Drawing.SystemColors.Window;
+            this.grid2.DisplayLayout.Override.GroupByRowAppearance = appearance13;
+            this.grid2.DisplayLayout.Override.HeaderClickAction = Infragistics.Win.UltraWinGrid.HeaderClickAction.SortMulti;
+            this.grid2.DisplayLayout.Override.HeaderStyle = Infragistics.Win.HeaderStyle.WindowsXPCommand;
+            appearance14.BackColor = System.Drawing.SystemColors.Window;
+            appearance14.BorderColor = System.Drawing.Color.Silver;
+            this.grid2.DisplayLayout.Override.RowAppearance = appearance14;
+            this.grid2.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.False;
+            appearance15.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.grid2.DisplayLayout.Override.TemplateAddRowAppearance = appearance15;
+            this.grid2.DisplayLayout.ScrollBounds = Infragistics.Win.UltraWinGrid.ScrollBounds.ScrollToFill;
+            this.grid2.DisplayLayout.ScrollStyle = Infragistics.Win.UltraWinGrid.ScrollStyle.Immediate;
+            this.grid2.DisplayLayout.SelectionOverlayBorderThickness = 2;
+            this.grid2.DisplayLayout.ViewStyleBand = Infragistics.Win.UltraWinGrid.ViewStyleBand.OutlookGroupBy;
+            this.grid2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grid2.EnterNextRowEnable = true;
+            this.grid2.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.grid2.Location = new System.Drawing.Point(0, 0);
+            this.grid2.Margin = new System.Windows.Forms.Padding(0);
+            this.grid2.Name = "grid2";
+            this.grid2.Size = new System.Drawing.Size(1631, 354);
+            this.grid2.TabIndex = 7;
+            this.grid2.TabStop = false;
+            this.grid2.Text = "grid3";
+            this.grid2.TextRenderingMode = Infragistics.Win.TextRenderingMode.GDI;
+            this.grid2.UpdateMode = Infragistics.Win.UltraWinGrid.UpdateMode.OnCellChange;
+            this.grid2.UseFlatMode = Infragistics.Win.DefaultableBoolean.True;
+            this.grid2.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            // 
+            // AP0128
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1639, 870);
+            this.Name = "AP0128";
+            this.Text = "작업지시 정보 조회 및 생성";
+            this.Load += new System.EventHandler(this.AP0128_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gbxHeader)).EndInit();
+            this.gbxHeader.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gbxBody)).EndInit();
+            this.gbxBody.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.cbo_ENDDATE_H)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbo_PLANTCODE_H)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_ITEMCODE_H)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbo_STARTDATE_H)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_ITEMNAME_H)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbo_ORDERTYPE_H)).EndInit();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gbx_CUSTCODE_B)).EndInit();
+            this.gbx_CUSTCODE_B.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.grid1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gbx_MAIN_B)).EndInit();
+            this.gbx_MAIN_B.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.grid3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_CUSTCODE_H)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_CUSTNAME_H)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid2)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+        private Infragistics.Win.UltraWinSchedule.UltraCalendarCombo cbo_ENDDATE_H;
+        private Control.SLabel lbl;
+        private Infragistics.Win.UltraWinEditors.UltraComboEditor cbo_PLANTCODE_H;
+        private Control.SLabel lbl_PLANTCODE_H;
+        private Control.SBtnTextEditor txt_ITEMCODE_H;
+        private Infragistics.Win.UltraWinSchedule.UltraCalendarCombo cbo_STARTDATE_H;
+        private Control.SLabel lbl_DATE_H;
+        private Control.STextBox txt_ITEMNAME_H;
+        private Control.SLabel lbl_ITEMCODE_H;
+        private Infragistics.Win.UltraWinEditors.UltraComboEditor cbo_ORDERTYPE_H;
+        private Control.SLabel lbl_ORDERTYPE_H;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private Infragistics.Win.Misc.UltraGroupBox gbx_CUSTCODE_B;
+        private Control.Grid grid1;
+        private Infragistics.Win.Misc.UltraButton btnLink;
+        //private System.Windows.Forms.SplitContainer splitContainer2;
+        private Infragistics.Win.Misc.UltraGroupBox gbx_MAIN_B;
+        private Control.Grid grid2;
+        private Control.Grid grid3;
+        private System.Windows.Forms.TextBox txtRemark;
+        private System.Windows.Forms.Label label2;
+        private Control.SBtnTextEditor txt_CUSTCODE_H;
+        private Control.STextBox txt_CUSTNAME_H;
+        private Control.SLabel lbl_CUSTCODE_H;
+
+    }
+}

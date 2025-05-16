@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E6EB4B3D-D7DF-42C1-ADE1-5B008FDF502F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WIZ.CM</RootNamespace>
+    <AssemblyName>WIZ.CM</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics2.Shared.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.Misc.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinChart.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinSchedule.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinTabControl.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinToolbars.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CM0020 [설비 온도 이력].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CM0020 [설비 온도 이력].designer.cs">
+      <DependentUpon>CM0020 [설비 온도 이력].cs</DependentUpon>
+    </Compile>
+    <Compile Include="CM0040 [설비 사이클타임 이력].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CM0040 [설비 사이클타임 이력].designer.cs">
+      <DependentUpon>CM0040 [설비 사이클타임 이력].cs</DependentUpon>
+    </Compile>
+    <Compile Include="CM0030 [설비 냉각수온도 이력].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CM0030 [설비 냉각수온도 이력].designer.cs">
+      <DependentUpon>CM0030 [설비 냉각수온도 이력].cs</DependentUpon>
+    </Compile>
+    <Compile Include="CM0400.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CM0400.Designer.cs">
+      <DependentUpon>CM0400.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CM0410.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CM0410.designer.cs">
+      <DependentUpon>CM0410.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CM0500.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CM0500.designer.cs">
+      <DependentUpon>CM0500.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CM0600.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CM0600.designer.cs">
+      <DependentUpon>CM0600.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CM0700.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CM0700.designer.cs">
+      <DependentUpon>CM0700.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CM0800.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CM0800.designer.cs">
+      <DependentUpon>CM0800.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CM0900.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CM0900.designer.cs">
+      <DependentUpon>CM0900.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CM1000.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CM1000.designer.cs">
+      <DependentUpon>CM1000.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="CM0010 [설비 사용 현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CM0010 [설비 사용 현황].designer.cs">
+      <DependentUpon>CM0010 [설비 사용 현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="TO0100.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TO0100.designer.cs">
+      <DependentUpon>TO0100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TO0200.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TO0200.Designer.cs">
+      <DependentUpon>TO0200.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TO0300.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TO0300.designer.cs">
+      <DependentUpon>TO0300.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TO0400.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TO0400.designer.cs">
+      <DependentUpon>TO0400.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TO0410.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TO0410.Designer.cs">
+      <DependentUpon>TO0410.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TO0500.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TO0500.Designer.cs">
+      <DependentUpon>TO0500.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CM0020 [설비 온도 이력].resx">
+      <DependentUpon>CM0020 [설비 온도 이력].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CM0040 [설비 사이클타임 이력].resx">
+      <DependentUpon>CM0040 [설비 사이클타임 이력].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CM0030 [설비 냉각수온도 이력].resx">
+      <DependentUpon>CM0030 [설비 냉각수온도 이력].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CM0400.resx">
+      <DependentUpon>CM0400.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CM0410.resx">
+      <DependentUpon>CM0410.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CM0500.resx">
+      <DependentUpon>CM0500.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CM0600.resx">
+      <DependentUpon>CM0600.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CM0010 [설비 사용 현황].resx">
+      <DependentUpon>CM0010 [설비 사용 현황].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CM0700.resx">
+      <DependentUpon>CM0700.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CM0800.resx">
+      <DependentUpon>CM0800.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CM0900.resx">
+      <DependentUpon>CM0900.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CM1000.resx">
+      <DependentUpon>CM1000.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="TO0100.resx">
+      <DependentUpon>TO0100.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TO0200.resx">
+      <DependentUpon>TO0200.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TO0300.resx">
+      <DependentUpon>TO0300.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TO0400.resx">
+      <DependentUpon>TO0400.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TO0410.resx">
+      <DependentUpon>TO0410.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TO0500.resx">
+      <DependentUpon>TO0500.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Module\MES\PopManager\PopManager.csproj">
+      <Project>{fd5753c6-1531-442f-8ce5-e317811ed41d}</Project>
+      <Name>PopManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.Control\WIZ.Control.csproj">
+      <Project>{865bf19b-00b8-45e8-b4e7-0cc5f58f8a98}</Project>
+      <Name>WIZ.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.Forms\WIZ.Forms.csproj">
+      <Project>{4c2dad9f-dcab-4b8f-a803-f5e43f8849e7}</Project>
+      <Name>WIZ.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ\WIZ.csproj">
+      <Project>{3887acf7-cbbb-4d70-bb62-1a45d6679c2c}</Project>
+      <Name>WIZ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIZ.PopUp\WIZ.PopUp.csproj">
+      <Project>{c8d579ce-fbb1-4da8-a1bd-848168b8ccb1}</Project>
+      <Name>WIZ.PopUp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetDir)$(TargetFileName) $(SolutionDir)\$(SolutionName)\$(OutDir)$(TargetFileName)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

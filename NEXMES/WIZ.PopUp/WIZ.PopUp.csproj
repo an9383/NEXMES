@@ -1,0 +1,1838 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C8D579CE-FBB1-4DA8-A1BD-848168B8CCB1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WIZ.PopUp</RootNamespace>
+    <AssemblyName>WIZ.PopUp</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>MESIcon_wiz.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataMatrix.net">
+      <HintPath>..\NEXMES\DLL\DataMatrix.net.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Documents.Excel.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Shared.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.Misc.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.ExcelExport.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinSchedule.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinTabControl.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinToolbars.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=8.7.2.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.PDFViewer.7.7.0\lib\net46\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.PdfViewer.Asp, Version=7.7.1.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.PDFViewer.7.7.0\lib\net46\Spire.PdfViewer.Asp.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.PdfViewer.Forms, Version=7.7.1.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.PDFViewer.7.7.0\lib\net46\Spire.PdfViewer.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.Reporting, Version=7.2.13.1105, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\NEXMES\DLL\Telerik.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WinForms, Version=7.2.13.1105, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\NEXMES\DLL\Telerik.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AP0020_POP_TEL[완제품 식별표].cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AP0020_POP_TEL[완제품 식별표].designer.cs">
+      <DependentUpon>AP0020_POP_TEL[완제품 식별표].cs</DependentUpon>
+    </Compile>
+    <Compile Include="AP0127_POP[ERP매입삭제].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AP0127_POP[ERP매입삭제].Designer.cs">
+      <DependentUpon>AP0127_POP[ERP매입삭제].cs</DependentUpon>
+    </Compile>
+    <Compile Include="AP0126_POP[ERP매출삭제].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AP0126_POP[ERP매출삭제].Designer.cs">
+      <DependentUpon>AP0126_POP[ERP매출삭제].cs</DependentUpon>
+    </Compile>
+    <Compile Include="AP0129_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AP0129_EXCEL.designer.cs">
+      <DependentUpon>AP0129_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0014_POP[환율정보].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0014_POP[환율정보].Designer.cs">
+      <DependentUpon>BM0014_POP[환율정보].cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MM0000_POP4[자재 가입고 처리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MM0000_POP4[자재 가입고 처리].Designer.cs">
+      <DependentUpon>MM0000_POP4[자재 가입고 처리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MM0000_POP3[자재 가입고 처리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MM0000_POP3[자재 가입고 처리].Designer.cs">
+      <DependentUpon>MM0000_POP3[자재 가입고 처리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MM0000_POP3_TEL[원자재 식별표].cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MM0000_POP3_TEL[원자재 식별표].designer.cs">
+      <DependentUpon>MM0000_POP3_TEL[원자재 식별표].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MM0020_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MM0020_POP.Designer.cs">
+      <DependentUpon>MM0020_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BizGridManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BizTextBoxManager.cs" />
+    <Compile Include="BM0000_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0000_POP.Designer.cs">
+      <DependentUpon>BM0000_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AP0110_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AP0110_POP.Designer.cs">
+      <DependentUpon>AP0110_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PDFVIEW_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PDFVIEW_POP.designer.cs">
+      <DependentUpon>PDFVIEW_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP3510_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP3510_POP.Designer.cs">
+      <DependentUpon>PP3510_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0013_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0013_POP.Designer.cs">
+      <DependentUpon>BM0013_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0013_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0013_EXCEL.Designer.cs">
+      <DependentUpon>BM0013_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0011_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0011_EXCEL.designer.cs">
+      <DependentUpon>BM0011_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0011_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0011_POP.designer.cs">
+      <DependentUpon>BM0011_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0012_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0012_EXCEL.designer.cs">
+      <DependentUpon>BM0012_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0425_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0425_EXCEL.Designer.cs">
+      <DependentUpon>BM0425_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM8000_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM8000_POP.Designer.cs">
+      <DependentUpon>BM8000_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MM0000_POP2[자재 가입고 처리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MM0000_POP2[자재 가입고 처리].Designer.cs">
+      <DependentUpon>MM0000_POP2[자재 가입고 처리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp_Common.cs" />
+    <Compile Include="MD0001_POP[금형제품].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0001_POP[금형제품].Designer.cs">
+      <DependentUpon>MD0001_POP[금형제품].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM5050_POP[공정별 작업조건 설정].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM5050_POP[공정별 작업조건 설정].Designer.cs">
+      <DependentUpon>BM5050_POP[공정별 작업조건 설정].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MM0001_POP[자재 가입고 처리-예정일색상].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MM0001_POP[자재 가입고 처리-예정일색상].Designer.cs">
+      <DependentUpon>MM0001_POP[자재 가입고 처리-예정일색상].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MM0000_POP_UNIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MM0000_POP_UNIT.Designer.cs">
+      <DependentUpon>MM0000_POP_UNIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TSY0030_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TSY0030_POP.Designer.cs">
+      <DependentUpon>TSY0030_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM5100_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM5100_POP.Designer.cs">
+      <DependentUpon>BM5100_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0071_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0071_POP.Designer.cs">
+      <DependentUpon>BM0071_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MM0090_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MM0090_EXCEL.Designer.cs">
+      <DependentUpon>MM0090_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MM0010_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MM0010_POP.Designer.cs">
+      <DependentUpon>MM0010_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MM0000_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MM0000_EXCEL.Designer.cs">
+      <DependentUpon>MM0000_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0460_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0460_POP.Designer.cs">
+      <DependentUpon>BM0460_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0710_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0710_POP.Designer.cs">
+      <DependentUpon>BM0710_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0680_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0680_POP.Designer.cs">
+      <DependentUpon>BM0680_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0710_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0710_EXCEL.Designer.cs">
+      <DependentUpon>BM0710_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0680_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0680_EXCEL.Designer.cs">
+      <DependentUpon>BM0680_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0090_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0090_EXCEL.Designer.cs">
+      <DependentUpon>BM0090_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0560_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0560_EXCEL.Designer.cs">
+      <DependentUpon>BM0560_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0140_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0140_EXCEL.Designer.cs">
+      <DependentUpon>BM0140_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0120_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0120_EXCEL.Designer.cs">
+      <DependentUpon>BM0120_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0200_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0200_EXCEL.Designer.cs">
+      <DependentUpon>BM0200_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0380_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0380_EXCEL.Designer.cs">
+      <DependentUpon>BM0380_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0360_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0360_EXCEL.Designer.cs">
+      <DependentUpon>BM0360_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0350_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0350_EXCEL.Designer.cs">
+      <DependentUpon>BM0350_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0340_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0340_EXCEL.Designer.cs">
+      <DependentUpon>BM0340_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0330_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0330_EXCEL.Designer.cs">
+      <DependentUpon>BM0330_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0270_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0270_EXCEL.Designer.cs">
+      <DependentUpon>BM0270_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0260_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0260_EXCEL.Designer.cs">
+      <DependentUpon>BM0260_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0250_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0250_EXCEL.Designer.cs">
+      <DependentUpon>BM0250_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0390_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0390_EXCEL.Designer.cs">
+      <DependentUpon>BM0390_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0460_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0460_EXCEL.Designer.cs">
+      <DependentUpon>BM0460_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0480_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0480_EXCEL.Designer.cs">
+      <DependentUpon>BM0480_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0520_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0520_EXCEL.Designer.cs">
+      <DependentUpon>BM0520_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0600_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0600_EXCEL.Designer.cs">
+      <DependentUpon>BM0600_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0550_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0550_EXCEL.Designer.cs">
+      <DependentUpon>BM0550_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0540_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0540_EXCEL.Designer.cs">
+      <DependentUpon>BM0540_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0510_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0510_EXCEL.Designer.cs">
+      <DependentUpon>BM0510_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0590_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0590_EXCEL.Designer.cs">
+      <DependentUpon>BM0590_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0370_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0370_EXCEL.Designer.cs">
+      <DependentUpon>BM0370_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0440_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0440_EXCEL.Designer.cs">
+      <DependentUpon>BM0440_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0430_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0430_EXCEL.Designer.cs">
+      <DependentUpon>BM0430_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0420_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0420_EXCEL.Designer.cs">
+      <DependentUpon>BM0420_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0410_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0410_EXCEL.Designer.cs">
+      <DependentUpon>BM0410_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0610_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0610_EXCEL.Designer.cs">
+      <DependentUpon>BM0610_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PD2030_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PD2030_POP.Designer.cs">
+      <DependentUpon>PD2030_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PD4030_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PD4030_POP.Designer.cs">
+      <DependentUpon>PD4030_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AP0020_POP[LOT 발행].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AP0020_POP[LOT 발행].Designer.cs">
+      <DependentUpon>AP0020_POP[LOT 발행].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0000_POP[완제품 식별표 발행].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0000_POP[완제품 식별표 발행].Designer.cs">
+      <DependentUpon>WM0000_POP[완제품 식별표 발행].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0050_POP2_TEL[완제품 식별표].cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WM0050_POP2_TEL[완제품 식별표].designer.cs">
+      <DependentUpon>WM0050_POP2_TEL[완제품 식별표].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0060_POP_TEL[완제품 식별표].cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WM0060_POP_TEL[완제품 식별표].designer.cs">
+      <DependentUpon>WM0060_POP_TEL[완제품 식별표].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MM0070_POP2_TEL[원자재 식별표].cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MM0070_POP2_TEL[원자재 식별표].designer.cs">
+      <DependentUpon>MM0070_POP2_TEL[원자재 식별표].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MM0000_POP_TEL[원자재 식별표].cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MM0000_POP_TEL[원자재 식별표].designer.cs">
+      <DependentUpon>MM0000_POP_TEL[원자재 식별표].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PD6040[창고 및 위치].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PD6040[창고 및 위치].Designer.cs">
+      <DependentUpon>PD6040[창고 및 위치].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0050_POP1[LOT 분할].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0050_POP1[LOT 분할].Designer.cs">
+      <DependentUpon>WM0050_POP1[LOT 분할].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MM0070_POP1[LOT 분할].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MM0070_POP1[LOT 분할].Designer.cs">
+      <DependentUpon>MM0070_POP1[LOT 분할].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0050_POP2[LOT 병합].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0050_POP2[LOT 병합].Designer.cs">
+      <DependentUpon>WM0050_POP2[LOT 병합].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MM0070_POP2[LOT 병합].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MM0070_POP2[LOT 병합].Designer.cs">
+      <DependentUpon>MM0070_POP2[LOT 병합].cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_TBM0000.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_TBM0000.Designer.cs">
+      <DependentUpon>POP_TBM0000.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0190_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0190_POP.Designer.cs">
+      <DependentUpon>BM0190_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0400_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0400_EXCEL.Designer.cs">
+      <DependentUpon>BM0400_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0320_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0320_EXCEL.Designer.cs">
+      <DependentUpon>BM0320_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0310_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0310_EXCEL.Designer.cs">
+      <DependentUpon>BM0310_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0300_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0300_EXCEL.Designer.cs">
+      <DependentUpon>BM0300_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0290_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0290_EXCEL.Designer.cs">
+      <DependentUpon>BM0290_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0280_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0280_EXCEL.Designer.cs">
+      <DependentUpon>BM0280_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0630_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0630_EXCEL.Designer.cs">
+      <DependentUpon>BM0630_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0620_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0620_EXCEL.Designer.cs">
+      <DependentUpon>BM0620_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0530_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0530_POP.Designer.cs">
+      <DependentUpon>BM0530_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0500_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0500_POP.Designer.cs">
+      <DependentUpon>BM0500_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0370_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0370_POP.Designer.cs">
+      <DependentUpon>BM0370_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0180_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0180_POP.Designer.cs">
+      <DependentUpon>BM0180_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0170_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0170_POP.Designer.cs">
+      <DependentUpon>BM0170_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0160_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0160_POP.Designer.cs">
+      <DependentUpon>BM0160_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0150_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0150_POP.Designer.cs">
+      <DependentUpon>BM0150_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0130_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0130_POP.Designer.cs">
+      <DependentUpon>BM0130_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0110_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0110_POP.Designer.cs">
+      <DependentUpon>BM0110_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0100_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0100_POP.Designer.cs">
+      <DependentUpon>BM0100_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0080_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0080_POP.Designer.cs">
+      <DependentUpon>BM0080_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0090_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0090_POP.Designer.cs">
+      <DependentUpon>BM0090_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0070_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0070_POP.Designer.cs">
+      <DependentUpon>BM0070_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0060_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0060_POP.Designer.cs">
+      <DependentUpon>BM0060_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0050_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0050_POP.Designer.cs">
+      <DependentUpon>BM0050_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0040_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0040_POP.Designer.cs">
+      <DependentUpon>BM0040_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0030_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0030_POP.Designer.cs">
+      <DependentUpon>BM0030_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0020_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0020_POP.Designer.cs">
+      <DependentUpon>BM0020_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0220_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0220_EXCEL.Designer.cs">
+      <DependentUpon>BM0220_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0210_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0210_EXCEL.Designer.cs">
+      <DependentUpon>BM0210_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0240_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0240_EXCEL.Designer.cs">
+      <DependentUpon>BM0240_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0230_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0230_EXCEL.Designer.cs">
+      <DependentUpon>BM0230_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0530_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0530_EXCEL.Designer.cs">
+      <DependentUpon>BM0530_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0500_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0500_EXCEL.Designer.cs">
+      <DependentUpon>BM0500_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0190_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0190_EXCEL.Designer.cs">
+      <DependentUpon>BM0190_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0180_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0180_EXCEL.Designer.cs">
+      <DependentUpon>BM0180_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0170_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0170_EXCEL.Designer.cs">
+      <DependentUpon>BM0170_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0160_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0160_EXCEL.Designer.cs">
+      <DependentUpon>BM0160_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0150_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0150_EXCEL.Designer.cs">
+      <DependentUpon>BM0150_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0110_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0110_EXCEL.Designer.cs">
+      <DependentUpon>BM0110_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0130_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0130_EXCEL.Designer.cs">
+      <DependentUpon>BM0130_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0100_EXCEL .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0100_EXCEL .Designer.cs">
+      <DependentUpon>BM0100_EXCEL .cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0070_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0070_EXCEL.Designer.cs">
+      <DependentUpon>BM0070_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0050_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0050_EXCEL.Designer.cs">
+      <DependentUpon>BM0050_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0080_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0080_EXCEL.Designer.cs">
+      <DependentUpon>BM0080_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0060_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0060_EXCEL.Designer.cs">
+      <DependentUpon>BM0060_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0040_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0040_EXCEL.Designer.cs">
+      <DependentUpon>BM0040_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IMAGEVIEW_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IMAGEVIEW_POP.designer.cs">
+      <DependentUpon>IMAGEVIEW_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_MM0001Y[자재 가입고 처리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_MM0001Y[자재 가입고 처리].Designer.cs">
+      <DependentUpon>POP_MM0001Y[자재 가입고 처리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_MT3000[적재 정보].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_MT3000[적재 정보].Designer.cs">
+      <DependentUpon>POP_MT3000[적재 정보].cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0020_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0020_EXCEL.Designer.cs">
+      <DependentUpon>BM0020_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0030_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0030_EXCEL.Designer.cs">
+      <DependentUpon>BM0030_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0010_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0010_POP.Designer.cs">
+      <DependentUpon>BM0010_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BM0010_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM0010_EXCEL.Designer.cs">
+      <DependentUpon>BM0010_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_TBM8600_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_TBM8600_EXCEL.Designer.cs">
+      <DependentUpon>POP_TBM8600_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_TBM8500_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_TBM8500_EXCEL.Designer.cs">
+      <DependentUpon>POP_TBM8500_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_TBM9100_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_TBM9100_EXCEL.Designer.cs">
+      <DependentUpon>POP_TBM9100_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_TDA0100_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_TDA0100_EXCEL.Designer.cs">
+      <DependentUpon>POP_TDA0100_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_TBM6100_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_TBM6100_EXCEL.Designer.cs">
+      <DependentUpon>POP_TBM6100_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_TBM9300_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_TBM9300_EXCEL.Designer.cs">
+      <DependentUpon>POP_TBM9300_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_TBM1000_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_TBM1000_EXCEL.Designer.cs">
+      <DependentUpon>POP_TBM1000_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_TBM1100_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_TBM1100_EXCEL.Designer.cs">
+      <DependentUpon>POP_TBM1100_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_TBM0600Y_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_TBM0600Y_EXCEL.Designer.cs">
+      <DependentUpon>POP_TBM0600Y_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_TBM0400_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_TBM0400_EXCEL.Designer.cs">
+      <DependentUpon>POP_TBM0400_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_TBM0300_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_TBM0300_EXCEL.Designer.cs">
+      <DependentUpon>POP_TBM0300_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_TBM1200_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_TBM1200_EXCEL.Designer.cs">
+      <DependentUpon>POP_TBM1200_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_WM4000_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_WM4000_EXCEL.Designer.cs">
+      <DependentUpon>POP_WM4000_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_WorkOrder[작업지시서 발행].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_WorkOrder[작업지시서 발행].Designer.cs">
+      <DependentUpon>POP_WorkOrder[작업지시서 발행].cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductTab_R2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProductTab_R2.designer.cs">
+      <DependentUpon>ProductTab_R2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrder1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkOrder1.Designer.cs">
+      <DependentUpon>WorkOrder1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_PP6130[공정이동표등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_PP6130[공정이동표등록].Designer.cs">
+      <DependentUpon>POP_PP6130[공정이동표등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUpManager.cs" />
+    <Compile Include="PopUp_Biz.cs" />
+    <Compile Include="POP_AP0040.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_AP0040.Designer.cs">
+      <DependentUpon>POP_AP0040.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MM0000_POP[자재 가입고 처리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MM0000_POP[자재 가입고 처리].Designer.cs">
+      <DependentUpon>MM0000_POP[자재 가입고 처리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_MM9900.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_MM9900.Designer.cs">
+      <DependentUpon>POP_MM9900.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_TBM0700_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_TBM0700_EXCEL.Designer.cs">
+      <DependentUpon>POP_TBM0700_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_TSY0101.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_TSY0101.Designer.cs">
+      <DependentUpon>POP_TSY0101.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_TSY0030[사용자].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_TSY0030[사용자].designer.cs">
+      <DependentUpon>POP_TSY0030[사용자].cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_TSY0031[사용자그룹].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_TSY0031[사용자그룹].designer.cs">
+      <DependentUpon>POP_TSY0031[사용자그룹].cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_TSY1500[프로그램].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_TSY1500[프로그램].Designer.cs">
+      <DependentUpon>POP_TSY1500[프로그램].cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_WM4210Y.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_WM4210Y.Designer.cs">
+      <DependentUpon>POP_WM4210Y.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_YQM5030[작업자 등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_YQM5030[작업자 등록].Designer.cs">
+      <DependentUpon>POP_YQM5030[작업자 등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_YQM5130[검사세부내역].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_YQM5130[검사세부내역].Designer.cs">
+      <DependentUpon>POP_YQM5130[검사세부내역].cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_YQM5140[로트수량].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_YQM5140[로트수량].Designer.cs">
+      <DependentUpon>POP_YQM5140[로트수량].cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_YQM5150[불합격 사유등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_YQM5150[불합격 사유등록].Designer.cs">
+      <DependentUpon>POP_YQM5150[불합격 사유등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="POP_YQM5010[규격복사].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_YQM5010[규격복사].Designer.cs">
+      <DependentUpon>POP_YQM5010[규격복사].cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_YQM5000[검사항목등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_YQM5000[검사항목등록].Designer.cs">
+      <DependentUpon>POP_YQM5000[검사항목등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_TBM0100Y_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_TBM0100Y_EXCEL.Designer.cs">
+      <DependentUpon>POP_TBM0100Y_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_MM0000Y_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_MM0000Y_EXCEL.Designer.cs">
+      <DependentUpon>POP_MM0000Y_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_MM0300X[반출증 발행].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_MM0300X[반출증 발행].Designer.cs">
+      <DependentUpon>POP_MM0300X[반출증 발행].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MM0300X_R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MM0300X_R.Designer.cs">
+      <DependentUpon>MM0300X_R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="POP_ReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_ReportViewer.designer.cs">
+      <DependentUpon>POP_ReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0040_R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WM0040_R.Designer.cs">
+      <DependentUpon>WM0040_R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_WM0040[상차지시서 발행].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_WM0040[상차지시서 발행].Designer.cs">
+      <DependentUpon>POP_WM0040[상차지시서 발행].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0050_R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WM0050_R.Designer.cs">
+      <DependentUpon>WM0050_R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_WM0050[거래명세서 발행].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_WM0050[거래명세서 발행].Designer.cs">
+      <DependentUpon>POP_WM0050[거래명세서 발행].cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_MM0130[발주정보].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_MM0130[발주정보].Designer.cs">
+      <DependentUpon>POP_MM0130[발주정보].cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_MM0900[이미지등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_MM0900[이미지등록].Designer.cs">
+      <DependentUpon>POP_MM0900[이미지등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_WM0500[제품LOT 분할].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_WM0500[제품LOT 분할].Designer.cs">
+      <DependentUpon>POP_WM0500[제품LOT 분할].cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_WM0510[제품LOT 병합].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_WM0510[제품LOT 병합].Designer.cs">
+      <DependentUpon>POP_WM0510[제품LOT 병합].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0500_R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WM0500_R.Designer.cs">
+      <DependentUpon>WM0500_R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_MM0200[이미지등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_MM0200[이미지등록].Designer.cs">
+      <DependentUpon>POP_MM0200[이미지등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_WM0520[작업지시정보].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_WM0520[작업지시정보].Designer.cs">
+      <DependentUpon>POP_WM0520[작업지시정보].cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP_TBM5120[COMPORT_IFRECORD].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_TBM5120[COMPORT_IFRECORD].designer.cs">
+      <DependentUpon>POP_TBM5120[COMPORT_IFRECORD].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP6130_R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PP6130_R.designer.cs">
+      <DependentUpon>PP6130_R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductTab_R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProductTab_R.designer.cs">
+      <DependentUpon>ProductTab_R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="[DA3300_LOTC] 원재식별표.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="[DA3300_LOTC] 원재식별표.designer.cs">
+      <DependentUpon>[DA3300_LOTC] 원재식별표.cs</DependentUpon>
+    </Compile>
+    <Compile Include="[DA3300_LOTG] 재공품식별표.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="[DA3300_LOTG] 재공품식별표.designer.cs">
+      <DependentUpon>[DA3300_LOTG] 재공품식별표.cs</DependentUpon>
+    </Compile>
+    <Compile Include="[DA3300_LOTZ] 완성품식별표.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="[DA3300_LOTZ] 완성품식별표.designer.cs">
+      <DependentUpon>[DA3300_LOTZ] 완성품식별표.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AP0020_POP_TEL[완제품 식별표].resx">
+      <DependentUpon>AP0020_POP_TEL[완제품 식별표].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AP0127_POP[ERP매입삭제].resx">
+      <DependentUpon>AP0127_POP[ERP매입삭제].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AP0126_POP[ERP매출삭제].resx">
+      <DependentUpon>AP0126_POP[ERP매출삭제].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AP0129_EXCEL.resx">
+      <DependentUpon>AP0129_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0014_POP[환율정보].resx">
+      <DependentUpon>BM0014_POP[환율정보].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MM0000_POP4[자재 가입고 처리].resx">
+      <DependentUpon>MM0000_POP4[자재 가입고 처리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MM0000_POP3[자재 가입고 처리].resx">
+      <DependentUpon>MM0000_POP3[자재 가입고 처리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MM0000_POP3_TEL[원자재 식별표].resx">
+      <DependentUpon>MM0000_POP3_TEL[원자재 식별표].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MM0020_POP.resx">
+      <DependentUpon>MM0020_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0000_POP.resx">
+      <DependentUpon>BM0000_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AP0110_POP.resx">
+      <DependentUpon>AP0110_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PDFVIEW_POP.resx">
+      <DependentUpon>PDFVIEW_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP3510_POP.resx">
+      <DependentUpon>PP3510_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0013_POP.resx">
+      <DependentUpon>BM0013_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0013_EXCEL.resx">
+      <DependentUpon>BM0013_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0011_EXCEL.resx">
+      <DependentUpon>BM0011_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0011_POP.resx">
+      <DependentUpon>BM0011_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0012_EXCEL.resx">
+      <DependentUpon>BM0012_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0425_EXCEL.resx">
+      <DependentUpon>BM0425_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM8000_POP.resx">
+      <DependentUpon>BM8000_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0001_POP[금형제품].resx">
+      <DependentUpon>MD0001_POP[금형제품].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM5050_POP[공정별 작업조건 설정].resx">
+      <DependentUpon>BM5050_POP[공정별 작업조건 설정].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MM0000_POP2[자재 가입고 처리].resx">
+      <DependentUpon>MM0000_POP2[자재 가입고 처리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MM0001_POP[자재 가입고 처리-예정일색상].resx">
+      <DependentUpon>MM0001_POP[자재 가입고 처리-예정일색상].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MM0000_POP_UNIT.resx">
+      <DependentUpon>MM0000_POP_UNIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TSY0030_POP.resx">
+      <DependentUpon>TSY0030_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM5100_POP.resx">
+      <DependentUpon>BM5100_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0071_POP.resx">
+      <DependentUpon>BM0071_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MM0090_EXCEL.resx">
+      <DependentUpon>MM0090_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MM0010_POP.resx">
+      <DependentUpon>MM0010_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MM0000_EXCEL.resx">
+      <DependentUpon>MM0000_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0460_POP.resx">
+      <DependentUpon>BM0460_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0710_POP.resx">
+      <DependentUpon>BM0710_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0680_POP.resx">
+      <DependentUpon>BM0680_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0710_EXCEL.resx">
+      <DependentUpon>BM0710_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0680_EXCEL.resx">
+      <DependentUpon>BM0680_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0090_EXCEL.resx">
+      <DependentUpon>BM0090_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0560_EXCEL.resx">
+      <DependentUpon>BM0560_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0140_EXCEL.resx">
+      <DependentUpon>BM0140_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0120_EXCEL.resx">
+      <DependentUpon>BM0120_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0200_EXCEL.resx">
+      <DependentUpon>BM0200_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0380_EXCEL.resx">
+      <DependentUpon>BM0380_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0360_EXCEL.resx">
+      <DependentUpon>BM0360_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0350_EXCEL.resx">
+      <DependentUpon>BM0350_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0340_EXCEL.resx">
+      <DependentUpon>BM0340_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0330_EXCEL.resx">
+      <DependentUpon>BM0330_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0270_EXCEL.resx">
+      <DependentUpon>BM0270_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0260_EXCEL.resx">
+      <DependentUpon>BM0260_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0250_EXCEL.resx">
+      <DependentUpon>BM0250_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0390_EXCEL.resx">
+      <DependentUpon>BM0390_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0460_EXCEL.resx">
+      <DependentUpon>BM0460_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0480_EXCEL.resx">
+      <DependentUpon>BM0480_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0520_EXCEL.resx">
+      <DependentUpon>BM0520_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0600_EXCEL.resx">
+      <DependentUpon>BM0600_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0550_EXCEL.resx">
+      <DependentUpon>BM0550_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0540_EXCEL.resx">
+      <DependentUpon>BM0540_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0510_EXCEL.resx">
+      <DependentUpon>BM0510_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0590_EXCEL.resx">
+      <DependentUpon>BM0590_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0370_EXCEL.resx">
+      <DependentUpon>BM0370_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0440_EXCEL.resx">
+      <DependentUpon>BM0440_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0430_EXCEL.resx">
+      <DependentUpon>BM0430_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0420_EXCEL.resx">
+      <DependentUpon>BM0420_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0410_EXCEL.resx">
+      <DependentUpon>BM0410_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0610_EXCEL.resx">
+      <DependentUpon>BM0610_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PD2030_POP.resx">
+      <DependentUpon>PD2030_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PD4030_POP.resx">
+      <DependentUpon>PD4030_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AP0020_POP[LOT 발행].resx">
+      <DependentUpon>AP0020_POP[LOT 발행].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0000_POP[완제품 식별표 발행].resx">
+      <DependentUpon>WM0000_POP[완제품 식별표 발행].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0050_POP2_TEL[완제품 식별표].resx">
+      <DependentUpon>WM0050_POP2_TEL[완제품 식별표].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0060_POP_TEL[완제품 식별표].resx">
+      <DependentUpon>WM0060_POP_TEL[완제품 식별표].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MM0070_POP2_TEL[원자재 식별표].resx">
+      <DependentUpon>MM0070_POP2_TEL[원자재 식별표].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MM0000_POP_TEL[원자재 식별표].resx">
+      <DependentUpon>MM0000_POP_TEL[원자재 식별표].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PD6040[창고 및 위치].resx">
+      <DependentUpon>PD6040[창고 및 위치].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0050_POP1[LOT 분할].resx">
+      <DependentUpon>WM0050_POP1[LOT 분할].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MM0070_POP1[LOT 분할].resx">
+      <DependentUpon>MM0070_POP1[LOT 분할].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0050_POP2[LOT 병합].resx">
+      <DependentUpon>WM0050_POP2[LOT 병합].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MM0070_POP2[LOT 병합].resx">
+      <DependentUpon>MM0070_POP2[LOT 병합].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_TBM0000.resx">
+      <DependentUpon>POP_TBM0000.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0190_POP.resx">
+      <DependentUpon>BM0190_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0400_EXCEL.resx">
+      <DependentUpon>BM0400_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0320_EXCEL.resx">
+      <DependentUpon>BM0320_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0310_EXCEL.resx">
+      <DependentUpon>BM0310_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0300_EXCEL.resx">
+      <DependentUpon>BM0300_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0290_EXCEL.resx">
+      <DependentUpon>BM0290_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0280_EXCEL.resx">
+      <DependentUpon>BM0280_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0630_EXCEL.resx">
+      <DependentUpon>BM0630_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0620_EXCEL.resx">
+      <DependentUpon>BM0620_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0530_POP.resx">
+      <DependentUpon>BM0530_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0500_POP.resx">
+      <DependentUpon>BM0500_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0370_POP.resx">
+      <DependentUpon>BM0370_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0180_POP.resx">
+      <DependentUpon>BM0180_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0170_POP.resx">
+      <DependentUpon>BM0170_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0160_POP.resx">
+      <DependentUpon>BM0160_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0150_POP.resx">
+      <DependentUpon>BM0150_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0130_POP.resx">
+      <DependentUpon>BM0130_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0110_POP.resx">
+      <DependentUpon>BM0110_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0100_POP.resx">
+      <DependentUpon>BM0100_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0080_POP.resx">
+      <DependentUpon>BM0080_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0090_POP.resx">
+      <DependentUpon>BM0090_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0070_POP.resx">
+      <DependentUpon>BM0070_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0060_POP.resx">
+      <DependentUpon>BM0060_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0050_POP.resx">
+      <DependentUpon>BM0050_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0040_POP.resx">
+      <DependentUpon>BM0040_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0030_POP.resx">
+      <DependentUpon>BM0030_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0020_POP.resx">
+      <DependentUpon>BM0020_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0220_EXCEL.resx">
+      <DependentUpon>BM0220_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0210_EXCEL.resx">
+      <DependentUpon>BM0210_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0240_EXCEL.resx">
+      <DependentUpon>BM0240_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0230_EXCEL.resx">
+      <DependentUpon>BM0230_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0530_EXCEL.resx">
+      <DependentUpon>BM0530_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0500_EXCEL.resx">
+      <DependentUpon>BM0500_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0190_EXCEL.resx">
+      <DependentUpon>BM0190_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0180_EXCEL.resx">
+      <DependentUpon>BM0180_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0170_EXCEL.resx">
+      <DependentUpon>BM0170_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0160_EXCEL.resx">
+      <DependentUpon>BM0160_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0150_EXCEL.resx">
+      <DependentUpon>BM0150_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0110_EXCEL.resx">
+      <DependentUpon>BM0110_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0130_EXCEL.resx">
+      <DependentUpon>BM0130_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0100_EXCEL .resx">
+      <DependentUpon>BM0100_EXCEL .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0070_EXCEL.resx">
+      <DependentUpon>BM0070_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0050_EXCEL.resx">
+      <DependentUpon>BM0050_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0080_EXCEL.resx">
+      <DependentUpon>BM0080_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0060_EXCEL.resx">
+      <DependentUpon>BM0060_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0040_EXCEL.resx">
+      <DependentUpon>BM0040_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IMAGEVIEW_POP.resx">
+      <DependentUpon>IMAGEVIEW_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_MM0001Y[자재 가입고 처리].resx">
+      <DependentUpon>POP_MM0001Y[자재 가입고 처리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_MT3000[적재 정보].resx">
+      <DependentUpon>POP_MT3000[적재 정보].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0020_EXCEL.resx">
+      <DependentUpon>BM0020_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0030_EXCEL.resx">
+      <DependentUpon>BM0030_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0010_POP.resx">
+      <DependentUpon>BM0010_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BM0010_EXCEL.resx">
+      <DependentUpon>BM0010_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_TBM8600_EXCEL.resx">
+      <DependentUpon>POP_TBM8600_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_TBM8500_EXCEL.resx">
+      <DependentUpon>POP_TBM8500_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_TBM9100_EXCEL.resx">
+      <DependentUpon>POP_TBM9100_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_TDA0100_EXCEL.resx">
+      <DependentUpon>POP_TDA0100_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_TBM6100_EXCEL.resx">
+      <DependentUpon>POP_TBM6100_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_TBM9300_EXCEL.resx">
+      <DependentUpon>POP_TBM9300_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_TBM1000_EXCEL.resx">
+      <DependentUpon>POP_TBM1000_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_TBM1100_EXCEL.resx">
+      <DependentUpon>POP_TBM1100_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_TBM0600Y_EXCEL.resx">
+      <DependentUpon>POP_TBM0600Y_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_TBM0400_EXCEL.resx">
+      <DependentUpon>POP_TBM0400_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_TBM0300_EXCEL.resx">
+      <DependentUpon>POP_TBM0300_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_TBM1200_EXCEL.resx">
+      <DependentUpon>POP_TBM1200_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_WM4000_EXCEL.resx">
+      <DependentUpon>POP_WM4000_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_WorkOrder[작업지시서 발행].resx">
+      <DependentUpon>POP_WorkOrder[작업지시서 발행].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductTab_R2.resx">
+      <DependentUpon>ProductTab_R2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkOrder1.resx">
+      <DependentUpon>WorkOrder1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_PP6130[공정이동표등록].resx">
+      <DependentUpon>POP_PP6130[공정이동표등록].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_AP0040.resx">
+      <DependentUpon>POP_AP0040.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MM0000_POP[자재 가입고 처리].resx">
+      <DependentUpon>MM0000_POP[자재 가입고 처리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_MM9900.resx">
+      <DependentUpon>POP_MM9900.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_TBM0700_EXCEL.resx">
+      <DependentUpon>POP_TBM0700_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_TSY0101.resx">
+      <DependentUpon>POP_TSY0101.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_TSY0030[사용자].resx">
+      <DependentUpon>POP_TSY0030[사용자].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_TSY0031[사용자그룹].resx">
+      <DependentUpon>POP_TSY0031[사용자그룹].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_TSY1500[프로그램].resx">
+      <DependentUpon>POP_TSY1500[프로그램].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_WM4210Y.resx">
+      <DependentUpon>POP_WM4210Y.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_YQM5030[작업자 등록].resx">
+      <DependentUpon>POP_YQM5030[작업자 등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_YQM5130[검사세부내역].resx">
+      <DependentUpon>POP_YQM5130[검사세부내역].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_YQM5140[로트수량].resx">
+      <DependentUpon>POP_YQM5140[로트수량].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_YQM5150[불합격 사유등록].resx">
+      <DependentUpon>POP_YQM5150[불합격 사유등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_YQM5010[규격복사].resx">
+      <DependentUpon>POP_YQM5010[규격복사].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_YQM5000[검사항목등록].resx">
+      <DependentUpon>POP_YQM5000[검사항목등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="POP_TBM0100Y_EXCEL.resx">
+      <DependentUpon>POP_TBM0100Y_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_MM0000Y_EXCEL.resx">
+      <DependentUpon>POP_MM0000Y_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_MM0300X[반출증 발행].resx">
+      <DependentUpon>POP_MM0300X[반출증 발행].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MM0300X_R.resx">
+      <DependentUpon>MM0300X_R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_ReportViewer.resx">
+      <DependentUpon>POP_ReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0040_R.resx">
+      <DependentUpon>WM0040_R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_WM0040[상차지시서 발행].resx">
+      <DependentUpon>POP_WM0040[상차지시서 발행].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0050_R.resx">
+      <DependentUpon>WM0050_R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_WM0050[거래명세서 발행].resx">
+      <DependentUpon>POP_WM0050[거래명세서 발행].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_MM0130[발주정보].resx">
+      <DependentUpon>POP_MM0130[발주정보].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_MM0900[이미지등록].resx">
+      <DependentUpon>POP_MM0900[이미지등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_WM0500[제품LOT 분할].resx">
+      <DependentUpon>POP_WM0500[제품LOT 분할].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_WM0510[제품LOT 병합].resx">
+      <DependentUpon>POP_WM0510[제품LOT 병합].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0500_R.resx">
+      <DependentUpon>WM0500_R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_MM0200[이미지등록].resx">
+      <DependentUpon>POP_MM0200[이미지등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_WM0520[작업지시정보].resx">
+      <DependentUpon>POP_WM0520[작업지시정보].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_TBM5120[COMPORT_IFRECORD].resx">
+      <DependentUpon>POP_TBM5120[COMPORT_IFRECORD].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP6130_R.resx">
+      <DependentUpon>PP6130_R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductTab_R.resx">
+      <DependentUpon>ProductTab_R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="[DA3300_LOTC] 원재식별표.resx">
+      <DependentUpon>[DA3300_LOTC] 원재식별표.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="[DA3300_LOTG] 재공품식별표.resx">
+      <DependentUpon>[DA3300_LOTG] 재공품식별표.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="[DA3300_LOTZ] 완성품식별표.resx">
+      <DependentUpon>[DA3300_LOTZ] 완성품식별표.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MESIcon_wiz.ico" />
+    <None Include="packages.config" />
+    <None Include="Resources\Default_Image2.png" />
+    <None Include="Resources\Default_Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Module\MES\PopManager\PopManager.csproj">
+      <Project>{fd5753c6-1531-442f-8ce5-e317811ed41d}</Project>
+      <Name>PopManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.Control\WIZ.Control.csproj">
+      <Project>{865bf19b-00b8-45e8-b4e7-0cc5f58f8a98}</Project>
+      <Name>WIZ.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.Forms\WIZ.Forms.csproj">
+      <Project>{4c2dad9f-dcab-4b8f-a803-f5e43f8849e7}</Project>
+      <Name>WIZ.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.MAIN\WIZ.MAIN.csproj">
+      <Project>{857469de-5d2a-45b7-8875-38c5912d16c8}</Project>
+      <Name>WIZ.MAIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.SY\WIZ.SY.csproj">
+      <Project>{6fefaff7-664f-4b53-b787-22b3bd31ad97}</Project>
+      <Name>WIZ.SY</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ\WIZ.csproj">
+      <Project>{3887acf7-cbbb-4d70-bb62-1a45d6679c2c}</Project>
+      <Name>WIZ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIZ.REPORT\WIZ.REPORT.csproj">
+      <Project>{9c57806b-3f5c-4518-ac11-a9b24abddda6}</Project>
+      <Name>WIZ.REPORT</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetDir)$(TargetFileName) $(SolutionDir)\$(SolutionName)\$(OutDir)$(TargetFileName)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

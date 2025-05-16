@@ -1,0 +1,785 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3D00498C-F42B-456C-BABF-6EB6EFFD1FA8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WIZ.WM</RootNamespace>
+    <AssemblyName>WIZ.WM</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics2.Documents.Excel.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Documents.IO.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Shared.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.Misc.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinFormattedText.WordWriter.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinSchedule.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinTabControl.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinToolbars.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinTree.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.Reporting, Version=7.2.13.1105, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\NEXMES\DLL\Telerik.Reporting.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PD4045[제품포장 등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PD4045[제품포장 등록].Designer.cs">
+      <DependentUpon>PD4045[제품포장 등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PD4120[자재출고 등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PD4120[자재출고 등록].Designer.cs">
+      <DependentUpon>PD4120[자재출고 등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PD4051[제품출고 등록2] .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PD4051[제품출고 등록2] .Designer.cs">
+      <DependentUpon>PD4051[제품출고 등록2] .cs</DependentUpon>
+    </Compile>
+    <Compile Include="PD4061[제품출고 취소2].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PD4061[제품출고 취소2].Designer.cs">
+      <DependentUpon>PD4061[제품출고 취소2].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PD4110[외주 발송-작업중].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PD4110[외주 발송-작업중].Designer.cs">
+      <DependentUpon>PD4110[외주 발송-작업중].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PD8000[제품일괄출하].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PD8000[제품일괄출하].Designer.cs">
+      <DependentUpon>PD8000[제품일괄출하].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0001[제품출하검사 조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0001[제품출하검사 조회].Designer.cs">
+      <DependentUpon>WM0001[제품출하검사 조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0005[대차입고 등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0005[대차입고 등록].Designer.cs">
+      <DependentUpon>WM0005[대차입고 등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0025[대차재고현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0025[대차재고현황].Designer.cs">
+      <DependentUpon>WM0025[대차재고현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0151[제품출고 이력2].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0151[제품출고 이력2].designer.cs">
+      <DependentUpon>WM0151[제품출고 이력2].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0159[출하지시].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0159[출하지시].designer.cs">
+      <DependentUpon>WM0159[출하지시].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0165[출하지시 조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0165[출하지시 조회].designer.cs">
+      <DependentUpon>WM0165[출하지시 조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0190[출하지시 %28제품출고2 관련%29].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0190[출하지시 %28제품출고2 관련%29].designer.cs">
+      <DependentUpon>WM0190[출하지시 %28제품출고2 관련%29].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0162[출하지시별 재고조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0162[출하지시별 재고조회].designer.cs">
+      <DependentUpon>WM0162[출하지시별 재고조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0180[재출력].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0180[재출력].designer.cs">
+      <DependentUpon>WM0180[재출력].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0141[제품출고 등록3].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0141[제품출고 등록3].designer.cs">
+      <DependentUpon>WM0141[제품출고 등록3].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0150[제품출고 이력].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0150[제품출고 이력].designer.cs">
+      <DependentUpon>WM0150[제품출고 이력].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0145[제품출고 등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0145[제품출고 등록].designer.cs">
+      <DependentUpon>WM0145[제품출고 등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0140[제품출고 등록2].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0140[제품출고 등록2].designer.cs">
+      <DependentUpon>WM0140[제품출고 등록2].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0110[LOCATION조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0110[LOCATION조회].designer.cs">
+      <DependentUpon>WM0110[LOCATION조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0120[제품식별표 재발행 이력].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0120[제품식별표 재발행 이력].designer.cs">
+      <DependentUpon>WM0120[제품식별표 재발행 이력].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0100[LOCATION조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0100[LOCATION조회].designer.cs">
+      <DependentUpon>WM0100[LOCATION조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0090[제품입고이력].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0090[제품입고이력].designer.cs">
+      <DependentUpon>WM0090[제품입고이력].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PD4040[제품검사 취소].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PD4040[제품검사 취소].Designer.cs">
+      <DependentUpon>PD4040[제품검사 취소].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PD4020[제품검사 대기취소].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PD4020[제품검사 대기취소].Designer.cs">
+      <DependentUpon>PD4020[제품검사 대기취소].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PD4060[제품출고 취소].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PD4060[제품출고 취소].Designer.cs">
+      <DependentUpon>PD4060[제품출고 취소].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0080[제품LOT정보조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0080[제품LOT정보조회].Designer.cs">
+      <DependentUpon>WM0080[제품LOT정보조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0070[제품검사대기현황조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0070[제품검사대기현황조회].Designer.cs">
+      <DependentUpon>WM0070[제품검사대기현황조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0000[제품입고 등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0000[제품입고 등록].Designer.cs">
+      <DependentUpon>WM0000[제품입고 등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0060[완제품식별표 재발행].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0060[완제품식별표 재발행].Designer.cs">
+      <DependentUpon>WM0060[완제품식별표 재발행].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PD4050[제품출고 등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PD4050[제품출고 등록].Designer.cs">
+      <DependentUpon>PD4050[제품출고 등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PD4030[제품검사 등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PD4030[제품검사 등록].Designer.cs">
+      <DependentUpon>PD4030[제품검사 등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PD4010[제품검사 대기등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PD4010[제품검사 대기등록].Designer.cs">
+      <DependentUpon>PD4010[제품검사 대기등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0050[제품LOT분할병합].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0050[제품LOT분할병합].Designer.cs">
+      <DependentUpon>WM0050[제품LOT분할병합].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0030[제품검사실적조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0030[제품검사실적조회].Designer.cs">
+      <DependentUpon>WM0030[제품검사실적조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0040[제품검사불량현황조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0040[제품검사불량현황조회].Designer.cs">
+      <DependentUpon>WM0040[제품검사불량현황조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0020[제품재고현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0020[제품재고현황].Designer.cs">
+      <DependentUpon>WM0020[제품재고현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0010[제품입출고이력].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0010[제품입출고이력].Designer.cs">
+      <DependentUpon>WM0010[제품입출고이력].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0110Y.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0110Y.Designer.cs">
+      <DependentUpon>WM0110Y.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0130[제품포장실적등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0130[제품포장실적등록].Designer.cs">
+      <DependentUpon>WM0130[제품포장실적등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0161[출하지시%28수주X%29].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0161[출하지시%28수주X%29].designer.cs">
+      <DependentUpon>WM0161[출하지시%28수주X%29].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0170[출하검사].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0170[출하검사].designer.cs">
+      <DependentUpon>WM0170[출하검사].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0160[출하지시].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0160[출하지시].designer.cs">
+      <DependentUpon>WM0160[출하지시].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0800.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0800.Designer.cs">
+      <DependentUpon>WM0800.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0700.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0700.Designer.cs">
+      <DependentUpon>WM0700.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0310.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0310.Designer.cs">
+      <DependentUpon>WM0310.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0330.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0330.Designer.cs">
+      <DependentUpon>WM0330.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0520.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0520.Designer.cs">
+      <DependentUpon>WM0520.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0900.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0900.Designer.cs">
+      <DependentUpon>WM0900.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0600.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0600.Designer.cs">
+      <DependentUpon>WM0600.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0500.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0500.Designer.cs">
+      <DependentUpon>WM0500.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM2140[제품검사일괄등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM2140[제품검사일괄등록].Designer.cs">
+      <DependentUpon>WM2140[제품검사일괄등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM3100.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM3100.Designer.cs">
+      <DependentUpon>WM3100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM3200.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM3200.Designer.cs">
+      <DependentUpon>WM3200.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pivot.cs" />
+    <Compile Include="WM4000.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM4000.Designer.cs">
+      <DependentUpon>WM4000.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM4050[제품출고일괄등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM4050[제품출고일괄등록].Designer.cs">
+      <DependentUpon>WM4050[제품출고일괄등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM4100.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM4100.Designer.cs">
+      <DependentUpon>WM4100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM4200[고객사발주정보].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM4200[고객사발주정보].Designer.cs">
+      <DependentUpon>WM4200[고객사발주정보].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM4300.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM4300.Designer.cs">
+      <DependentUpon>WM4300.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM4400[설비 IF].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM4400[설비 IF].Designer.cs">
+      <DependentUpon>WM4400[설비 IF].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM9900.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM9900.Designer.cs">
+      <DependentUpon>WM9900.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="WM0200.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0200.designer.cs">
+      <DependentUpon>WM0200.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM0300.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM0300.Designer.cs">
+      <DependentUpon>WM0300.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM1000.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM1000.Designer.cs">
+      <DependentUpon>WM1000.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM1100.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM1100.Designer.cs">
+      <DependentUpon>WM1100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM1200.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM1200.Designer.cs">
+      <DependentUpon>WM1200.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM2000.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM2000.Designer.cs">
+      <DependentUpon>WM2000.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM2100.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM2100.Designer.cs">
+      <DependentUpon>WM2100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM2200.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM2200.Designer.cs">
+      <DependentUpon>WM2200.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM2300.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM2300.Designer.cs">
+      <DependentUpon>WM2300.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM3000.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM3000.designer.cs">
+      <DependentUpon>WM3000.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PD4045[제품포장 등록].resx">
+      <DependentUpon>PD4045[제품포장 등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PD4120[자재출고 등록].resx">
+      <DependentUpon>PD4120[자재출고 등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PD4051[제품출고 등록2] .resx">
+      <DependentUpon>PD4051[제품출고 등록2] .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PD4061[제품출고 취소2].resx">
+      <DependentUpon>PD4061[제품출고 취소2].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PD4110[외주 발송-작업중].resx">
+      <DependentUpon>PD4110[외주 발송-작업중].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PD8000[제품일괄출하].resx">
+      <DependentUpon>PD8000[제품일괄출하].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0001[제품출하검사 조회].resx">
+      <DependentUpon>WM0001[제품출하검사 조회].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0005[대차입고 등록].resx">
+      <DependentUpon>WM0005[대차입고 등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0025[대차재고현황].resx">
+      <DependentUpon>WM0025[대차재고현황].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0151[제품출고 이력2].resx">
+      <DependentUpon>WM0151[제품출고 이력2].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0159[출하지시].resx">
+      <DependentUpon>WM0159[출하지시].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0165[출하지시 조회].resx">
+      <DependentUpon>WM0165[출하지시 조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0190[출하지시 %28제품출고2 관련%29].resx">
+      <DependentUpon>WM0190[출하지시 %28제품출고2 관련%29].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0162[출하지시별 재고조회].resx">
+      <DependentUpon>WM0162[출하지시별 재고조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0180[재출력].resx">
+      <DependentUpon>WM0180[재출력].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0141[제품출고 등록3].resx">
+      <DependentUpon>WM0141[제품출고 등록3].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0150[제품출고 이력].resx">
+      <DependentUpon>WM0150[제품출고 이력].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0145[제품출고 등록].resx">
+      <DependentUpon>WM0145[제품출고 등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0140[제품출고 등록2].resx">
+      <DependentUpon>WM0140[제품출고 등록2].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0110[LOCATION조회].resx">
+      <DependentUpon>WM0110[LOCATION조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0120[제품식별표 재발행 이력].resx">
+      <DependentUpon>WM0120[제품식별표 재발행 이력].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0100[LOCATION조회].resx">
+      <DependentUpon>WM0100[LOCATION조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0090[제품입고이력].resx">
+      <DependentUpon>WM0090[제품입고이력].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PD4040[제품검사 취소].resx">
+      <DependentUpon>PD4040[제품검사 취소].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PD4020[제품검사 대기취소].resx">
+      <DependentUpon>PD4020[제품검사 대기취소].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PD4060[제품출고 취소].resx">
+      <DependentUpon>PD4060[제품출고 취소].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0080[제품LOT정보조회].resx">
+      <DependentUpon>WM0080[제품LOT정보조회].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0070[제품검사대기현황조회].resx">
+      <DependentUpon>WM0070[제품검사대기현황조회].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0000[제품입고 등록].resx">
+      <DependentUpon>WM0000[제품입고 등록].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0060[완제품식별표 재발행].resx">
+      <DependentUpon>WM0060[완제품식별표 재발행].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PD4050[제품출고 등록].resx">
+      <DependentUpon>PD4050[제품출고 등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PD4030[제품검사 등록].resx">
+      <DependentUpon>PD4030[제품검사 등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PD4010[제품검사 대기등록].resx">
+      <DependentUpon>PD4010[제품검사 대기등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0050[제품LOT분할병합].resx">
+      <DependentUpon>WM0050[제품LOT분할병합].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0030[제품검사실적조회].resx">
+      <DependentUpon>WM0030[제품검사실적조회].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0040[제품검사불량현황조회].resx">
+      <DependentUpon>WM0040[제품검사불량현황조회].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0020[제품재고현황].resx">
+      <DependentUpon>WM0020[제품재고현황].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0010[제품입출고이력].resx">
+      <DependentUpon>WM0010[제품입출고이력].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0110Y.resx">
+      <DependentUpon>WM0110Y.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0130[제품포장실적등록].resx">
+      <DependentUpon>WM0130[제품포장실적등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0161[출하지시%28수주X%29].resx">
+      <DependentUpon>WM0161[출하지시%28수주X%29].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0170[출하검사].resx">
+      <DependentUpon>WM0170[출하검사].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0160[출하지시].resx">
+      <DependentUpon>WM0160[출하지시].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0800.resx">
+      <DependentUpon>WM0800.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0700.resx">
+      <DependentUpon>WM0700.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0310.resx">
+      <DependentUpon>WM0310.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0330.resx">
+      <DependentUpon>WM0330.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0520.resx">
+      <DependentUpon>WM0520.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0900.resx">
+      <DependentUpon>WM0900.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0600.resx">
+      <DependentUpon>WM0600.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0500.resx">
+      <DependentUpon>WM0500.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM2140[제품검사일괄등록].resx">
+      <DependentUpon>WM2140[제품검사일괄등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM3100.resx">
+      <DependentUpon>WM3100.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM3200.resx">
+      <DependentUpon>WM3200.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM4000.resx">
+      <DependentUpon>WM4000.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM4050[제품출고일괄등록].resx">
+      <DependentUpon>WM4050[제품출고일괄등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM4100.resx">
+      <DependentUpon>WM4100.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM4200[고객사발주정보].resx">
+      <DependentUpon>WM4200[고객사발주정보].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM4300.resx">
+      <DependentUpon>WM4300.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM4400[설비 IF].resx">
+      <DependentUpon>WM4400[설비 IF].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM9900.resx">
+      <DependentUpon>WM9900.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="WM0200.resx">
+      <DependentUpon>WM0200.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM0300.resx">
+      <DependentUpon>WM0300.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM1000.resx">
+      <DependentUpon>WM1000.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM1100.resx">
+      <DependentUpon>WM1100.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM1200.resx">
+      <DependentUpon>WM1200.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM2000.resx">
+      <DependentUpon>WM2000.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM2100.resx">
+      <DependentUpon>WM2100.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM2200.resx">
+      <DependentUpon>WM2200.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM2300.resx">
+      <DependentUpon>WM2300.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM3000.resx">
+      <DependentUpon>WM3000.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Module\MES\PopManager\PopManager.csproj">
+      <Project>{fd5753c6-1531-442f-8ce5-e317811ed41d}</Project>
+      <Name>PopManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.Control\WIZ.Control.csproj">
+      <Project>{865bf19b-00b8-45e8-b4e7-0cc5f58f8a98}</Project>
+      <Name>WIZ.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.Forms\WIZ.Forms.csproj">
+      <Project>{4c2dad9f-dcab-4b8f-a803-f5e43f8849e7}</Project>
+      <Name>WIZ.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ\WIZ.csproj">
+      <Project>{3887acf7-cbbb-4d70-bb62-1a45d6679c2c}</Project>
+      <Name>WIZ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIZ.ETC\WIZ.ETC.csproj">
+      <Project>{407bb92a-9f1f-48ea-bdbd-3fe3730ce2a0}</Project>
+      <Name>WIZ.ETC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIZ.PopUp\WIZ.PopUp.csproj">
+      <Project>{c8d579ce-fbb1-4da8-a1bd-848168b8ccb1}</Project>
+      <Name>WIZ.PopUp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetDir)$(TargetFileName) $(SolutionDir)\$(SolutionName)\$(OutDir)$(TargetFileName)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

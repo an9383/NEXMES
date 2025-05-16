@@ -1,0 +1,563 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4EB34ECA-8FB7-47A1-9413-DD3269EC4687}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WIZ.QM</RootNamespace>
+    <AssemblyName>WIZ.QM</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics2.Shared.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.Misc.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinChart.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.ExcelExport.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinSchedule.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinTabControl.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinToolbars.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MSDATASRC, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>Resources\MSDATASRC.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VBRUN">
+      <HintPath>Resources\VBRUN.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="QM0440[공정검사결과].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM0440[공정검사결과].Designer.cs">
+      <DependentUpon>QM0440[공정검사결과].cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM0130[고객크레임등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM0130[고객크레임등록].Designer.cs">
+      <DependentUpon>QM0130[고객크레임등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM0025[수입검사SPC분석].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM0025[수입검사SPC분석].Designer.cs">
+      <DependentUpon>QM0025[수입검사SPC분석].cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM0061[수입검사SPC분석].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM0061[수입검사SPC분석].Designer.cs">
+      <DependentUpon>QM0061[수입검사SPC분석].cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM0051[3차원측정이력조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM0051[3차원측정이력조회].Designer.cs">
+      <DependentUpon>QM0051[3차원측정이력조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM0200[작업자별 불량현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM0200[작업자별 불량현황].Designer.cs">
+      <DependentUpon>QM0200[작업자별 불량현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM0300[불량유형별 발생이력].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM0300[불량유형별 발생이력].Designer.cs">
+      <DependentUpon>QM0300[불량유형별 발생이력].cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM0700[부적합보고처리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM0700[부적합보고처리].Designer.cs">
+      <DependentUpon>QM0700[부적합보고처리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM8000[결감처리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM8000[결감처리].designer.cs">
+      <DependentUpon>QM8000[결감처리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM5000[인장력테스트].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM5000[인장력테스트].designer.cs">
+      <DependentUpon>QM5000[인장력테스트].cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM0121[부적합불량처리취소].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM0121[부적합불량처리취소].designer.cs">
+      <DependentUpon>QM0121[부적합불량처리취소].cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM0120[부적합처리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM0120[부적합처리].designer.cs">
+      <DependentUpon>QM0120[부적합처리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiSamplesSPC.cs" />
+    <Compile Include="QM0050[3차원측정이력조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM0050[3차원측정이력조회].Designer.cs">
+      <DependentUpon>QM0050[3차원측정이력조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM0060[3차원SPC분석].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM0060[3차원SPC분석].Designer.cs">
+      <DependentUpon>QM0060[3차원SPC분석].cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM0040[자주검사SPC분석].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM0040[자주검사SPC분석].Designer.cs">
+      <DependentUpon>QM0040[자주검사SPC분석].cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM0110[초중종검사관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM0110[초중종검사관리].Designer.cs">
+      <DependentUpon>QM0110[초중종검사관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM1110Y[불량실적판정취소].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM1110Y[불량실적판정취소].designer.cs">
+      <DependentUpon>QM1110Y[불량실적판정취소].cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM1200Y.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM1200Y.designer.cs">
+      <DependentUpon>QM1200Y.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM0010[작업장 별 불량 현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM0010[작업장 별 불량 현황].designer.cs">
+      <DependentUpon>QM0010[작업장 별 불량 현황].cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM1100Y[불량실적판정처리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM1100Y[불량실적판정처리].Designer.cs">
+      <DependentUpon>QM1100Y[불량실적판정처리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM0020[불량유형 별 불량 집계].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM0020[불량유형 별 불량 집계].designer.cs">
+      <DependentUpon>QM0020[불량유형 별 불량 집계].cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM1600[자주검사이력].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM1600[자주검사이력].Designer.cs">
+      <DependentUpon>QM1600[자주검사이력].cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM3000[자주검사실적등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM3000[자주검사실적등록].Designer.cs">
+      <DependentUpon>QM3000[자주검사실적등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM0030[자주검사실적조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM0030[자주검사실적조회].Designer.cs">
+      <DependentUpon>QM0030[자주검사실적조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM3100[자주검사실적조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM3100[자주검사실적조회].Designer.cs">
+      <DependentUpon>QM3100[자주검사실적조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM3110[3차원측정실적조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM3110[3차원측정실적조회].Designer.cs">
+      <DependentUpon>QM3110[3차원측정실적조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM3210[3차원SPC분석].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM3210[3차원SPC분석].Designer.cs">
+      <DependentUpon>QM3210[3차원SPC분석].cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM4000[검사결과조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM4000[검사결과조회].Designer.cs">
+      <DependentUpon>QM4000[검사결과조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPQ0100.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPQ0100.Designer.cs">
+      <DependentUpon>RPQ0100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="QM0400[불량작업장별TOP10].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM0400[불량작업장별TOP10].Designer.cs">
+      <DependentUpon>QM0400[불량작업장별TOP10].cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM0500[작업자별 TOP10].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM0500[작업자별 TOP10].Designer.cs">
+      <DependentUpon>QM0500[작업자별 TOP10].cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM0600[불량유형별 TOP10].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM0600[불량유형별 TOP10].Designer.cs">
+      <DependentUpon>QM0600[불량유형별 TOP10].cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM0800.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM0800.designer.cs">
+      <DependentUpon>QM0800.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM0900.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM0900.Designer.cs">
+      <DependentUpon>QM0900.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM0910.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM0910.Designer.cs">
+      <DependentUpon>QM0910.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM1000.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM1000.Designer.cs">
+      <DependentUpon>QM1000.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM1100.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM1100.Designer.cs">
+      <DependentUpon>QM1100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM1200.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM1200.Designer.cs">
+      <DependentUpon>QM1200.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM1300.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM1300.Designer.cs">
+      <DependentUpon>QM1300.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM1400.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM1400.Designer.cs">
+      <DependentUpon>QM1400.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM1500.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM1500.Designer.cs">
+      <DependentUpon>QM1500.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QM2001.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QM2001.Designer.cs">
+      <DependentUpon>QM2001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SingleSampleSPC.cs" />
+    <Compile Include="SPCBase.cs" />
+    <Compile Include="UC_SPC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_SPC.Designer.cs">
+      <DependentUpon>UC_SPC.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="QM0440[공정검사결과].resx">
+      <DependentUpon>QM0440[공정검사결과].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM0130[고객크레임등록].resx">
+      <DependentUpon>QM0130[고객크레임등록].cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM0025[수입검사SPC분석].resx">
+      <DependentUpon>QM0025[수입검사SPC분석].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM0061[수입검사SPC분석].resx">
+      <DependentUpon>QM0061[수입검사SPC분석].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM0051[3차원측정이력조회].resx">
+      <DependentUpon>QM0051[3차원측정이력조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM0200[작업자별 불량현황].resx">
+      <DependentUpon>QM0200[작업자별 불량현황].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM0300[불량유형별 발생이력].resx">
+      <DependentUpon>QM0300[불량유형별 발생이력].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM0700[부적합보고처리].resx">
+      <DependentUpon>QM0700[부적합보고처리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM8000[결감처리].resx">
+      <DependentUpon>QM8000[결감처리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM5000[인장력테스트].resx">
+      <DependentUpon>QM5000[인장력테스트].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM0121[부적합불량처리취소].resx">
+      <DependentUpon>QM0121[부적합불량처리취소].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM0120[부적합처리].resx">
+      <DependentUpon>QM0120[부적합처리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM0050[3차원측정이력조회].resx">
+      <DependentUpon>QM0050[3차원측정이력조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM0060[3차원SPC분석].resx">
+      <DependentUpon>QM0060[3차원SPC분석].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM0040[자주검사SPC분석].resx">
+      <DependentUpon>QM0040[자주검사SPC분석].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM0110[초중종검사관리].resx">
+      <DependentUpon>QM0110[초중종검사관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM1110Y[불량실적판정취소].resx">
+      <DependentUpon>QM1110Y[불량실적판정취소].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM1200Y.resx">
+      <DependentUpon>QM1200Y.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="QM0010[작업장 별 불량 현황].resx">
+      <DependentUpon>QM0010[작업장 별 불량 현황].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM1100Y[불량실적판정처리].resx">
+      <DependentUpon>QM1100Y[불량실적판정처리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM0020[불량유형 별 불량 집계].resx">
+      <DependentUpon>QM0020[불량유형 별 불량 집계].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM1600[자주검사이력].resx">
+      <DependentUpon>QM1600[자주검사이력].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM3000[자주검사실적등록].resx">
+      <DependentUpon>QM3000[자주검사실적등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM0030[자주검사실적조회].resx">
+      <DependentUpon>QM0030[자주검사실적조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM3100[자주검사실적조회].resx">
+      <DependentUpon>QM3100[자주검사실적조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM3110[3차원측정실적조회].resx">
+      <DependentUpon>QM3110[3차원측정실적조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM3210[3차원SPC분석].resx">
+      <DependentUpon>QM3210[3차원SPC분석].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM4000[검사결과조회].resx">
+      <DependentUpon>QM4000[검사결과조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPQ0100.resx">
+      <DependentUpon>RPQ0100.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM0400[불량작업장별TOP10].resx">
+      <DependentUpon>QM0400[불량작업장별TOP10].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM0500[작업자별 TOP10].resx">
+      <DependentUpon>QM0500[작업자별 TOP10].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM0600[불량유형별 TOP10].resx">
+      <DependentUpon>QM0600[불량유형별 TOP10].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM0800.resx">
+      <DependentUpon>QM0800.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM0900.resx">
+      <DependentUpon>QM0900.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM0910.resx">
+      <DependentUpon>QM0910.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM1000.resx">
+      <DependentUpon>QM1000.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM1100.resx">
+      <DependentUpon>QM1100.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM1200.resx">
+      <DependentUpon>QM1200.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM1300.resx">
+      <DependentUpon>QM1300.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM1400.resx">
+      <DependentUpon>QM1400.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM1500.resx">
+      <DependentUpon>QM1500.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QM2001.resx">
+      <DependentUpon>QM2001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_SPC.resx">
+      <DependentUpon>UC_SPC.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\계산식.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\AxMINI_SPC_CHART.dll" />
+    <Content Include="Resources\AxSPC_Chart.dll" />
+    <None Include="Resources\Default_Image.png" />
+    <Content Include="Resources\MINI_SPC_CHART.dll" />
+    <Content Include="Resources\MINI_SPC_CHART.ocx" />
+    <Content Include="Resources\MSDATASRC.dll" />
+    <Content Include="Resources\SAMMI_SPC_CHART.ocx" />
+    <Content Include="Resources\SPC_Chart.dll" />
+    <Content Include="Resources\VBRUN.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Module\MES\PopManager\PopManager.csproj">
+      <Project>{fd5753c6-1531-442f-8ce5-e317811ed41d}</Project>
+      <Name>PopManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.Control\WIZ.Control.csproj">
+      <Project>{865bf19b-00b8-45e8-b4e7-0cc5f58f8a98}</Project>
+      <Name>WIZ.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.Forms\WIZ.Forms.csproj">
+      <Project>{4c2dad9f-dcab-4b8f-a803-f5e43f8849e7}</Project>
+      <Name>WIZ.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ\WIZ.csproj">
+      <Project>{3887acf7-cbbb-4d70-bb62-1a45d6679c2c}</Project>
+      <Name>WIZ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIZ.PopUp\WIZ.PopUp.csproj">
+      <Project>{c8d579ce-fbb1-4da8-a1bd-848168b8ccb1}</Project>
+      <Name>WIZ.PopUp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIZ.REPORT\WIZ.REPORT.csproj">
+      <Project>{9c57806b-3f5c-4518-ac11-a9b24abddda6}</Project>
+      <Name>WIZ.REPORT</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetDir)$(TargetFileName) $(SolutionDir)\$(SolutionName)\$(OutDir)$(TargetFileName)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

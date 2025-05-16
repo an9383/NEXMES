@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{865BF19B-00B8-45E8-B4E7-0CC5F58F8A98}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WIZ.Control</RootNamespace>
+    <AssemblyName>WIZ.Control</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics2.Shared.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.Misc.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinChart.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.DocumentExport.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinPrintPreviewDialog.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinTree.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics3.Documents.Excel.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics3.Win.UltraWinGrid.ExcelExport.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft Enterprise Library 5.0\Bin\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=8.7.2.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\..\..\NEXMES\packages\Spire.PDFViewer.7.7.0\lib\net46\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.PdfViewer.Asp, Version=7.7.1.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\..\..\NEXMES\packages\Spire.PDFViewer.7.7.0\lib\net46\Spire.PdfViewer.Asp.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.PdfViewer.Forms, Version=7.7.1.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\..\..\NEXMES\packages\Spire.PDFViewer.7.7.0\lib\net46\Spire.PdfViewer.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CircularProgressControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ComboDataType.cs" />
+    <Compile Include="ComboDataTypeYN.cs" />
+    <Compile Include="DBForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBForm.Designer.cs">
+      <DependentUpon>DBForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileImporter.cs" />
+    <Compile Include="Grid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GridExtendUtil.cs" />
+    <Compile Include="GridSetUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridSetUpForm.Designer.cs">
+      <DependentUpon>GridSetUpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MergedGroupCellEvaluator.cs" />
+    <Compile Include="NumTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Padding.cs" />
+    <Compile Include="partialSumForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Report.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SBtnTextEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScboGetCarNo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScboGetCustCode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScboGetErrorCode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScboGetFaultCode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScboGetInspCode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScboGetItemCode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScboGetLineCode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScboGetOPCode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScboGetResCode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScboGetStopCode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScboGetStorageLocCode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScboGetToolCode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScboGetUnitCode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScboGetWHCode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScboGetWorkCenterCode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScboGetWorker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScboGRPIDCode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScboProgramIDCode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SCodeComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SCodeNMComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SCodeTBM0200ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SCodeTBM0600ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SPC_Chart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SPC_Chart.Designer.cs">
+      <DependentUpon>SPC_Chart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SScaleItemComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="STextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TwoTextBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WizTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chart.resx">
+      <DependentUpon>Chart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grid.resx">
+      <DependentUpon>Grid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridSetUpForm.resx">
+      <DependentUpon>GridSetUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SPC_Chart.resx">
+      <DependentUpon>SPC_Chart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TwoTextBoxForm.resx">
+      <DependentUpon>TwoTextBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dll.licenses" />
+    <None Include="packages.config" />
+    <None Include="Resources\Item.bmp" />
+    <None Include="Resources\Popup03.png" />
+    <None Include="Resources\Popup02.png" />
+    <None Include="Resources\Popup01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WIZ\WIZ.csproj">
+      <Project>{3887acf7-cbbb-4d70-bb62-1a45d6679c2c}</Project>
+      <Name>WIZ</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

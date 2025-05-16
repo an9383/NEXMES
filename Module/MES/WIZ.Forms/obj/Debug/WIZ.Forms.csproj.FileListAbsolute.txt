@@ -1,0 +1,360 @@
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Forms.dll
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Forms.pdb
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Shared.v11.1.dll
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.Misc.v11.1.dll
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinEditors.v11.1.dll
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinGrid.v11.1.dll
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinStatusBar.v11.1.dll
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinTabControl.v11.1.dll
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.v11.1.dll
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Control.dll
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.dll
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinChart.v11.1.dll
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics3.Win.UltraWinGrid.ExcelExport.v11.1.dll
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinGrid.DocumentExport.v11.1.dll
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinPrintPreviewDialog.v11.1.dll
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinTree.v11.1.dll
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics3.Documents.Excel.v11.1.dll
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Documents.Reports.v11.1.dll
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinToolbars.v11.1.dll
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Control.pdb
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.pdb
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Shared.v11.1.xml
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.Misc.v11.1.xml
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinEditors.v11.1.xml
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinGrid.v11.1.xml
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinStatusBar.v11.1.xml
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinTabControl.v11.1.xml
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.v11.1.xml
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinChart.v11.1.xml
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics3.Win.UltraWinGrid.ExcelExport.v11.1.xml
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinGrid.DocumentExport.v11.1.xml
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinPrintPreviewDialog.v11.1.xml
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinTree.v11.1.xml
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics3.Documents.Excel.v11.1.xml
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Documents.Reports.v11.1.xml
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinToolbars.v11.1.xml
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csprojAssemblyReference.cache
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.BaseForm.resources
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.BaseMDIChildForm.resources
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.BasePopupForm.resources
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.CheckForm.resources
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.DialogForm.resources
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.MessageForm.resources
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.Properties.Resources.resources
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.GenerateResource.cache
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.dll.licenses
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.CopyComplete
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.dll
+D:\Project\90.소스\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.pdb
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Forms.dll
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Forms.pdb
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Shared.v11.1.dll
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.Misc.v11.1.dll
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinEditors.v11.1.dll
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinGrid.v11.1.dll
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinStatusBar.v11.1.dll
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinTabControl.v11.1.dll
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.v11.1.dll
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Control.dll
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.dll
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinChart.v11.1.dll
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics3.Win.UltraWinGrid.ExcelExport.v11.1.dll
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinGrid.DocumentExport.v11.1.dll
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinPrintPreviewDialog.v11.1.dll
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinTree.v11.1.dll
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics3.Documents.Excel.v11.1.dll
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Documents.Reports.v11.1.dll
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinToolbars.v11.1.dll
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Control.pdb
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.pdb
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Shared.v11.1.xml
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.Misc.v11.1.xml
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinEditors.v11.1.xml
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinGrid.v11.1.xml
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinStatusBar.v11.1.xml
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinTabControl.v11.1.xml
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.v11.1.xml
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinChart.v11.1.xml
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics3.Win.UltraWinGrid.ExcelExport.v11.1.xml
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinGrid.DocumentExport.v11.1.xml
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinPrintPreviewDialog.v11.1.xml
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinTree.v11.1.xml
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics3.Documents.Excel.v11.1.xml
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Documents.Reports.v11.1.xml
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinToolbars.v11.1.xml
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.AssemblyReference.cache
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.BaseForm.resources
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.BaseMDIChildForm.resources
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.BasePopupForm.resources
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.CheckForm.resources
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.DialogForm.resources
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.MessageForm.resources
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.Properties.Resources.resources
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.GenerateResource.cache
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.dll.licenses
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.CoreCompileInputs.cache
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.CopyComplete
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.dll
+D:\P1904\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.pdb
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Forms.dll
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Forms.pdb
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Shared.v11.1.dll
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.Misc.v11.1.dll
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinEditors.v11.1.dll
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinGrid.v11.1.dll
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinStatusBar.v11.1.dll
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinTabControl.v11.1.dll
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.v11.1.dll
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Newtonsoft.Json.dll
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Control.dll
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.dll
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinChart.v11.1.dll
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics3.Win.UltraWinGrid.ExcelExport.v11.1.dll
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinGrid.DocumentExport.v11.1.dll
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinPrintPreviewDialog.v11.1.dll
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinTree.v11.1.dll
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics3.Documents.Excel.v11.1.dll
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Documents.Reports.v11.1.dll
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinToolbars.v11.1.dll
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Control.pdb
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.pdb
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Shared.v11.1.xml
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.Misc.v11.1.xml
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinEditors.v11.1.xml
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinGrid.v11.1.xml
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinStatusBar.v11.1.xml
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinTabControl.v11.1.xml
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.v11.1.xml
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Newtonsoft.Json.xml
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinChart.v11.1.xml
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics3.Win.UltraWinGrid.ExcelExport.v11.1.xml
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinGrid.DocumentExport.v11.1.xml
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinPrintPreviewDialog.v11.1.xml
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinTree.v11.1.xml
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics3.Documents.Excel.v11.1.xml
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Documents.Reports.v11.1.xml
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinToolbars.v11.1.xml
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.AssemblyReference.cache
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.BaseForm.resources
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.BaseMDIChildForm.resources
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.BasePopupForm.resources
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.CheckForm.resources
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.DialogForm.resources
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.MessageForm.resources
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.Properties.Resources.resources
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.GenerateResource.cache
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.dll.licenses
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.CoreCompileInputs.cache
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.CopyComplete
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.dll
+C:\Users\an938\Dropbox\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.pdb
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Forms.dll
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Forms.pdb
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Shared.v11.1.dll
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.Misc.v11.1.dll
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinEditors.v11.1.dll
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinGrid.v11.1.dll
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinStatusBar.v11.1.dll
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinTabControl.v11.1.dll
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.v11.1.dll
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Newtonsoft.Json.dll
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Control.dll
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.dll
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinChart.v11.1.dll
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics3.Win.UltraWinGrid.ExcelExport.v11.1.dll
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinGrid.DocumentExport.v11.1.dll
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinPrintPreviewDialog.v11.1.dll
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinTree.v11.1.dll
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics3.Documents.Excel.v11.1.dll
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Documents.Reports.v11.1.dll
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinToolbars.v11.1.dll
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Control.pdb
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.pdb
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Shared.v11.1.xml
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.Misc.v11.1.xml
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinEditors.v11.1.xml
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinGrid.v11.1.xml
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinStatusBar.v11.1.xml
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinTabControl.v11.1.xml
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.v11.1.xml
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Newtonsoft.Json.xml
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinChart.v11.1.xml
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics3.Win.UltraWinGrid.ExcelExport.v11.1.xml
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinGrid.DocumentExport.v11.1.xml
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinPrintPreviewDialog.v11.1.xml
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinTree.v11.1.xml
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics3.Documents.Excel.v11.1.xml
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Documents.Reports.v11.1.xml
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinToolbars.v11.1.xml
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.AssemblyReference.cache
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.BaseForm.resources
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.BaseMDIChildForm.resources
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.BasePopupForm.resources
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.CheckForm.resources
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.DialogForm.resources
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.MessageForm.resources
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.Properties.Resources.resources
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.GenerateResource.cache
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.dll.licenses
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.CoreCompileInputs.cache
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.CopyComplete
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.dll
+C:\Users\an938\안기선 Dropbox\안기선\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.pdb
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Forms.dll
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Forms.pdb
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Shared.v11.1.dll
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.Misc.v11.1.dll
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinEditors.v11.1.dll
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinGrid.v11.1.dll
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinStatusBar.v11.1.dll
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinTabControl.v11.1.dll
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.v11.1.dll
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Newtonsoft.Json.dll
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Control.dll
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.dll
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinChart.v11.1.dll
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics3.Win.UltraWinGrid.ExcelExport.v11.1.dll
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinGrid.DocumentExport.v11.1.dll
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinPrintPreviewDialog.v11.1.dll
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinTree.v11.1.dll
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics3.Documents.Excel.v11.1.dll
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Documents.Reports.v11.1.dll
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinToolbars.v11.1.dll
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Control.pdb
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.pdb
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Shared.v11.1.xml
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.Misc.v11.1.xml
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinEditors.v11.1.xml
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinGrid.v11.1.xml
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinStatusBar.v11.1.xml
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinTabControl.v11.1.xml
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.v11.1.xml
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Newtonsoft.Json.xml
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinChart.v11.1.xml
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics3.Win.UltraWinGrid.ExcelExport.v11.1.xml
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinGrid.DocumentExport.v11.1.xml
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinPrintPreviewDialog.v11.1.xml
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinTree.v11.1.xml
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics3.Documents.Excel.v11.1.xml
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Documents.Reports.v11.1.xml
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinToolbars.v11.1.xml
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.AssemblyReference.cache
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.BaseForm.resources
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.BaseMDIChildForm.resources
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.BasePopupForm.resources
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.CheckForm.resources
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.DialogForm.resources
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.MessageForm.resources
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.Properties.Resources.resources
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.GenerateResource.cache
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.dll.licenses
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.CoreCompileInputs.cache
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.CopyComplete
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.dll
+C:\Users\an938\OneDrive\문서\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.pdb
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Forms.dll
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Forms.pdb
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Shared.v11.1.dll
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.Misc.v11.1.dll
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinEditors.v11.1.dll
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinGrid.v11.1.dll
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinStatusBar.v11.1.dll
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinTabControl.v11.1.dll
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.v11.1.dll
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Newtonsoft.Json.dll
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Control.dll
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.dll
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinChart.v11.1.dll
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics3.Win.UltraWinGrid.ExcelExport.v11.1.dll
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinGrid.DocumentExport.v11.1.dll
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinPrintPreviewDialog.v11.1.dll
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinTree.v11.1.dll
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics3.Documents.Excel.v11.1.dll
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Documents.Reports.v11.1.dll
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinToolbars.v11.1.dll
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Control.pdb
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.pdb
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Shared.v11.1.xml
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.Misc.v11.1.xml
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinEditors.v11.1.xml
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinGrid.v11.1.xml
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinStatusBar.v11.1.xml
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinTabControl.v11.1.xml
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.v11.1.xml
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Newtonsoft.Json.xml
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinChart.v11.1.xml
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics3.Win.UltraWinGrid.ExcelExport.v11.1.xml
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinGrid.DocumentExport.v11.1.xml
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinPrintPreviewDialog.v11.1.xml
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinTree.v11.1.xml
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics3.Documents.Excel.v11.1.xml
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Documents.Reports.v11.1.xml
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinToolbars.v11.1.xml
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.AssemblyReference.cache
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.BaseForm.resources
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.BaseMDIChildForm.resources
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.BasePopupForm.resources
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.CheckForm.resources
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.DialogForm.resources
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.MessageForm.resources
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.Properties.Resources.resources
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.GenerateResource.cache
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.dll.licenses
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.CoreCompileInputs.cache
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.CopyComplete
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.dll
+C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.pdb
+D:\WorkSpace\PROJECT\P1904_0930\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.AssemblyReference.cache
+D:\WorkSpace\PROJECT\P1904_0930\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.dll
+D:\WorkSpace\PROJECT\P1904_0930\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.pdb
+E:\WorkSpace\PROJECT\P1904_0930\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.AssemblyReference.cache
+E:\WorkSpace\PROJECT\P1904_0930\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.dll
+E:\WorkSpace\PROJECT\P1904_0930\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.pdb
+E:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.AssemblyReference.cache
+E:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.dll
+E:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.pdb
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.AssemblyReference.cache
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.dll
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.pdb
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.BaseForm.resources
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.BaseMDIChildForm.resources
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.BasePopupForm.resources
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.CheckForm.resources
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.DialogForm.resources
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.MessageForm.resources
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.Properties.Resources.resources
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.GenerateResource.cache
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Forms.dll
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Forms.pdb
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Newtonsoft.Json.dll
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Control.dll
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.dll
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinChart.v11.1.dll
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics3.Win.UltraWinGrid.ExcelExport.v11.1.dll
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinGrid.DocumentExport.v11.1.dll
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinPrintPreviewDialog.v11.1.dll
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinTree.v11.1.dll
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics3.Documents.Excel.v11.1.dll
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Documents.Reports.v11.1.dll
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinToolbars.v11.1.dll
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Control.pdb
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.pdb
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Shared.v11.1.xml
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.Misc.v11.1.xml
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinEditors.v11.1.xml
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinGrid.v11.1.xml
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinStatusBar.v11.1.xml
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinTabControl.v11.1.xml
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.v11.1.xml
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Newtonsoft.Json.xml
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinChart.v11.1.xml
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics3.Win.UltraWinGrid.ExcelExport.v11.1.xml
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinGrid.DocumentExport.v11.1.xml
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinPrintPreviewDialog.v11.1.xml
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinTree.v11.1.xml
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics3.Documents.Excel.v11.1.xml
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Documents.Reports.v11.1.xml
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Infragistics2.Win.UltraWinToolbars.v11.1.xml
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.CoreCompileInputs.cache
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.Up2Date

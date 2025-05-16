@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{407BB92A-9F1F-48EA-BDBD-3FE3730CE2A0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WIZ.ETC</RootNamespace>
+    <AssemblyName>WIZ.ETC</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics2.Shared.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.Misc.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinChart.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.ExcelExport.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinSchedule.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinTabControl.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinToolbars.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.QRCode">
+      <HintPath>..\NEXMES\DLL\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="ET0510_POP[수주미납사유등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ET0510_POP[수주미납사유등록].designer.cs">
+      <DependentUpon>ET0510_POP[수주미납사유등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="ET0130_POP[금형등급샷관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ET0130_POP[금형등급샷관리].designer.cs">
+      <DependentUpon>ET0130_POP[금형등급샷관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="ET0121 [금형점검].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ET0121 [금형점검].designer.cs">
+      <DependentUpon>ET0121 [금형점검].cs</DependentUpon>
+    </Compile>
+    <Compile Include="ET0100 [금형점검].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ET0100 [금형점검].designer.cs">
+      <DependentUpon>ET0100 [금형점검].cs</DependentUpon>
+    </Compile>
+    <Compile Include="ET0120_POP[수리점검등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ET0120_POP[수리점검등록].designer.cs">
+      <DependentUpon>ET0120_POP[수리점검등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="ET0120 [수리완료확정].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ET0120 [수리완료확정].designer.cs">
+      <DependentUpon>ET0120 [수리완료확정].cs</DependentUpon>
+    </Compile>
+    <Compile Include="ET0710 [출고대비실적관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ET0710 [출고대비실적관리].designer.cs">
+      <DependentUpon>ET0710 [출고대비실적관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="ET0700 [생산대비실적관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ET0700 [생산대비실적관리].designer.cs">
+      <DependentUpon>ET0700 [생산대비실적관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="ET0620_POP[판매단가변경관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ET0620_POP[판매단가변경관리].designer.cs">
+      <DependentUpon>ET0620_POP[판매단가변경관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="ET0610_POP[구매단가변경관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ET0610_POP[구매단가변경관리].designer.cs">
+      <DependentUpon>ET0610_POP[구매단가변경관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="ET0620 [판매단가관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ET0620 [판매단가관리].designer.cs">
+      <DependentUpon>ET0620 [판매단가관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="ET0610 [구매단가관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ET0610 [구매단가관리].designer.cs">
+      <DependentUpon>ET0610 [구매단가관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="ET0600_POP[매입처등록관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ET0600_POP[매입처등록관리].designer.cs">
+      <DependentUpon>ET0600_POP[매입처등록관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="ET0600 [매입처관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ET0600 [매입처관리].designer.cs">
+      <DependentUpon>ET0600 [매입처관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="ET0500 [수주주단위현황조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ET0500 [수주주단위현황조회].designer.cs">
+      <DependentUpon>ET0500 [수주주단위현황조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="ET0400 [매출관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ET0400 [매출관리].designer.cs">
+      <DependentUpon>ET0400 [매출관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="ET0300 [재고비용산출].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ET0300 [재고비용산출].designer.cs">
+      <DependentUpon>ET0300 [재고비용산출].cs</DependentUpon>
+    </Compile>
+    <Compile Include="ET0200 [금형비정산].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ET0200 [금형비정산].designer.cs">
+      <DependentUpon>ET0200 [금형비정산].cs</DependentUpon>
+    </Compile>
+    <Compile Include="ET0800_POP[신규제품개발등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ET0800_POP[신규제품개발등록].designer.cs">
+      <DependentUpon>ET0800_POP[신규제품개발등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="ET0800 [제품개발관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ET0800 [제품개발관리].designer.cs">
+      <DependentUpon>ET0800 [제품개발관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="ET0110 [PH세척액관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ET0110 [PH세척액관리].designer.cs">
+      <DependentUpon>ET0110 [PH세척액관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="ET0110_POP[세척액점검].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ET0110_POP[세척액점검].designer.cs">
+      <DependentUpon>ET0110_POP[세척액점검].cs</DependentUpon>
+    </Compile>
+    <Compile Include="ETC_Common.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Module\MES\PopManager\PopManager.csproj">
+      <Project>{fd5753c6-1531-442f-8ce5-e317811ed41d}</Project>
+      <Name>PopManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.Control\WIZ.Control.csproj">
+      <Project>{865bf19b-00b8-45e8-b4e7-0cc5f58f8a98}</Project>
+      <Name>WIZ.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.Forms\WIZ.Forms.csproj">
+      <Project>{4c2dad9f-dcab-4b8f-a803-f5e43f8849e7}</Project>
+      <Name>WIZ.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.MAIN\WIZ.MAIN.csproj">
+      <Project>{857469de-5d2a-45b7-8875-38c5912d16c8}</Project>
+      <Name>WIZ.MAIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.SY\WIZ.SY.csproj">
+      <Project>{6fefaff7-664f-4b53-b787-22b3bd31ad97}</Project>
+      <Name>WIZ.SY</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ\WIZ.csproj">
+      <Project>{3887acf7-cbbb-4d70-bb62-1a45d6679c2c}</Project>
+      <Name>WIZ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIZ.PopUp\WIZ.PopUp.csproj">
+      <Project>{c8d579ce-fbb1-4da8-a1bd-848168b8ccb1}</Project>
+      <Name>WIZ.PopUp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIZ.REPORT\WIZ.REPORT.csproj">
+      <Project>{9c57806b-3f5c-4518-ac11-a9b24abddda6}</Project>
+      <Name>WIZ.REPORT</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ET0510_POP[수주미납사유등록].resx">
+      <DependentUpon>ET0510_POP[수주미납사유등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ET0130_POP[금형등급샷관리].resx">
+      <DependentUpon>ET0130_POP[금형등급샷관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ET0121 [금형점검].resx">
+      <DependentUpon>ET0121 [금형점검].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ET0100 [금형점검].resx">
+      <DependentUpon>ET0100 [금형점검].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ET0120_POP[수리점검등록].resx">
+      <DependentUpon>ET0120_POP[수리점검등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ET0120 [수리완료확정].resx">
+      <DependentUpon>ET0120 [수리완료확정].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ET0710 [출고대비실적관리].resx">
+      <DependentUpon>ET0710 [출고대비실적관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ET0700 [생산대비실적관리].resx">
+      <DependentUpon>ET0700 [생산대비실적관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ET0620_POP[판매단가변경관리].resx">
+      <DependentUpon>ET0620_POP[판매단가변경관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ET0610_POP[구매단가변경관리].resx">
+      <DependentUpon>ET0610_POP[구매단가변경관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ET0620 [판매단가관리].resx">
+      <DependentUpon>ET0620 [판매단가관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ET0610 [구매단가관리].resx">
+      <DependentUpon>ET0610 [구매단가관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ET0600_POP[매입처등록관리].resx">
+      <DependentUpon>ET0600_POP[매입처등록관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ET0600 [매입처관리].resx">
+      <DependentUpon>ET0600 [매입처관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ET0500 [수주주단위현황조회].resx">
+      <DependentUpon>ET0500 [수주주단위현황조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ET0400 [매출관리].resx">
+      <DependentUpon>ET0400 [매출관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ET0300 [재고비용산출].resx">
+      <DependentUpon>ET0300 [재고비용산출].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ET0200 [금형비정산].resx">
+      <DependentUpon>ET0200 [금형비정산].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ET0800_POP[신규제품개발등록].resx">
+      <DependentUpon>ET0800_POP[신규제품개발등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ET0800 [제품개발관리].resx">
+      <DependentUpon>ET0800 [제품개발관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ET0110 [PH세척액관리].resx">
+      <DependentUpon>ET0110 [PH세척액관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ET0110_POP[세척액점검].resx">
+      <DependentUpon>ET0110_POP[세척액점검].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phimg.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetDir)$(TargetFileName) $(SolutionDir)\$(SolutionName)\$(OutDir)$(TargetFileName)</PostBuildEvent>
+  </PropertyGroup>
+</Project>

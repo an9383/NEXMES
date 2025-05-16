@@ -1,0 +1,576 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7288E708-2A00-42E0-9AB2-E1FC7009AA2D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WIZ.MD</RootNamespace>
+    <AssemblyName>WIZ.MD</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics2.Shared.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.Misc.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinDock.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinSchedule.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinStatusBar.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinTabbedMdi.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinTabControl.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinTree.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Microsoft Enterprise Library 5.0\Bin\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Microsoft Enterprise Library 5.0\Bin\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.Reporting, Version=7.2.13.1105, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\NEXMES\DLL\Telerik.Reporting.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MD0001_POP1[현생산제품].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0001_POP1[현생산제품].Designer.cs">
+      <DependentUpon>MD0001_POP1[현생산제품].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0005_POP1[코어연계].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0005_POP1[코어연계].Designer.cs">
+      <DependentUpon>MD0005_POP1[코어연계].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0005[코어마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0005[코어마스터].designer.cs">
+      <DependentUpon>MD0005[코어마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0001[금형마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0001[금형마스터].designer.cs">
+      <DependentUpon>MD0001[금형마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0051[코어수불리스트].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0051[코어수불리스트].designer.cs">
+      <DependentUpon>MD0051[코어수불리스트].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0120[금형세척액관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0120[금형세척액관리].designer.cs">
+      <DependentUpon>MD0120[금형세척액관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0110[금형현황조회].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0110[금형현황조회].designer.cs">
+      <DependentUpon>MD0110[금형현황조회].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0060_POP2[이관등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0060_POP2[이관등록].designer.cs">
+      <DependentUpon>MD0060_POP2[이관등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0060_POP1[폐기등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0060_POP1[폐기등록].designer.cs">
+      <DependentUpon>MD0060_POP1[폐기등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0070_POP1[수리완료등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0070_POP1[수리완료등록].designer.cs">
+      <DependentUpon>MD0070_POP1[수리완료등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0070_POP4[체인지타입].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0070_POP4[체인지타입].designer.cs">
+      <DependentUpon>MD0070_POP4[체인지타입].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0070_POP3[수리등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0070_POP3[수리등록].designer.cs">
+      <DependentUpon>MD0070_POP3[수리등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD1000_UJ [금형마스터].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD1000_UJ [금형마스터].designer.cs">
+      <DependentUpon>MD1000_UJ [금형마스터].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0080[금형세척관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0080[금형세척관리].designer.cs">
+      <DependentUpon>MD0080[금형세척관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0060[금형이관폐기].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0060[금형이관폐기].designer.cs">
+      <DependentUpon>MD0060[금형이관폐기].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0050[코어수불].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0050[코어수불].designer.cs">
+      <DependentUpon>MD0050[코어수불].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0050_POP2[코어예외불출].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0050_POP2[코어예외불출].Designer.cs">
+      <DependentUpon>MD0050_POP2[코어예외불출].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0070[금형수리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0070[금형수리].designer.cs">
+      <DependentUpon>MD0070[금형수리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0020[금형수리요청].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0020[금형수리요청].designer.cs">
+      <DependentUpon>MD0020[금형수리요청].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0100.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0100.designer.cs">
+      <DependentUpon>MD0100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0050_POP1[코어입고].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0050_POP1[코어입고].Designer.cs">
+      <DependentUpon>MD0050_POP1[코어입고].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0070_POP2[수리내역등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0070_POP2[수리내역등록].designer.cs">
+      <DependentUpon>MD0070_POP2[수리내역등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0200.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0200.Designer.cs">
+      <DependentUpon>MD0200.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0300.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0300.Designer.cs">
+      <DependentUpon>MD0300.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0460[기능 샘플Test].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0460[기능 샘플Test].designer.cs">
+      <DependentUpon>MD0460[기능 샘플Test].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0450[기능 샘플].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0450[기능 샘플].designer.cs">
+      <DependentUpon>MD0450[기능 샘플].cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0400.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0400.designer.cs">
+      <DependentUpon>MD0400.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0500.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0500.Designer.cs">
+      <DependentUpon>MD0500.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0600.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0600.Designer.cs">
+      <DependentUpon>MD0600.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0700.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0700.Designer.cs">
+      <DependentUpon>MD0700.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0710.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0710.Designer.cs">
+      <DependentUpon>MD0710.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0720.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0720.designer.cs">
+      <DependentUpon>MD0720.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0730.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0730.designer.cs">
+      <DependentUpon>MD0730.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0800.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0800.Designer.cs">
+      <DependentUpon>MD0800.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0810.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0810.Designer.cs">
+      <DependentUpon>MD0810.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD0900.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD0900.designer.cs">
+      <DependentUpon>MD0900.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD1000.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD1000.Designer.cs">
+      <DependentUpon>MD1000.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD1100.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD1100.Designer.cs">
+      <DependentUpon>MD1100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD1110.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD1110.Designer.cs">
+      <DependentUpon>MD1110.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD1120.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD1120.Designer.cs">
+      <DependentUpon>MD1120.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD1130.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD1130.designer.cs">
+      <DependentUpon>MD1130.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD1200.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD1200.designer.cs">
+      <DependentUpon>MD1200.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD1300.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD1300.designer.cs">
+      <DependentUpon>MD1300.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD1310.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD1310.designer.cs">
+      <DependentUpon>MD1310.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD3000.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD3000.designer.cs">
+      <DependentUpon>MD3000.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD3100.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD3100.designer.cs">
+      <DependentUpon>MD3100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD3200.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD3200.Designer.cs">
+      <DependentUpon>MD3200.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD3210.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD3210.designer.cs">
+      <DependentUpon>MD3210.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MD0001_POP1[현생산제품].resx">
+      <DependentUpon>MD0001_POP1[현생산제품].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0005_POP1[코어연계].resx">
+      <DependentUpon>MD0005_POP1[코어연계].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0005[코어마스터].resx">
+      <DependentUpon>MD0005[코어마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0001[금형마스터].resx">
+      <DependentUpon>MD0001[금형마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0051[코어수불리스트].resx">
+      <DependentUpon>MD0051[코어수불리스트].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0120[금형세척액관리].resx">
+      <DependentUpon>MD0120[금형세척액관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0110[금형현황조회].resx">
+      <DependentUpon>MD0110[금형현황조회].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0060_POP2[이관등록].resx">
+      <DependentUpon>MD0060_POP2[이관등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0060_POP1[폐기등록].resx">
+      <DependentUpon>MD0060_POP1[폐기등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0070_POP1[수리완료등록].resx">
+      <DependentUpon>MD0070_POP1[수리완료등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0070_POP4[체인지타입].resx">
+      <DependentUpon>MD0070_POP4[체인지타입].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0070_POP3[수리등록].resx">
+      <DependentUpon>MD0070_POP3[수리등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD1000_UJ [금형마스터].resx">
+      <DependentUpon>MD1000_UJ [금형마스터].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0080[금형세척관리].resx">
+      <DependentUpon>MD0080[금형세척관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0060[금형이관폐기].resx">
+      <DependentUpon>MD0060[금형이관폐기].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0050[코어수불].resx">
+      <DependentUpon>MD0050[코어수불].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0050_POP2[코어예외불출].resx">
+      <DependentUpon>MD0050_POP2[코어예외불출].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0070[금형수리].resx">
+      <DependentUpon>MD0070[금형수리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0020[금형수리요청].resx">
+      <DependentUpon>MD0020[금형수리요청].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0100.resx">
+      <DependentUpon>MD0100.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0050_POP1[코어입고].resx">
+      <DependentUpon>MD0050_POP1[코어입고].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0070_POP2[수리내역등록].resx">
+      <DependentUpon>MD0070_POP2[수리내역등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0200.resx">
+      <DependentUpon>MD0200.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0300.resx">
+      <DependentUpon>MD0300.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0460[기능 샘플Test].resx">
+      <DependentUpon>MD0460[기능 샘플Test].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0450[기능 샘플].resx">
+      <DependentUpon>MD0450[기능 샘플].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0400.resx">
+      <DependentUpon>MD0400.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0500.resx">
+      <DependentUpon>MD0500.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0600.resx">
+      <DependentUpon>MD0600.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0700.resx">
+      <DependentUpon>MD0700.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0710.resx">
+      <DependentUpon>MD0710.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0720.resx">
+      <DependentUpon>MD0720.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0730.resx">
+      <DependentUpon>MD0730.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0800.resx">
+      <DependentUpon>MD0800.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0810.resx">
+      <DependentUpon>MD0810.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD0900.resx">
+      <DependentUpon>MD0900.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD1000.resx">
+      <DependentUpon>MD1000.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD1100.resx">
+      <DependentUpon>MD1100.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD1110.resx">
+      <DependentUpon>MD1110.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD1120.resx">
+      <DependentUpon>MD1120.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD1130.resx">
+      <DependentUpon>MD1130.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD1200.resx">
+      <DependentUpon>MD1200.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD1300.resx">
+      <DependentUpon>MD1300.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD1310.resx">
+      <DependentUpon>MD1310.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD3000.resx">
+      <DependentUpon>MD3000.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD3100.resx">
+      <DependentUpon>MD3100.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD3200.resx">
+      <DependentUpon>MD3200.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD3210.resx">
+      <DependentUpon>MD3210.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Module\MES\PopManager\PopManager.csproj">
+      <Project>{fd5753c6-1531-442f-8ce5-e317811ed41d}</Project>
+      <Name>PopManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.Control\WIZ.Control.csproj">
+      <Project>{865bf19b-00b8-45e8-b4e7-0cc5f58f8a98}</Project>
+      <Name>WIZ.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.Forms\WIZ.Forms.csproj">
+      <Project>{4c2dad9f-dcab-4b8f-a803-f5e43f8849e7}</Project>
+      <Name>WIZ.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ\WIZ.csproj">
+      <Project>{3887acf7-cbbb-4d70-bb62-1a45d6679c2c}</Project>
+      <Name>WIZ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIZ.PopUp\WIZ.PopUp.csproj">
+      <Project>{c8d579ce-fbb1-4da8-a1bd-848168b8ccb1}</Project>
+      <Name>WIZ.PopUp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetDir)$(TargetFileName) $(SolutionDir)\$(SolutionName)\$(OutDir)$(TargetFileName)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

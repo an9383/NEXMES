@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8986825C-4826-48F2-B72E-234732A1344D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WIZ.OD</RootNamespace>
+    <AssemblyName>WIZ.OD</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics2.Shared.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.Misc.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinChart.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.ExcelExport.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinSchedule.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinTabControl.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinToolbars.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.QRCode">
+      <HintPath>..\NEXMES\DLL\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OD0110_POP[수주미납사유등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OD0110_POP[수주미납사유등록].designer.cs">
+      <DependentUpon>OD0110_POP[수주미납사유등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="OD0010 [조립관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OD0010 [조립관리].designer.cs">
+      <DependentUpon>OD0010 [조립관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="OD0000_POP [수동수주등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OD0000_POP [수동수주등록].designer.cs">
+      <DependentUpon>OD0000_POP [수동수주등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="OD0000_POP_POP1[수주제품].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OD0000_POP_POP1[수주제품].Designer.cs">
+      <DependentUpon>OD0000_POP_POP1[수주제품].cs</DependentUpon>
+    </Compile>
+    <Compile Include="OD0200 [수주잔량관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OD0200 [수주잔량관리].designer.cs">
+      <DependentUpon>OD0200 [수주잔량관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="OD0100 [수주미납관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OD0100 [수주미납관리].designer.cs">
+      <DependentUpon>OD0100 [수주미납관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="OD0000 [수주관리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OD0000 [수주관리].designer.cs">
+      <DependentUpon>OD0000 [수주관리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Module\MES\PopManager\PopManager.csproj">
+      <Project>{fd5753c6-1531-442f-8ce5-e317811ed41d}</Project>
+      <Name>PopManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.Control\WIZ.Control.csproj">
+      <Project>{865bf19b-00b8-45e8-b4e7-0cc5f58f8a98}</Project>
+      <Name>WIZ.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.Forms\WIZ.Forms.csproj">
+      <Project>{4c2dad9f-dcab-4b8f-a803-f5e43f8849e7}</Project>
+      <Name>WIZ.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.MAIN\WIZ.MAIN.csproj">
+      <Project>{857469de-5d2a-45b7-8875-38c5912d16c8}</Project>
+      <Name>WIZ.MAIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ.SY\WIZ.SY.csproj">
+      <Project>{6fefaff7-664f-4b53-b787-22b3bd31ad97}</Project>
+      <Name>WIZ.SY</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Module\MES\WIZ\WIZ.csproj">
+      <Project>{3887acf7-cbbb-4d70-bb62-1a45d6679c2c}</Project>
+      <Name>WIZ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIZ.PopUp\WIZ.PopUp.csproj">
+      <Project>{c8d579ce-fbb1-4da8-a1bd-848168b8ccb1}</Project>
+      <Name>WIZ.PopUp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIZ.REPORT\WIZ.REPORT.csproj">
+      <Project>{9c57806b-3f5c-4518-ac11-a9b24abddda6}</Project>
+      <Name>WIZ.REPORT</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="OD0110_POP[수주미납사유등록].resx">
+      <DependentUpon>OD0110_POP[수주미납사유등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OD0010 [조립관리].resx">
+      <DependentUpon>OD0010 [조립관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OD0000_POP [수동수주등록].resx">
+      <DependentUpon>OD0000_POP [수동수주등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OD0000_POP_POP1[수주제품].resx">
+      <DependentUpon>OD0000_POP_POP1[수주제품].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OD0200 [수주잔량관리].resx">
+      <DependentUpon>OD0200 [수주잔량관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OD0100 [수주미납관리].resx">
+      <DependentUpon>OD0100 [수주미납관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OD0000 [수주관리].resx">
+      <DependentUpon>OD0000 [수주관리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetDir)$(TargetFileName) $(SolutionDir)\$(SolutionName)\$(OutDir)$(TargetFileName)</PostBuildEvent>
+  </PropertyGroup>
+</Project>
