@@ -282,18 +282,7 @@ C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.SY\obj\Debug\WIZ.SY.csproj
 C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.SY\obj\Debug\WIZ.SY.csproj.CopyComplete
 C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.SY\obj\Debug\WIZ.SY.dll
 C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.SY\obj\Debug\WIZ.SY.pdb
-D:\WorkSpace\PROJECT\P1904_0930\P1904_0930\NEXMES\Module\MES\WIZ.SY\obj\Debug\WIZ.SY.csproj.AssemblyReference.cache
-D:\WorkSpace\PROJECT\P1904_0930\P1904_0930\NEXMES\Module\MES\WIZ.SY\obj\Debug\WIZ.SY.dll
-D:\WorkSpace\PROJECT\P1904_0930\P1904_0930\NEXMES\Module\MES\WIZ.SY\obj\Debug\WIZ.SY.pdb
-E:\WorkSpace\PROJECT\P1904_0930\P1904_0930\NEXMES\Module\MES\WIZ.SY\obj\Debug\WIZ.SY.csproj.AssemblyReference.cache
-E:\WorkSpace\PROJECT\P1904_0930\P1904_0930\NEXMES\Module\MES\WIZ.SY\obj\Debug\WIZ.SY.dll
-E:\WorkSpace\PROJECT\P1904_0930\P1904_0930\NEXMES\Module\MES\WIZ.SY\obj\Debug\WIZ.SY.pdb
-E:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.SY\obj\Debug\WIZ.SY.csproj.AssemblyReference.cache
-E:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.SY\obj\Debug\WIZ.SY.dll
-E:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.SY\obj\Debug\WIZ.SY.pdb
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.SY\obj\Debug\WIZ.SY.csproj.AssemblyReference.cache
-D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.SY\obj\Debug\WIZ.SY.dll
-D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.SY\obj\Debug\WIZ.SY.pdb
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.SY\obj\Debug\WIZ.SY.POP_TSY0030.resources
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.SY\obj\Debug\WIZ.SY.POP_TSY0031.resources
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.SY\obj\Debug\WIZ.SY.Properties.Resources.resources
@@ -303,6 +292,8 @@ D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.SY\obj\Debug\WIZ.SY.SY0080
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.SY\obj\Debug\WIZ.SY.SY0081.resources
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.SY\obj\Debug\WIZ.SY.SY0201Y.resources
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.SY\obj\Debug\WIZ.SY.csproj.GenerateResource.cache
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.SY\obj\Debug\WIZ.SY.dll
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.SY\obj\Debug\WIZ.SY.pdb
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.SY\bin\Debug\WIZ.SY.dll
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.SY\bin\Debug\WIZ.SY.pdb
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.SY\bin\Debug\PopManager.dll

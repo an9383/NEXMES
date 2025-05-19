@@ -324,18 +324,7 @@ C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Control\obj\Debug\WIZ.Cont
 C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Control\obj\Debug\WIZ.Control.csproj.CopyComplete
 C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Control\obj\Debug\WIZ.Control.dll
 C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Control\obj\Debug\WIZ.Control.pdb
-D:\WorkSpace\PROJECT\P1904_0930\P1904_0930\NEXMES\Module\MES\WIZ.Control\obj\Debug\WIZ.Control.csproj.AssemblyReference.cache
-D:\WorkSpace\PROJECT\P1904_0930\P1904_0930\NEXMES\Module\MES\WIZ.Control\obj\Debug\WIZ.Control.dll
-D:\WorkSpace\PROJECT\P1904_0930\P1904_0930\NEXMES\Module\MES\WIZ.Control\obj\Debug\WIZ.Control.pdb
-E:\WorkSpace\PROJECT\P1904_0930\P1904_0930\NEXMES\Module\MES\WIZ.Control\obj\Debug\WIZ.Control.csproj.AssemblyReference.cache
-E:\WorkSpace\PROJECT\P1904_0930\P1904_0930\NEXMES\Module\MES\WIZ.Control\obj\Debug\WIZ.Control.dll
-E:\WorkSpace\PROJECT\P1904_0930\P1904_0930\NEXMES\Module\MES\WIZ.Control\obj\Debug\WIZ.Control.pdb
-E:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Control\obj\Debug\WIZ.Control.csproj.AssemblyReference.cache
-E:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Control\obj\Debug\WIZ.Control.dll
-E:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Control\obj\Debug\WIZ.Control.pdb
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Control\obj\Debug\WIZ.Control.csproj.AssemblyReference.cache
-D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Control\obj\Debug\WIZ.Control.dll
-D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Control\obj\Debug\WIZ.Control.pdb
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Control\obj\Debug\WIZ.Control.Chart.resources
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Control\obj\Debug\WIZ.Control.Grid.resources
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Control\obj\Debug\WIZ.Control.GridSetUpForm.resources
@@ -343,6 +332,8 @@ D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Control\obj\Debug\WIZ.Cont
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Control\obj\Debug\WIZ.Control.SPC_Chart.resources
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Control\obj\Debug\WIZ.Control.TwoTextBoxForm.resources
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Control\obj\Debug\WIZ.Control.csproj.GenerateResource.cache
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Control\obj\Debug\WIZ.Control.dll
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Control\obj\Debug\WIZ.Control.pdb
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Control\bin\Debug\WIZ.Control.dll
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Control\bin\Debug\WIZ.Control.pdb
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Control\bin\Debug\Spire.Pdf.dll

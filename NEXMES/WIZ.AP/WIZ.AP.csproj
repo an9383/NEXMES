@@ -245,6 +245,12 @@
     <Compile Include="AP0010[작업지시편성].designer.cs">
       <DependentUpon>AP0010[작업지시편성].cs</DependentUpon>
     </Compile>
+    <Compile Include="AP0110[수주현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AP0110[수주현황].designer.cs">
+      <DependentUpon>AP0110[수주현황].cs</DependentUpon>
+    </Compile>
     <Compile Include="AP0120[ERP매출현황].cs">
       <SubType>Form</SubType>
     </Compile>
@@ -451,6 +457,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AP0010[작업지시편성].resx">
       <DependentUpon>AP0010[작업지시편성].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AP0110[수주현황].resx">
+      <DependentUpon>AP0110[수주현황].cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AP0120[ERP매출현황].resx">
       <DependentUpon>AP0120[ERP매출현황].cs</DependentUpon>

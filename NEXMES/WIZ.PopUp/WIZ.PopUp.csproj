@@ -1716,6 +1716,7 @@
     <EmbeddedResource Include="POP_YQM5000[검사항목등록].resx">
       <DependentUpon>POP_YQM5000[검사항목등록].cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="POP_TBM0100Y_EXCEL.resx">
       <DependentUpon>POP_TBM0100Y_EXCEL.cs</DependentUpon>
     </EmbeddedResource>

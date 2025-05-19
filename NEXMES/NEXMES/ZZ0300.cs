@@ -145,6 +145,8 @@ namespace NEXMES
                     return;
                 }
 
+
+
                 string pwd = txtPwdNow.Text;
                 string pwd1 = txtPwdChg.Text;
 

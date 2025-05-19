@@ -305,18 +305,7 @@ C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.
 C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.CopyComplete
 C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.dll
 C:\Users\an9383\Documents\P1904\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.pdb
-D:\WorkSpace\PROJECT\P1904_0930\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.AssemblyReference.cache
-D:\WorkSpace\PROJECT\P1904_0930\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.dll
-D:\WorkSpace\PROJECT\P1904_0930\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.pdb
-E:\WorkSpace\PROJECT\P1904_0930\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.AssemblyReference.cache
-E:\WorkSpace\PROJECT\P1904_0930\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.dll
-E:\WorkSpace\PROJECT\P1904_0930\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.pdb
-E:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.AssemblyReference.cache
-E:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.dll
-E:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.pdb
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.AssemblyReference.cache
-D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.dll
-D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.pdb
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.BaseForm.resources
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.BaseMDIChildForm.resources
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.BasePopupForm.resources
@@ -325,6 +314,8 @@ D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.MessageForm.resources
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.Properties.Resources.resources
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.csproj.GenerateResource.cache
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.dll
+D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\obj\Debug\WIZ.Forms.pdb
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Forms.dll
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\WIZ.Forms.pdb
 D:\WorkSpace\PROJECT\P1904_0930\NEXMES\Module\MES\WIZ.Forms\bin\Debug\Newtonsoft.Json.dll

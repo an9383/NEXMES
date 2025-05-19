@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6FEFAFF7-664F-4B53-B787-22B3BD31AD97}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WIZ.SY</RootNamespace>
+    <AssemblyName>WIZ.SY</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics2.Shared.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.Misc.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinSchedule.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinTree.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.v11.1, Version=11.1.20111.2071, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="POP_SY0101.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_SY1600.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_TSY0030.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP_TSY0031.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SY0010.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SY0020.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SY0030.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SY0040.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SY0050.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SY0060.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SY0070.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SY0080.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SY0081.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SY0090.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SY0200Y.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SY0201Y.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SY0210Y.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="POP_TSY0030.resx">
+      <DependentUpon>POP_TSY0030.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP_TSY0031.resx">
+      <DependentUpon>POP_TSY0031.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SY0020.resx">
+      <DependentUpon>SY0020.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SY0070.resx">
+      <DependentUpon>SY0070.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SY0080.resx">
+      <DependentUpon>SY0080.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SY0081.resx">
+      <DependentUpon>SY0081.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SY0201Y.resx">
+      <DependentUpon>SY0201Y.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dll.licenses" />
+    <None Include="Resources\Mtree03.png" />
+    <None Include="Resources\MTree02.png" />
+    <None Include="Resources\MTree01.png" />
+    <None Include="Resources\edit-copy.png" />
+    <None Include="Resources\dark.png" />
+    <None Include="Resources\062_012.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PopManager\PopManager.csproj">
+      <Project>{fd5753c6-1531-442f-8ce5-e317811ed41d}</Project>
+      <Name>PopManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIZ.Control\WIZ.Control.csproj">
+      <Project>{865bf19b-00b8-45e8-b4e7-0cc5f58f8a98}</Project>
+      <Name>WIZ.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIZ.Forms\WIZ.Forms.csproj">
+      <Project>{4c2dad9f-dcab-4b8f-a803-f5e43f8849e7}</Project>
+      <Name>WIZ.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIZ\WIZ.csproj">
+      <Project>{3887acf7-cbbb-4d70-bb62-1a45d6679c2c}</Project>
+      <Name>WIZ</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
