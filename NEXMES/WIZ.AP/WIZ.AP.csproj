@@ -505,7 +505,6 @@
     <EmbeddedResource Include="AP0126[ERP매출현황].resx">
       <DependentUpon>AP0126[ERP매출현황].cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
